@@ -1,27 +1,22 @@
 // Mobile
 // Desktop
 
-.mobile-menu {
-    &__nav {
-
+.header {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__thumb {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 15px;
-        @include mq(desktop) {    
-            display: block;
-        }
-
     }
 
-    &__header-link {
+    &__link {
         color: $color-akcent;
-
-        // @include mq(desktop) {    
-        //     display: none;
-        // }
     }
 
     &__logo {
@@ -37,51 +32,85 @@
         }        
     }
 
-    &__close-btn {
+    &__btn {
+        border: none;
+        background-color: transparent;
+        color: $color-blue;
+        padding: 0px;
+        margin: 0;
+        cursor: pointer;
+
+        margin-left: 200px;
 
         @include mq(desktop) {    
             display: none;
         }
-        
-        border: none;
-        background-color: transparent;
-        color: $color-blue;
-        // transition: color $duration $timing-function;
     }
 
-    &__close-icon {
+    &__icon {
         fill: currentColor;
         @include mq(tablet) {    
             width: 41px;
             height: 41px;
         }
     }
+}
 
+.site-nav {   
     &__item {
-        // margin-left: auto;
-        // margin-right: auto;
+
     }
 
     &__list {
         display: none;
-
-        @include mq(desktop-only) {
-            display: block;
-        } 
+        
+        @include mq(desktop) {
+            display: flex;
+            align-items: center;
+            // gap: 60px;
+            margin-left: auto;
+        }
     } 
 
     &__link {
-        // text-align: center;
+        font-family: $info-font;
+        font-style: 20px;
+        font-weight: 300;
+        color: $color-black;
+        margin-bottom: 40px;
+
+        @include mq(desktop) {
+            :not(:first-child) {
+                margin-left: 60px;
+            }
+        }
     }
-
-    &__call-me {
-        display: none;
-
-        @include mq(desktop-only) {
-            display: block;
-        } 
-    } 
 }
+
+.mobile-menu__call-me {
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+        font-family: $info-font;
+        font-style: 20px;
+        font-weight: 500;
+        line-height: 1,25;
+        text-transform: uppercase;
+        color: $color-akcent;
+        background-color: $color-white;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        margin-left: 64px;
+        padding: 17px 12px;
+    }
+}
+
+// .mobile-menu__call-me:hover,
+// .mobile-menu__call-me:focus {
+//     color: $color-akcent;
+// }
+
 
 
 
