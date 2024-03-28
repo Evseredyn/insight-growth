@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         z-index: 11;
-        transform: translateX(80%);
+        transform: translateX(100%);
         transition: $duration $timing-function;
     }
     
@@ -63,6 +63,50 @@
     
     &__close-icon {
         fill: currentColor;
+    }
+
+    &__call-me {
+        display: none;
+    
+        @include mq(desktop) {
+            display: block;
+            font-family: $info-font;
+            font-style: 20px;
+            font-weight: 500;
+            line-height: 1,25;
+            text-transform: uppercase;
+            color: $color-akcent;
+            background-color: $color-white;
+            border: solid 2px $color-akcent;
+            border-radius: 40px;
+            margin-left: 64px;
+            padding: 17px 12px;
+        }
+    }
+}
+
+.mob-nav {   
+    &__item {
+
+    }
+
+    &__list {
+        display: none;
+        
+        @include mq(desktop) {
+            display: flex;
+            align-items: center;
+            // gap: 60px;
+            margin-left: auto;
+        }
+    } 
+
+    &__link {
+        font-family: $info-font;
+        font-style: 20px;
+        font-weight: 300;
+        color: $color-black;
+        margin-bottom: 40px;
     }
 }
 
