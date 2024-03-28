@@ -1,0 +1,99 @@
+
+html {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   font-family: $main-font;
+ }
+ 
+ .container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+
+   @include mq(mobile) {
+      width: 360px;
+   }
+
+   @include mq(tablet) {
+      width: 744px;
+   }
+
+   @include mq(desktop) {
+      width: 1366px;
+      padding-left: 120px;
+      padding-right: 120px;
+   }
+
+   @include mq(monitor) {
+      width: 1920px;
+      padding-left: 100px;
+      padding-right: 100px;
+   }
+}
+ 
+.section {
+   padding: 60px 0;
+
+   @include mq(desktop) {
+      padding: 94px 0;
+   }
+}
+
+.link {
+   text-decoration: none;
+   color: currentColor;
+}
+ 
+.list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+ 
+//  .header,
+//  .features,
+//  .ourwork,
+//  .clients {
+//     background-color: $color-white-bg;
+//  }
+ 
+.current {
+   color: $color-akcent;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+ 
+//  .active {
+//     color: $color-white;
+//     background-color: $color-akcent;  
+//  }
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}

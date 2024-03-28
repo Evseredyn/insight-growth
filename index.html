@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Inter:wght@300;400;500;900&family=Roboto+Condensed:wght@300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 <!--Header-->
-    <header>
-        <a href="">Logo</a>
+<header>
+    <div class="mobile-menu__nav container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu__thumb">
+            <a class="mobile-menu__close-btn">
+                <svg class="mobile-menu__logo" width="39" height="41">
+                    <use href="./images/icons.svg#icon-main-logo"></use>
+                </svg>
+            </a>
+            <button class="mobile-menu__close-btn js-close-menu">
+                <svg class="mobile-menu__close-icon" width="36" height="36" aria-label="Перемикач мобільного меню">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Головна</a></li>
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Послуги</a></li>
+            <li class="mobile-menu__item"><a href="./complex.html" class="mobile-menu__link link">Бухгалтерія під ключ</a></li>
+            <li class="mobile-menu__item"><a href="./personal.html" class="mobile-menu__link link">Управлінський облік для власника бізнесу</a></li>
+            <li class="mobile-menu__item"><a href="./management.html" class="mobile-menu__link link">Кадровий облік</a></li>
+            <li class="mobile-menu__item"><a href="./about.html" class="mobile-menu__link link">Про нас</a></li>
+            <li class="mobile-menu__item"><a href="./contacts.html" class="mobile-menu__link link">Контакти</a></li>
+        </ul>
+        <a class="mobile-menu__call-me" href="tel:+380972747200">зателефонувати</a>
+        <!-- <ul class="mobile-socials__list list">
+            <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Telegram</a></li>
+            <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Viber</a></li>
+            <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Whats App</a></li>
+        </ul> -->
+    </div>
+        <!-- <a href="">Logo</a>
         <nav>
             <ul>
                 <li><a href="">Головна</a></li>
@@ -19,17 +51,17 @@
                 <li><a href="">Контакти</a></li>
             </ul>
         </nav>
-        <button type="button">зателефонувати</button>
+        <button type="button">зателефонувати</button> -->
     </header>
     <main>
 <!--Hero-->
     <section>
-       <div>
+       <div class="container">
            <h1>Професійний <span>податковий консалтинг</span> для Вашого бізнесу</h1>
            <!-- <button type="button">Вибрати послугу</button> -->
            <a href="">Вибрати послугу</a>
            <ul>
-               <li><img src="" alt="керівник говорить по телефону" width="400px" height="500px"></li>
+               <li><img class="img-1" src="./images/general/hero-img-1_ulg.jpg" alt="керівник говорить по телефону" width="400px" height="500px"></li>
                <li><img src="" alt="персонал спілкується із клієнтом" width="400px" height="400px"></li>
                <li><img src="" alt="керівник проводить нараду" width="400px" height="400px"></li>
                <li><img src="" alt="керівник працює за комп'ютером" width="400px" height="500px"></li>
@@ -159,7 +191,7 @@
             </ul>
         </div>
     </section>
-<!--Say about us-->
+<!--Reviews-->
     <section>
         <div>
             <h2><span>Відгуки</span> наших клієнтів</h2>
@@ -259,6 +291,7 @@
         </div>
     </section>
     </main>
+<!--Footer-->
     <footer>
         <a href="">Logo</a>
         <div>
@@ -289,6 +322,43 @@
                 <svg></svg>
             </li>
         </ul>
-    </footer> 
+    </footer>
+<!--Mobile menu-->
+<div class="mobile-menu__nav js-menu-container" id="mobile-menu">
+    <div class="mobile-menu__thumb">
+        <a class="mobile-menu__header-link link" href="./index.html">
+            <svg class="mobile-menu__logo" widht="51px" height="54px">
+                <use href="./images/icons.svg#icon-main_logo"></use>
+            </svg>
+        </a>
+        <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="26" height="26">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+    <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Головна</a></li>
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Послуги</a></li>
+        <li class="mobile-menu__item"><a href="./complex.html" class="mobile-menu__link link">Бухгалтерія під ключ</a></li>
+        <li class="mobile-menu__item"><a href="./personal.html" class="mobile-menu__link link">ГоловнаУправлінський облік для власника бізнесуПослуги</a></li>
+        <li class="mobile-menu__item"><a href="./management.html" class="mobile-menu__link link">Кадровий облік</a></li>
+        <li class="mobile-menu__item"><a href="./about.html" class="mobile-menu__link link">Про нас</a></li>
+        <li class="mobile-menu__item"><a href="./contacts.html" class="mobile-menu__link link">Контакти</a></li>
+    </ul>
+    <a class="mobile-menu__call-me" href="tel:+380972747200">зателефонувати</a>
+    <!-- <ul class="mobile-socials__list list">
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Telegram</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Viber</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Whats App</a></li>
+    </ul> -->
+</div>
+<!-- <script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script> -->
 </body>
 </html>

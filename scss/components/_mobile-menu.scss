@@ -1,0 +1,129 @@
+.mobile-menu {
+    &__nav {
+        @include mq(tablet) {
+            display: none;
+        }
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 48px 40px;
+        background-color: $color-white-bg;
+        display: flex;
+        flex-direction: column;
+        z-index: 11;
+        transform: translateX(100%);
+        transition: $duration $timing-function;
+    }
+    
+    &__nav.is-open {
+        transform: translateX(0);
+    }
+
+    &__list {
+    }
+    
+    &__item {
+    margin-bottom: 32px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+        transition: color $duration $timing-function;
+    }
+    &__link:hover,
+    &__link:focus {
+    color: $color-akcent;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        margin: 0;
+        cursor: pointer;
+        color: $color-black;
+        background-color: transparent;
+        border: none;
+        transition: color $duration $timing-function;
+    }
+    
+    &__close-btn:hover,
+    &__close-btn:focus {
+        color: $color-akcent;
+    }
+    
+    &__close-icon {
+        fill: currentColor;
+    }
+}
+
+.mobile-contacts {
+    &__list {
+        margin-top: auto;
+        margin-bottom: 64px;
+    }
+
+    &__phone {
+        display: inline-block;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+    }
+
+    &__mail {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+
+    &__phone:hover,
+    &__phone:focus,
+    &__mail:hover,
+    &__mail:focus {
+        color: $color-akcent;
+    }
+}
+
+.mobile-socials {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    }
+}
+
+

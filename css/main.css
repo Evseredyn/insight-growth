@@ -231,4 +231,156 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .container {
+    width: 744px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1366px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.current {
+  color: #1C74E9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-menu__nav {
+  background-color: aquamarine;
+}
+.mobile-menu__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 1366px) {
+  .mobile-menu__thumb {
+    display: block;
+  }
+}
+.mobile-menu__header-link {
+  margin-top: 35px;
+  color: #1C74E9;
+}
+@media screen and (min-width: 1366px) {
+  .mobile-menu__header-link {
+    display: none;
+  }
+}
+.mobile-menu__logo {
+  fill: currentColor;
+}
+.mobile-menu__close-btn {
+  margin-top: 10px;
+  padding: 10;
+  border: none;
+  background-color: transparent;
+  color: #1060CA;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 744px) {
+  .mobile-menu__close-btn {
+    display: none;
+  }
+}
+.mobile-menu__close-icon {
+  width: 50px;
+  fill: currentColor;
+}
+@media screen and (min-width: 1366px) {
+  .mobile-menu__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .mobile-menu__list {
+    display: none;
+  }
+}
+.img-1 {
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,76 @@
+// Mobile
+// Desktop
+
+.mobile-menu {
+    &__nav {
+    background-color: aquamarine;
+    }
+
+    &__thumb {
+        display: flex;
+        justify-content: space-between;
+
+        @include mq(desktop) {    
+            display: block;
+        }
+
+    }
+
+    &__header-link {
+        margin-top: 35px;
+        color: $color-akcent;
+
+        @include mq(desktop) {    
+            display: none;
+        }
+    }
+
+    &__logo {
+        fill: currentColor;
+    }
+
+    &__close-btn {
+        margin-top: 10px;
+        @include mq(tablet) {    
+            display: none;
+        }
+        
+        padding: 10;
+        border: none;
+        background-color: transparent;
+        color: $color-blue;
+        transition: color $duration $timing-function;
+    }
+
+    &__close-icon {
+        width: 50px;
+        fill: currentColor;
+    }
+
+    &__list {
+        @include mq(desktop) {
+            display: none;
+        }
+    
+        @include mq(monitor) {
+            display: none;
+        }
+    }
+
+
+.mobile-menu__item {
+    // margin-left: auto;
+    // margin-right: auto;
+}
+    &__link {
+        // text-align: center;
+}
+.mobile-menu__call-me {
+}
+}
+
+
+
+
+
+
