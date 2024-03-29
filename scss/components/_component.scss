@@ -35,10 +35,14 @@ html {
 }
  
 .section {
-   padding: 60px 0;
+   padding: 100px 0;
+
+   @include mq(tablet) {
+      padding: 120px 0;
+   }
 
    @include mq(desktop) {
-      padding: 94px 0;
+      padding: 120px 0;
    }
 }
 
@@ -53,12 +57,15 @@ html {
    list-style: none;
 }
  
-//  .header,
-//  .features,
-//  .ourwork,
-//  .clients {
-//     background-color: $color-white-bg;
-//  }
+ .header,
+ .hero,
+ .about,
+ .benefites,
+ .services,
+ .reviews,
+ .contact-us {
+    background-color: $color-white;
+ }
  
 .current {
    color: $color-akcent;

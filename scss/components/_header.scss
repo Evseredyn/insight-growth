@@ -61,7 +61,7 @@
         @include mq(desktop) {
             display: block;
             font-family: $info-font;
-            font-style: 20px;
+            font-size: 20px;
             font-weight: 500;
             line-height: 1,25;
             text-transform: uppercase;
@@ -98,7 +98,7 @@
 
     &__link {
         font-family: $info-font;
-        font-style: 20px;
+        font-size: 20px;
         font-weight: 300;
         color: $color-black;
         // margin-left: 60px;

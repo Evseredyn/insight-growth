@@ -10,16 +10,22 @@
       <path d="m0 16 26.667 15.396V.604L0 16zm533.333 0L506.666.604v30.792L533.333 16zM24 18.667h485.333v-5.333H24v5.333z"/>
     </symbol>
     <symbol id="icon-arrow-right" viewBox="0 0 31 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.561" d="M5.665 16.45h18.922m0 0-7.096 7.096m7.096-7.096-7.096-7.096"/>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M5.665 16.45h18.922M24.587 16.45l-7.096 7.096M24.587 16.45l-7.096-7.096"></path>
     </symbol>
     <symbol id="icon-arrow-left" viewBox="0 0 31 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.561" d="M24.586 16.45H5.664m0 0 7.096-7.096M5.664 16.45l7.096 7.096"/>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M24.586 16.45h-18.922M5.664 16.45l7.096-7.096M5.664 16.45l7.096 7.096"></path>
     </symbol>
     <symbol id="icon-arrow-down" viewBox="0 0 31 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.561" d="m9.404 9.418 13.38 13.38m0 0H12.749m10.035 0V12.763"/>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M9.404 9.418l13.38 13.38M22.784 22.798h-10.035M22.784 22.798v-10.035"></path>
     </symbol>
     <symbol id="icon-arrow-up" viewBox="0 0 31 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.561" d="m8.749 22.484 13.38-13.38m0 .001V19.14m0-10.035H12.094"/>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M8.749 22.484l13.38-13.38M22.129 9.105v10.035M22.129 9.105h-10.035"></path>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+    <path d="M24.033 3.121H2.059c-2.35-.078-2.35 3.027 0 2.949h21.886c2.307.078 2.397-2.949.09-2.949h-.002zM2.059 14.915c-2.26 0-2.26 2.947 0 2.947h12.389c2.307 0 2.307-2.947 0-2.947H2.059zm0 11.794c-2.26 0-2.26 2.948 0 2.948h27.762c2.26 0 2.26-2.947 0-2.947H2.059z"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+    <path d="m17.88 16 8.4-8.387a1.34 1.34 0 0 0-1.894-1.894l-8.387 8.4-8.387-8.4a1.34 1.34 0 0 0-1.894 1.894l8.4 8.387-8.4 8.387a1.334 1.334 0 0 0 0 1.894 1.334 1.334 0 0 0 1.894 0l8.387-8.4 8.387 8.4a1.334 1.334 0 0 0 1.894 0 1.334 1.334 0 0 0 0-1.894L17.88 16z"/>
     </symbol>
     <!--Socials Icons-->
     <symbol id="icon-viber" viewBox="0 0 32 32">
@@ -63,13 +69,6 @@
     </symbol>
     <symbol id="icon-focus" viewBox="0 0 32 32">
       <path d="M29.44 14.507h-1.598A11.95 11.95 0 0 0 17.493 4.158V2.56a1.493 1.493 0 1 0-2.986 0v1.598A11.95 11.95 0 0 0 4.158 14.507H2.56a1.493 1.493 0 1 0 0 2.986h1.598a11.95 11.95 0 0 0 10.349 10.349v1.598a1.493 1.493 0 1 0 2.986 0v-1.598a11.95 11.95 0 0 0 10.349-10.349h1.598a1.493 1.493 0 1 0 0-2.986zM16 24.96a8.966 8.966 0 0 1-8.278-5.531A8.96 8.96 0 1 1 16 24.96zm0-13.44a4.483 4.483 0 0 0-4.139 2.766 4.478 4.478 0 0 0 5.853 5.853A4.48 4.48 0 0 0 16 11.52zm0 5.973a1.497 1.497 0 0 1-1.38-.922 1.49 1.49 0 0 1 .324-1.628 1.496 1.496 0 0 1 2.298.226 1.495 1.495 0 0 1-.185 1.886c-.28.28-.66.437-1.056.437z"/>
-    </symbol>
-    <!--Menu Icons-->
-    <symbol id="icon-menu" viewBox="0 0 32 32">
-      <path d="M24.033 3.121H2.059c-2.35-.078-2.35 3.027 0 2.949h21.886c2.307.078 2.397-2.949.09-2.949h-.002zM2.059 14.915c-2.26 0-2.26 2.947 0 2.947h12.389c2.307 0 2.307-2.947 0-2.947H2.059zm0 11.794c-2.26 0-2.26 2.948 0 2.948h27.762c2.26 0 2.26-2.947 0-2.947H2.059z"/>
-    </symbol>
-    <symbol id="icon-close" viewBox="0 0 32 32">
-      <path d="m17.88 16 8.4-8.387a1.34 1.34 0 0 0-1.894-1.894l-8.387 8.4-8.387-8.4a1.34 1.34 0 0 0-1.894 1.894l8.4 8.387-8.4 8.387a1.334 1.334 0 0 0 0 1.894 1.334 1.334 0 0 0 1.894 0l8.387-8.4 8.387 8.4a1.334 1.334 0 0 0 1.894 0 1.334 1.334 0 0 0 0-1.894L17.88 16z"/>
     </symbol>
   </defs>
 </svg>
