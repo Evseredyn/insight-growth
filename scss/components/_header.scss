@@ -90,17 +90,19 @@
         }
     } 
 
+    @include mq(desktop) {
+        &__link + &__link {
+            margin-left: 60px;
+        }
+    }
+
     &__link {
         font-family: $info-font;
         font-style: 20px;
         font-weight: 300;
         color: $color-black;
+        // margin-left: 60px;
 
-        @include mq(desktop) {
-            :not(:first-child) {
-                margin-left: 60px;
-            }
-        }
     }
 }
 

@@ -535,16 +535,16 @@ img {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1366px) {
+  .site-nav__link + .site-nav__link {
+    margin-left: 60px;
+  }
+}
 .site-nav__link {
   font-family: "Inter", sans-serif;
   font-style: 20px;
   font-weight: 300;
   color: #000000;
-}
-@media screen and (min-width: 1366px) {
-  .site-nav__link :not(:first-child) {
-    margin-left: 60px;
-  }
 }
 
 .img-1 {
