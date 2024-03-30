@@ -3,9 +3,11 @@
 
 .header {
     &__flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mq(desktop) {    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__thumb {
@@ -13,6 +15,14 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 15px;
+
+        @include mq(tablet) {    
+            padding-top: 20px;
+        }
+
+        @include mq(desktop) {    
+            padding-top: 30px;
+        }
     }
 
     &__link {
@@ -63,7 +73,7 @@
             font-family: $info-font;
             font-size: 20px;
             font-weight: 500;
-            line-height: 1,25;
+            line-height: 1.25;
             text-transform: uppercase;
             color: $color-akcent;
             background-color: $color-white;
@@ -79,6 +89,10 @@
     &__item {
 
     }
+           
+    &__item:not(:last-child) {
+        margin-right: 60px;
+    }
 
     &__list {
         display: none;
@@ -89,12 +103,6 @@
             margin-left: auto;
         }
     } 
-
-    @include mq(desktop) {
-        &__link + &__link {
-            margin-left: 60px;
-        }
-    }
 
     &__link {
         font-family: $info-font;

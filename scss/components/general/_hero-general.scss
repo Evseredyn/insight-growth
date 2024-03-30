@@ -4,8 +4,8 @@
         font-family: $secondary-font;
         font-size: 40px;
         font-weight: 500;
-        line-height: 1,35;
-        letter-spacing: 2.64px;
+        line-height: 1.35;
+        letter-spacing: 0.03em;
         color: $color-first-title;
         text-align: center;
         min-width: 310px;
@@ -15,14 +15,14 @@
          @include mq(tablet) {
             max-width: 560px;
             font-size: 50px;
-            line-height: 1,28;
+            line-height: 1.28;
             margin-bottom: 50px;
          }
 
          @include mq(desktop) {
             max-width: 800px;
             font-size: 64px;
-            line-height: 1,25;
+            line-height: 1.25;
          }
 
          @include mq(monitor) {
@@ -31,46 +31,6 @@
             line-height: 1.1;
             margin-bottom: 80px;
          }
-    }
-    
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: $main-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1,25;
-        text-transform: uppercase;
-        color: $color-white;
-        background-color: $color-akcent;
-        border: solid 2px $color-akcent;
-        border-radius: 40px;
-        max-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 60px;
-        padding: 8px 10px 8px 15px;
-
-        @include mq(tablet) {
-            font-size: 18px;
-            line-height: 1,11;
-            max-width: 270px;
-            margin-bottom: 0px;
-         }
-    }
-    
-    &__icon {
-        fill: $color-akcent;
-        background-color: $color-white;
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
-
-        @include mq(tablet) {    
-            width: 60px;
-            height: 60px;
-        }
     }
 
     &__list { 
@@ -85,10 +45,9 @@
             height: 400px;
         }
 
-
         @include mq(tablet) {    
             width: 714px;
-            max-height: 350px;
+            min-height: 235px;
         }
 
         @include mq(desktop) {    
@@ -109,11 +68,11 @@
             left: 0;
         }
         
-        // @include mq(tablet) {    
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        // }
+        @include mq(tablet) {    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
 
         @include mq(desktop) {    
             position: absolute;

@@ -71,6 +71,48 @@ html {
    color: $color-akcent;
 }
 
+.btn-contact {
+   &__link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $main-font;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1,25;
+      text-transform: uppercase;
+      color: $color-white;
+      background-color: $color-akcent;
+      border: solid 2px $color-akcent;
+      border-radius: 40px;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      padding: 8px 10px 8px 15px;
+
+      @include mq(tablet) {
+         font-size: 18px;
+         line-height: 1,11;
+         max-width: 270px;
+         margin-bottom: 0px;
+      }
+   }
+  
+   &__icon {
+      fill: $color-akcent;
+      background-color: $color-white;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+
+      @include mq(tablet) {    
+         width: 60px;
+         height: 60px;
+      }
+   }
+}
+
 .visually-hidden {
    position: absolute;
    width: 1px;
