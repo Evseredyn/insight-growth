@@ -1,0 +1,150 @@
+.reviews {
+
+}
+
+.reviews__heading {
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.46;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    @include mq(tablet) {
+        width: 90%;
+        font-size: 40px;
+        line-height: 1.35;
+    }
+
+    @include mq(desktop) {
+        width: 1060px;
+        font-size: 50px;
+        line-height: 1.28;
+    }
+
+    @include mq(monitor) {
+        font-size: 60px;
+        line-height: 1.23;
+    }
+}
+
+.reviews__list {
+    display: flex;
+
+    @include mq(tablet) {
+        justify-content: start;
+    }
+    
+    @include mq(desktop) {
+        justify-content: start;
+    }
+}
+
+.reviews__item:not(:first-child) {
+    margin-left: 20px;
+    
+    @include mq(mobile-only) {
+        display: none;
+    }
+    @include mq(desktop) {
+        margin-right: 30px;
+    }
+
+    @include mq(monitor) {
+        margin-right: 40px;
+    }
+}
+
+.reviews__item {
+    width: 100%;
+    background-color: $color-bg-item;
+    border-radius: 30px;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px 25px;
+
+    @include mq(tablet) {
+        max-width: 330px;
+        height: 340px;
+        padding: 10px 10px 25px;
+    }
+
+    @include mq(desktop) {
+        max-width: 380px;
+        height: 400px;
+        padding: 30px 30px 40px;
+    }
+
+    @include mq(monitor) {
+        width: 400px;
+        height: 480px;
+        padding: 30px 30px;
+    }
+}
+
+.reviews__title {
+    font-family: $main-font;
+    color: $color-akcent;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.45;
+    // text-align: center;
+    // width: 300px;
+    // margin: 0 auto;
+
+    @include mq(desktop) {
+        font-size: 26px;
+        line-height: 1.38;
+    }
+
+    @include mq(monitor) {
+        font-size: 30px;
+        line-height: 1.33;
+    }
+}
+
+.reviews__description {
+    font-family: $info-font;
+    color: $color-first-title;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.83;
+    text-align: center;
+    // width: 300px;
+    margin: 20px auto;
+
+    @include mq(desktop) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @include mq(monitor) {
+        font-size: 16px;
+        line-height: 1.87;
+    }
+}
+
+.reviews__thumb {
+    display: flex;
+}
+
+.reviews__img {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.reviews__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__name {
+}
+.reviews__company {
+}

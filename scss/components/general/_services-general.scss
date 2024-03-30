@@ -1,5 +1,5 @@
 .services {
-    position: relative;
+
 }
 
 .services__heading {
@@ -29,28 +29,31 @@
         line-height: 1.23;
     }
 }
+
 .services__list {
     display: flex;
 
+    @include mq(tablet) {
+        justify-content: start;
+    }
+    
     @include mq(desktop) {
         justify-content: center;
     }
-    
 }
 
-.services__item:not(:last-child) {
-    margin-right: 20px;
+.services__item:not(:first-child) {
+    margin-left: 20px;
     
+    @include mq(mobile-only) {
+        display: none;
+    }
     @include mq(desktop) {
         margin-right: 30px;
     }
 
     @include mq(monitor) {
         margin-right: 40px;
-    }
-
-    @include mq(mobile-only) {
-        display: none;
     }
 }
 
@@ -78,7 +81,8 @@
     }
 
     @include mq(monitor) {
-        max-width: 400px;
+        width: 400px;
+        height: 500px;
         padding: 20px 20px 30px;
     }
 }
@@ -123,9 +127,4 @@
         font-size: 26px;
         line-height: 1.38;
     }
-}
-.btn-contact__link {
-}
-
-.btn-contact__icon {
 }
