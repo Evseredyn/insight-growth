@@ -12,7 +12,6 @@
         z-index: 11;
         transform: translateX(100%);
         transition: $duration $timing-function;
-        // position: relative;
 
         @include mq(desctop) {
             display: none;
@@ -26,9 +25,16 @@
     &__thumb {
         display: flex;
         justify-content: space-between;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
+        align-items: center;
+        padding-top: 15px;
+
+        @include mq(tablet) {    
+            padding-top: 20px;
+        }
+
+        @include mq(desktop) {    
+            padding-top: 30px;
+        }
     }
 
     &__link {
@@ -41,7 +47,7 @@
     }
 
     &__logo {
-        fill: currentColor;
+        fill: $color-akcent;
         @include mq(tablet) {    
             width: 51px;
             height: 54px;
@@ -77,59 +83,59 @@
 }
 
 .mob-nav {   
-    &__item {
-
+    &__list {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 60px;
+        margin: 0 auto;
+        margin-top: 120px;
+        
+        @include mq(tablet) {
+            margin-top: 80px;
+        }
     }
 
-    &__list {
-        // display: none;
-        
-        @include mq(desktop) {
-            display: flex;
-            align-items: center;
-            // gap: 60px;
-            margin-left: auto;
-        }
-    } 
+    &__item {
+        margin-bottom: 40px;
+    }
+    
+    // &__item:not(:last-child) {
+    //     margin-bottom: 40px;
+    // }
 
     &__link {
         font-family: $info-font;
         color: $color-black;
-        font-style: 20px;
+        font-size: 20px;
         font-weight: 300;
         margin-bottom: 40px;
         text-align: center;
         // width: 300px;
-        margin: 0 auto;
+        // margin: 0 auto;
     
         @include mq(tablet) {
-            font-size: 14px;
-            line-height: 1.86;
-        }
-    }
 
-    &__link:not(:last-child) {
-        margin-bottom: 40px;
+        }
     }
 }
 
-.call-me {
-    display: none;
-
-    @include mq(desktop) {
+.mob-nav__call-me {
         display: block;
+        text-align: center;
+        // width: 155px;
+        height: 55px;
         font-family: $secondary-font;
-        font-style: 20px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 1,25;
+        line-height: 1.25;
         text-transform: uppercase;
         color: $color-akcent;
         background-color: $color-white;
         border: solid 2px $color-akcent;
         border-radius: 40px;
-        margin-left: 64px;
+        margin: 0 auto;
         padding: 17px 12px;
-    }
 }
 
 // .mobile-socials {
