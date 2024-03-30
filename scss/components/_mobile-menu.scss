@@ -1,9 +1,5 @@
 .mobile-menu {
     &__nav {
-        @include mq(desctop) {
-            display: none;
-        }
-
         position: fixed;
         top: 0;
         left: 0;
@@ -16,6 +12,11 @@
         z-index: 11;
         transform: translateX(100%);
         transition: $duration $timing-function;
+        // position: relative;
+
+        @include mq(desctop) {
+            display: none;
+        }
     }
     
     &__nav.is-open {
@@ -23,10 +24,19 @@
     }
     
     &__thumb {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
     }
 
     &__link {
+        color: $color-akcent;
+    }
+
+    &__link:hover,
+    &__link:focus {
         color: $color-akcent;
     }
 
@@ -64,25 +74,6 @@
     &__close-icon {
         fill: currentColor;
     }
-
-    &__call-me {
-        display: none;
-    
-        @include mq(desktop) {
-            display: block;
-            font-family: $secondary-font;
-            font-style: 20px;
-            font-weight: 500;
-            line-height: 1,25;
-            text-transform: uppercase;
-            color: $color-akcent;
-            background-color: $color-white;
-            border: solid 2px $color-akcent;
-            border-radius: 40px;
-            margin-left: 64px;
-            padding: 17px 12px;
-        }
-    }
 }
 
 .mob-nav {   
@@ -91,7 +82,7 @@
     }
 
     &__list {
-        display: none;
+        // display: none;
         
         @include mq(desktop) {
             display: flex;
@@ -103,10 +94,41 @@
 
     &__link {
         font-family: $info-font;
+        color: $color-black;
         font-style: 20px;
         font-weight: 300;
-        color: $color-black;
         margin-bottom: 40px;
+        text-align: center;
+        // width: 300px;
+        margin: 0 auto;
+    
+        @include mq(tablet) {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.call-me {
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+        font-family: $secondary-font;
+        font-style: 20px;
+        font-weight: 500;
+        line-height: 1,25;
+        text-transform: uppercase;
+        color: $color-akcent;
+        background-color: $color-white;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        margin-left: 64px;
+        padding: 17px 12px;
     }
 }
 

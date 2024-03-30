@@ -70,7 +70,7 @@
     
         @include mq(desktop) {
             display: block;
-            font-family: $info-font;
+            font-family: secondary-font;
             font-size: 20px;
             font-weight: 500;
             line-height: 1.25;
