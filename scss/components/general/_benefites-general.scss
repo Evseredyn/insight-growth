@@ -1,0 +1,143 @@
+.benefites {
+}
+
+.benefites__heading {
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.46;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    @include mq(tablet) {
+        width: 90%;
+        font-size: 40px;
+        line-height: 1.35;
+    }
+
+    @include mq(desktop) {
+        width: 1060px;
+        font-size: 50px;
+        line-height: 1.28;
+    }
+
+    @include mq(monitor) {
+        font-size: 60px;
+        line-height: 1.23;
+    }
+}
+
+.benefites__list {
+
+    &:not(:last-child) {
+        @include mq(mobile-only) {
+            margin-bottom: 20px;
+
+        }
+    }
+    
+    // width: 350px;
+    
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-left: 15px;
+    }
+
+    @include mq(desktop) {
+        gap: 30px;
+    }
+
+    @include mq(monitor) {
+        gap: 40px;
+    }
+}
+
+.benefites__item {
+    background-color: $color-akcent;
+    max-width: 320px;
+    height: 320px;
+    border-radius: 30px;
+    padding: 20px 30px;
+
+    &:not(:last-child) {
+        @include mq(mobile-only) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include mq(tablet) {
+        width: 320px;
+        height: 320px;
+        padding: 20px 20px;
+    }
+
+    @include mq(desktop) {
+        min-width: 280px;
+        height: 320px;
+        padding: 20px 10px 40px;
+    }
+
+    @include mq(monitor) {
+        max-width: 550px;
+        height: 400px;
+        padding: 30px 20px;
+    }
+}
+
+.benefites__icon {
+    display: block;
+    fill: $color-white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.benefites__title {
+    font-family: $main-font;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    // width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    @include mq(desktop) {
+        font-size: 24px;
+        line-height: 1.38;
+    }
+
+    @include mq(monitor) {
+        font-size: 26px;
+        line-height: 1.38;
+    }
+}
+
+.benefites__line {
+    display: block;
+    fill: $color-white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.benefites__discription {
+    font-family: $info-font;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    @include mq(monitor) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
