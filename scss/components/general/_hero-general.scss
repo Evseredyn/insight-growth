@@ -52,7 +52,7 @@
 
         @include mq(desktop) {    
             width: 1200px;
-            max-height: 530px;
+            height: 530px;
         }
 
         @include mq(monitor) {    
@@ -96,6 +96,12 @@
         @include mq(desktop) {    
             position: absolute;
             bottom: 0;
+            left: 305px;
+        }
+
+        @include mq(monitor) {    
+            position: absolute;
+            bottom: 0;
             left: 440px;
         }
     }
@@ -113,6 +119,12 @@
         }
 
         @include mq(desktop) {    
+            position: absolute;
+            bottom: 0;
+            right: 305px;
+        }
+
+        @include mq(monitor) {    
             position: absolute;
             bottom: 0;
             right: 440px;
@@ -137,7 +149,8 @@
             right: 0;
         }
     }
-    &__img {
+
+    &__img--rectangle {
         border-radius: 20px;
         width: 160px;
         max-height: 230px;
@@ -155,6 +168,27 @@
         @include mq(monitor) {    
             width: 400px;
             max-height: 500px;
+        }
+    }
+
+    &__img--quarter {
+        border-radius: 20px;
+        width: 160px;
+        max-height: 160px;
+
+        @include mq(tablet) {    
+            width: 170px;
+            max-height: 170px;
+        }
+
+        @include mq(desktop) {    
+            width: 285px;
+            max-height: 285px;
+        }
+
+        @include mq(monitor) {    
+            width: 400px;
+            max-height: 400px;
         }
     }
 }

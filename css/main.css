@@ -690,7 +690,7 @@ img {
 @media screen and (min-width: 1366px) {
   .hero__list {
     width: 1200px;
-    max-height: 530px;
+    height: 530px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -738,6 +738,13 @@ img {
   .hero__item-2 {
     position: absolute;
     bottom: 0;
+    left: 305px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__item-2 {
+    position: absolute;
+    bottom: 0;
     left: 440px;
   }
 }
@@ -756,6 +763,13 @@ img {
   }
 }
 @media screen and (min-width: 1366px) {
+  .hero__item-3 {
+    position: absolute;
+    bottom: 0;
+    right: 305px;
+  }
+}
+@media screen and (min-width: 1920px) {
   .hero__item-3 {
     position: absolute;
     bottom: 0;
@@ -783,27 +797,50 @@ img {
     right: 0;
   }
 }
-.hero__img {
+.hero__img--rectangle {
   border-radius: 20px;
   width: 160px;
   max-height: 230px;
 }
 @media screen and (min-width: 744px) {
-  .hero__img {
+  .hero__img--rectangle {
     width: 170px;
     max-height: 230px;
   }
 }
 @media screen and (min-width: 1366px) {
-  .hero__img {
+  .hero__img--rectangle {
     width: 285px;
     max-height: 385px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .hero__img {
+  .hero__img--rectangle {
     width: 400px;
     max-height: 500px;
+  }
+}
+.hero__img--quarter {
+  border-radius: 20px;
+  width: 160px;
+  max-height: 160px;
+}
+@media screen and (min-width: 744px) {
+  .hero__img--quarter {
+    width: 170px;
+    max-height: 170px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__img--quarter {
+    width: 285px;
+    max-height: 285px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__img--quarter {
+    width: 400px;
+    max-height: 400px;
   }
 }
 
@@ -1470,4 +1507,136 @@ img {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
+}
+
+.questions {
+  background-color: #EBF4FF;
+}
+.questions__heading {
+  font-family: "Raleway", sans-serif;
+  color: #1E1E1E;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.46;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 744px) {
+  .questions__heading {
+    width: 90%;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .questions__heading {
+    width: 1060px;
+    font-size: 50px;
+    line-height: 1.28;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .questions__heading {
+    font-size: 60px;
+    line-height: 1.23;
+  }
+}
+.questions__item {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 15px 15px 15px 30px;
+}
+@media screen and (min-width: 1920px) {
+  .questions__item {
+    font-size: 60px;
+    line-height: 1.23;
+  }
+}
+.questions__item:not(:first-child) {
+  margin-top: 15px;
+}
+@media screen and (min-width: 744px) {
+  .questions__item:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .questions__item:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+.questions__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.questions__title {
+  font-family: "Raleway", sans-serif;
+  color: #1C74E9;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.37;
+  width: 300px;
+  margin: 0;
+}
+@media screen and (min-width: 744px) {
+  .questions__title {
+    width: 90%;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .questions__title {
+    width: 1060px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .questions__title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+.questions__icon {
+  fill: #1C74E9;
+}
+.questions__text {
+  font-family: "Inter", sans-serif;
+  color: #1E1E1E;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.66;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+}
+@media screen and (min-width: 744px) {
+  .questions__text {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .questions__text {
+    width: 1060px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .questions__text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }/*# sourceMappingURL=main.css.map */

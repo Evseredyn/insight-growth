@@ -76,7 +76,7 @@
                             srcset="./images/general/hero/gen-hero-1_sm.jpg 1x, ./images/general/hero/gen-hero-1_sm@2x.jpg 2x"
                             type="image/jpg">
                             
-                            <img class="hero__img"
+                            <img class="hero__img--rectangle"
                             src="./images/general/hero/gen-hero-1_ulg.jpg"
                             alt="керівник говорить по телефону"
                             width="400" 
@@ -114,7 +114,7 @@
                             srcset="./images/general/hero/gen-hero-2_sm.jpg 1x, ./images/general/hero/gen-hero-2_sm@2x.jpg 2x"
                             type="image/jpg">
                             
-                            <img class="hero__img"
+                            <img class="hero__img--quarter"
                             src="./images/general/hero/gen-hero-2_ulg.jpg"
                             alt="персонал спілкується із клієнтом"
                             width="400" 
@@ -152,7 +152,7 @@
                             srcset="./images/general/hero/gen-hero-3_sm.jpg 1x, ./images/general/hero/gen-hero-3_sm@2x.jpg 2x"
                             type="image/jpg">
                             
-                            <img class="hero__img"
+                            <img class="hero__img--quarter"
                             src="./images/general/hero/gen-hero-3_ulg.jpg"
                             alt="керівник проводить нараду"
                             width="400" 
@@ -190,7 +190,7 @@
                             srcset="./images/general/hero/gen-hero-4_sm.jpg 1x, ./images/general/hero/gen-hero-4_sm@2x.jpg 2x"
                             type="image/jpg">
                             
-                            <img class="hero__img"
+                            <img class="hero__img--rectangle"
                             src="./images/general/hero/gen-hero-4_ulg.jpg"
                             alt="керівник працює за комп'ютером"
                             width="400" 
@@ -482,40 +482,64 @@
             </ul>
         </div>
     </section>
-<!--FAQ-->
-    <section>
-        <div>
-            <h2>Часті <span>запитання</span></h2>
-            <ul>
-                <li>
-                    <p>Які вартості та умови надання послуг ви пропонуєте?</p>
-                    <svg></svg>
-                    <p>Наша компанія пропонує конкурентоспроможні та прозорі ціни за послуги, а умови співпраці обговорюються індивідуально, враховуючи потреби кожного клієнта.</p>
+<!--Questions-->
+    <section class="questions section">
+        <div class="container">
+            <h2 class="questions__heading">Часті <span class="current">запитання</span></h2>
+            <ul class="questions__list list">
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Які вартості та умови надання послуг ви пропонуєте?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p  class="questions__text">Наша компанія пропонує конкурентоспроможні та прозорі ціни за послуги, а умови співпраці обговорюються індивідуально, враховуючи потреби кожного клієнта.</p>
+                </li> 
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Чи можуть ваші клієнти отримувати доступ до своїх фінансових звітів онлайн?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p class="questions__text"></p>
                 </li>
-                <li>
-                    <p>Чи можуть ваші клієнти отримувати доступ до своїх фінансових звітів онлайн?</p>
-                    <svg></svg>
-                    <p></p>
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Які послуги з бухгалтерії ви надаєте?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p class="questions__text"></p>
                 </li>
-                <li>
-                    <p>Які послуги з бухгалтерії ви надаєте?</p>
-                    <svg></svg>
-                    <p></p>
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Як ви працюєте з малими та середніми підприємствами?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p class="questions__text"></p>
                 </li>
-                <li>
-                    <p>Як ви працюєте з малими та середніми підприємствами?</p>
-                    <svg></svg>
-                    <p></p>
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Які консультації та підтримка ви надаєте щодо податкового планування?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p class="questions__text"></p>
                 </li>
-                <li>
-                    <p>Які консультації та підтримка ви надаєте щодо податкового планування?</p>
-                    <svg></svg>
-                    <p></p>
-                </li>
-                <li>
-                    <p>Як ви гарантуєте конфіденційність фінансової інформації клієнтів?</p>
-                    <svg></svg>
-                    <p></p>
+                <li class="questions__item">
+                    <div class="questions__inner">
+                        <h5 class="questions__title">Як ви гарантуєте конфіденційність фінансової інформації клієнтів?</h5>
+                        <svg class="questions__icon" width="60" height="60">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                    <p class="questions__text"></p>
                 </li>
             </ul>
         </div>
