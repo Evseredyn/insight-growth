@@ -562,36 +562,40 @@
     </section>
     </main>
 <!--Footer-->
-    <footer>
-        <a href="">Logo</a>
-        <div>
-            <nav>
-               <ul>
-                   <li><a href="">Головна</a></li>
-                   <li><a href="">Послуги</a></li>
-                   <li><a href="">Про нас</a></li>
-                   <li><a href="">Контакти</a></li>
-               </ul>
-            </nav>
-            <a href=""></a>
+    <footer class="footer">
+        <div class="footer__wrap">
+            <a class="footer__link link" href="./index.html">
+                <svg class="footer__logo" width="89" height="94">
+                    <use href="./images/icons.svg#icon-main-logo"></use>
+                </svg>
+            </a>
+            <div class="footer__inner">
+                <ul class="footer-site-nav__list list">
+                    <li class="footer-site-nav__item"><a class="footer-site-nav__link link active" href="./index.html">Головна</a></li>
+                    <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./index.html">Послуги</a></li>
+                    <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./about.html">Про нас</a></li>
+                    <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./contacts.html">Контакти</a></li>
+                </ul>
+                <ul class="socials-footer__list list">
+                    <li class="socials-footer__item"><svg class="socials-footer__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-viber"></use></svg>
+                    </li>
+                    <li class="socials-footer__item"><svg class="socials-footer__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-telegram"></use></svg>
+                    </li>
+                    <li class="socials-footer__item"><svg class="socials-footer__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-whats-app"></use></svg>
+                    </li>
+                    <li class="socials-footer__item"><svg class="socials-footer__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-facebook"></use></svg>
+                    </li>
+                    <li class="socials-footer__item"><svg class="socials-footer__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-instagram"></use></svg>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li>
-                <svg></svg>
-            </li>
-            <li>
-                <svg></svg>
-            </li>
-            <li>
-                <svg></svg>
-            </li>
-            <li>
-                <svg></svg>
-            </li>
-            <li>
-                <svg></svg>
-            </li>
-        </ul>
+        <a class="footer_policy link" href="">&#169; Усі права захищені 2024</a>
     </footer>
 <!--Mobile menu-->
     <div class="mobile-menu__nav js-menu-container" id="mobile-menu">

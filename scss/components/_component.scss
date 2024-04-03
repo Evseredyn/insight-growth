@@ -71,6 +71,10 @@ html {
    color: $color-akcent;
 }
 
+.active {
+   font-weight: 500;
+}
+
 .btn-contact {
    &__link {
       display: flex;
