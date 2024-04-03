@@ -1813,6 +1813,12 @@ img {
     -ms-flex-line-pack: center;
         align-content: center;
     margin-top: 0;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .socials-footer__list {
+    margin-left: 300px;
   }
 }
 
