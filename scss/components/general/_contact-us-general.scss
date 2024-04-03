@@ -1,0 +1,139 @@
+.contact-us {
+    position: relative;
+}
+
+.contact-us__heading {
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.46;
+    text-align: center;
+    // width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    @include mq(tablet) {
+        width: 90%;
+        font-size: 40px;
+        line-height: 1.35;
+    }
+
+    @include mq(desktop) {
+        width: 1060px;
+        font-size: 50px;
+        line-height: 1.28;
+    }
+
+    @include mq(monitor) {
+        font-size: 60px;
+        line-height: 1.23;
+    }
+}
+
+.contact-us__text {
+    width: 80%;
+    font-family: $info-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.37;
+    text-align: center;
+    // width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+    @include mq(tablet) {
+        width: 90%;
+        font-size: 40px;
+        line-height: 1.35;
+    }
+
+    @include mq(desktop) {
+        width: 1060px;
+        font-size: 50px;
+        line-height: 1.28;
+    }
+
+    @include mq(monitor) {
+        font-size: 60px;
+        line-height: 1.23;
+    }
+}
+
+.contact-us__input {
+    max-width: 330px;
+    height: 70px;
+    font-family: $secondary-font;
+    color: $color-input;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    // display: block;
+    margin-bottom: 15px;
+    padding: 25px 100px 25px 30px;
+
+    border-radius: 40px;
+    border: 1px solid $color-akcent;
+    background-color: transparent;
+    outline: none;
+
+    @include mq(tablet-only) {
+        width: 450px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @include mq(desktop) {
+        width: 358px;
+    }
+}
+
+.contact-us__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-white;
+    font-family: $main-font;
+    background-color: $color-akcent;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: $color-akcent;
+    border-radius: 40px;
+    padding: 8px;
+    padding-left: 35px;
+    margin-left: 0;
+    margin-bottom: 240px;
+    min-width: 286px;
+    max-height: 75px;
+    cursor: pointer;
+    transition: color $duration $timing-function, background-color $duration $timing-function;
+
+    // @include mq(not-desktop) {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     width: 200px;
+    // }
+}
+
+.contact-us__icon {
+    width: 60px;
+    height: 60px;
+    background-color: $color-white;
+    border-radius: 50px;
+
+}
+
+.contact-us__img-1 {
+    display: none;
+    position: absolute;
+    top: 690px;
+    left: 75px;
+    border-radius: 17px;
+}
+
+.contact-us__img-2 {
+    display: none;
+    position: absolute;
+    border-radius: 17px;
+}
