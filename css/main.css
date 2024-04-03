@@ -1688,6 +1688,7 @@ img {
             flex-direction: row;
   }
 }
+
 .footer__logo {
   fill: #FFFFFF;
 }
@@ -1745,9 +1746,8 @@ img {
 }
 @media screen and (min-width: 1366px) {
   .footer-site-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
 }
 
@@ -1808,13 +1808,11 @@ img {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1366px) {
   .socials-footer__list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin-top: 0;
-    margin-left: 50px;
   }
 }
 
