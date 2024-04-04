@@ -61,6 +61,7 @@
 }
 
 .contact-us__input {
+    display: block;
     max-width: 330px;
     height: 70px;
     font-family: $secondary-font;
@@ -116,12 +117,24 @@
     // }
 }
 
-.contact-us__icon {
+.contact-us
+
+.cu__radius {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     background-color: $color-white;
     border-radius: 50px;
-
+}
+.contact-us__icon {
+    width: 32px;
+    height: 32px;
+    // background-color: $color-white;
+    // border-radius: 50px;
+    fill: $color-akcent;
+    // padding: 10px;
 }
 
 .contact-us__img-1 {

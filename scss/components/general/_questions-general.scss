@@ -1,5 +1,6 @@
 .questions {
     background-color: $color-bg-item;
+    border-radius: 30px;
 
     &__heading {
         font-family: $main-font;
@@ -106,7 +107,7 @@
         font-family: $info-font;
         color: $color-first-title;
         font-size: 12px;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.66;
         width: 100%;
         margin: 0;

@@ -9,18 +9,18 @@
     <symbol id="icon-line" viewBox="0 0 533 32">
       <path d="m0 16 26.667 15.396V.604L0 16zm533.333 0L506.666.604v30.792L533.333 16zM24 18.667h485.333v-5.333H24v5.333z"/>
     </symbol>
-    <symbol id="icon-arrow-right" viewBox="0 0 31 32">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M5.665 16.45h18.922M24.587 16.45l-7.096 7.096M24.587 16.45l-7.096-7.096"></path>
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.133" d="M28.93 16H3.07m0 0 9.697-9.697M3.07 16l9.697 9.697"/>
     </symbol>
-    <symbol id="icon-arrow-left" viewBox="0 0 31 32">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M24.586 16.45h-18.922M5.664 16.45l7.096-7.096M5.664 16.45l7.096 7.096"></path>
+    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.1333" stroke="#666" d="M3.070 16h25.86M28.93 16l-9.697 9.697M28.93 16l-9.697-9.697"/>
     </symbol>
-    <symbol id="icon-arrow-down" viewBox="0 0 31 32">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M9.404 9.418l13.38 13.38M22.784 22.798h-10.035M22.784 22.798v-10.035"></path>
-    </symbol>
-    <symbol id="icon-arrow-up" viewBox="0 0 31 32">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.561" d="M8.749 22.484l13.38-13.38M22.129 9.105v10.035M22.129 9.105h-10.035"></path>
-    </symbol>
+<symbol id="icon-arrow-up" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.2" d="M2.286 29.714l27.428-27.429M29.714 2.286v20.571M29.714 2.286h-20.571"/>
+</symbol>
+<symbol id="icon-arrow-down" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.2" d="M2.286 2.286l27.428 27.429M29.714 29.714h-20.571M29.714 29.714v-20.571"/>
+</symbol>
     <symbol id="icon-menu" viewBox="0 0 32 32">
     <path d="M24.033 3.121H2.059c-2.35-.078-2.35 3.027 0 2.949h21.886c2.307.078 2.397-2.949.09-2.949h-.002zM2.059 14.915c-2.26 0-2.26 2.947 0 2.947h12.389c2.307 0 2.307-2.947 0-2.947H2.059zm0 11.794c-2.26 0-2.26 2.948 0 2.948h27.762c2.26 0 2.26-2.947 0-2.947H2.059z"/>
     </symbol>
@@ -69,6 +69,15 @@
     </symbol>
     <symbol id="icon-focus" viewBox="0 0 32 32">
       <path d="M29.44 14.507h-1.598A11.95 11.95 0 0 0 17.493 4.158V2.56a1.493 1.493 0 1 0-2.986 0v1.598A11.95 11.95 0 0 0 4.158 14.507H2.56a1.493 1.493 0 1 0 0 2.986h1.598a11.95 11.95 0 0 0 10.349 10.349v1.598a1.493 1.493 0 1 0 2.986 0v-1.598a11.95 11.95 0 0 0 10.349-10.349h1.598a1.493 1.493 0 1 0 0-2.986zM16 24.96a8.966 8.966 0 0 1-8.278-5.531A8.96 8.96 0 1 1 16 24.96zm0-13.44a4.483 4.483 0 0 0-4.139 2.766 4.478 4.478 0 0 0 5.853 5.853A4.48 4.48 0 0 0 16 11.52zm0 5.973a1.497 1.497 0 0 1-1.38-.922 1.49 1.49 0 0 1 .324-1.628 1.496 1.496 0 0 1 2.298.226 1.495 1.495 0 0 1-.185 1.886c-.28.28-.66.437-1.056.437z"/>
+    </symbol>
+
+        <!--Tests Icons-->
+    <symbol id="icon-smartphone" viewBox="0 0 20 32">
+      <path d="M17 0H3C1.346 0 0 1.346 0 3v26c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3V3c0-1.654-1.346-3-3-3zM3 2h14a1 1 0 0 1 1 1v21H2V3a1 1 0 0 1 1-1zm14 28H3a1 1 0 0 1-1-1v-3h16v3a1 1 0 0 1-1 1z"/>
+      <path d="M4.707 27.478c.391.365.391.956 0 1.321s-1.024.365-1.414 0c-.391-.365-.391-.956 0-1.321s1.024-.365 1.414 0z"/>
+    </symbol>
+    <symbol id="icon-envelope" viewBox="0 0 43 32">
+      <path d="M38.667 0H4C1.794 0 0 1.794 0 4v24c0 2.206 1.794 4 4 4h34.667c2.206 0 4-1.794 4-4V4c0-2.206-1.794-4-4-4zm0 2.667c.181 0 .353.038.511.103L21.334 18.236 3.49 2.77a1.32 1.32 0 0 1 .511-.103h34.667zm0 26.666H4A1.334 1.334 0 0 1 2.667 28V5.587L20.46 21.008a1.335 1.335 0 0 0 1.748 0L40.001 5.587V28c0 .736-.598 1.333-1.333 1.333z"/>
     </symbol>
   </defs>
 </svg>
