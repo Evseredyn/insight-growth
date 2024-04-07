@@ -706,7 +706,7 @@ img {
 @media screen and (min-width: 744px) {
   .hero__list {
     width: 714px;
-    min-height: 235px;
+    height: 235px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -1664,8 +1664,23 @@ img {
   }
 }
 
-.contact-us {
-  position: relative;
+@media screen and (min-width: 1366px) {
+  .contact-us__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contact-us__inner {
+    width: 705px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .contact-us__inner {
+    width: 870px;
+  }
 }
 
 .contact-us__heading {
@@ -1674,7 +1689,6 @@ img {
   font-weight: 500;
   line-height: 1.46;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 744px) {
@@ -1686,9 +1700,10 @@ img {
 }
 @media screen and (min-width: 1366px) {
   .contact-us__heading {
-    width: 1060px;
+    width: 100%;
     font-size: 50px;
     line-height: 1.28;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1705,28 +1720,34 @@ img {
   font-weight: 400;
   line-height: 1.37;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 744px) {
   .contact-us__text {
     width: 90%;
-    font-size: 40px;
-    line-height: 1.35;
+    line-height: 1.62;
   }
 }
 @media screen and (min-width: 1366px) {
   .contact-us__text {
-    width: 1060px;
-    font-size: 50px;
-    line-height: 1.28;
+    width: 560px;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: left;
+    margin-left: 0;
   }
 }
-@media screen and (min-width: 1920px) {
-  .contact-us__text {
-    font-size: 60px;
-    line-height: 1.23;
+
+.contact-us__form {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1366px) {
+  .contact-us__form {
+    text-align: left;
   }
 }
 
@@ -1780,7 +1801,6 @@ img {
   padding: 8px;
   padding-left: 35px;
   margin-left: 0;
-  margin-bottom: 240px;
   min-width: 286px;
   max-height: 75px;
   cursor: pointer;
@@ -1810,17 +1830,15 @@ img {
   fill: #1C74E9;
 }
 
+.contact-us__thumb {
+  position: relative;
+}
+
 .contact-us__img-1 {
-  display: none;
-  position: absolute;
-  top: 690px;
-  left: 75px;
   border-radius: 17px;
 }
 
 .contact-us__img-2 {
-  display: none;
-  position: absolute;
   border-radius: 17px;
 }
 

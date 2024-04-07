@@ -47,7 +47,7 @@
 
         @include mq(tablet) {    
             width: 714px;
-            min-height: 235px;
+            height: 235px;
         }
 
         @include mq(desktop) {    

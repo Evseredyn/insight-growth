@@ -1,5 +1,17 @@
-.contact-us {
-    position: relative;
+.contact-us__flex {
+    @include mq(desktop) {
+        display: flex;
+    }
+}
+
+.contact-us__inner {
+    @include mq(desktop) {
+        width: 705px;
+    }
+
+    @include mq(monitor) {
+        width: 870px;
+    }
 }
 
 .contact-us__heading {
@@ -9,7 +21,6 @@
     line-height: 1.46;
     text-align: center;
     // width: 300px;
-    margin: 0 auto;
     margin-bottom: 50px;
     
     @include mq(tablet) {
@@ -19,9 +30,10 @@
     }
 
     @include mq(desktop) {
-        width: 1060px;
+        width: 100%;
         font-size: 50px;
         line-height: 1.28;
+        text-align: left;
     }
 
     @include mq(monitor) {
@@ -38,28 +50,33 @@
     line-height: 1.37;
     text-align: center;
     // width: 300px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     margin-bottom: 40px;
     
     @include mq(tablet) {
         width: 90%;
-        font-size: 40px;
-        line-height: 1.35;
+        line-height: 1.62;
     }
 
     @include mq(desktop) {
-        width: 1060px;
-        font-size: 50px;
-        line-height: 1.28;
-    }
-
-    @include mq(monitor) {
-        font-size: 60px;
-        line-height: 1.23;
+        width: 560px;
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: left;
+        margin-left: 0;
     }
 }
 
+.contact-us__form {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(desktop) {
+        text-align: left;
+    }
+}
 .contact-us__input {
     display: block;
     max-width: 330px;
@@ -104,7 +121,6 @@
     padding: 8px;
     padding-left: 35px;
     margin-left: 0;
-    margin-bottom: 240px;
     min-width: 286px;
     max-height: 75px;
     cursor: pointer;
@@ -137,16 +153,25 @@
     // padding: 10px;
 }
 
+.contact-us__thumb {
+    position: relative;
+}
+
 .contact-us__img-1 {
-    display: none;
-    position: absolute;
-    top: 690px;
-    left: 75px;
+    // display: none;
+    // position: absolute;
+    // width: 60vw;
+    // bottom: 270px;
+    // left: 15%;
     border-radius: 17px;
 }
 
 .contact-us__img-2 {
-    display: none;
-    position: absolute;
+    // display: none;
+    // position: absolute;
+    // width: 421px;
+    // height: 265px;
+    // bottom: 170px;
+    // left: 12%;
     border-radius: 17px;
 }
