@@ -49,6 +49,7 @@
 
     @include mq(desktop) {
         gap: 30px;
+        margin-left: 0px;
     }
 
     @include mq(monitor) {
@@ -76,13 +77,14 @@
     }
 
     @include mq(desktop) {
-        min-width: 280px;
-        height: 320px;
+        max-width: 278px;
+        height: 330px;
         padding: 20px 10px 40px;
     }
 
     @include mq(monitor) {
         max-width: 550px;
+        width: 400px;
         height: 400px;
         padding: 30px 20px;
     }
@@ -102,19 +104,21 @@
     font-weight: 500;
     line-height: 1.4;
     text-align: center;
-    // width: 300px;
+    width: 220px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 15px;
 
     @include mq(desktop) {
-        font-size: 24px;
-        line-height: 1.38;
+        font-size: 20px;
+        line-height: 1.4;
+        width: 260px;
     }
 
     @include mq(monitor) {
         font-size: 26px;
-        line-height: 1.38;
+        line-height: 1.4;
+        width: 340px;
     }
 }
 

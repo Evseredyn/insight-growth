@@ -1,18 +1,24 @@
 .footer {
     background-color: $color-akcent;
-    padding: 50px 15px 40px;
+    padding: 50px 40px;
+    margin-left: auto;
+    margin-right: auto;
     // padding-top: 50px;
     // padding-bottom: 40px;
 
     @include mq(tablet) {
+        width: 744px;
         padding: 60px 15px 45px;
     }
 
     @include mq(desktop) {
+        width: 1440px;
         padding: 60px 120px;
     }
 
     @include mq(monitor) {
+        min-width: 1920px;
+        //width: 100%;
         padding: 70px 100px 80px;
     }
 }

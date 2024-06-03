@@ -22,8 +22,8 @@
 
 .about__item {
     background-color: $color-bg-item;
-    max-width: 330px;
-    max-height: 390px;
+    width: 100%;
+    // max-height: 390px;
     padding: 30px 10px 40px;
     border-radius: 30px;
     display: flex;
@@ -38,8 +38,11 @@
 
     @include mq(desktop) {
         max-width: 380px;
-        height: 550px;
+        height: 600px;
         padding: 30px 30px 40px;
+        // &__item>link {
+        //     margin-top: auto;
+        // }
     }
 
     @include mq(monitor) {
