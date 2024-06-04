@@ -116,12 +116,12 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 1.37;
-        width: 290px;
+        max-width: 240px;
         margin: 0;
         
         @include mq(tablet) {
             // width: 90%;
-            width: 550px;
+            max-width: 550px;
             font-size: 24px;
             line-height: 1.25;
         }
