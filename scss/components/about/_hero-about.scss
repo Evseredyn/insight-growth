@@ -1,0 +1,220 @@
+.hero-services {
+    
+    &__title {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 0em;
+        color: $color-first-title;
+        text-align: center;
+        min-width: 310px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    
+         @include mq(tablet) {
+            max-width: 560px;
+            font-size: 50px;
+            line-height: 1.28;
+            margin-bottom: 50px;
+         }
+
+         @include mq(desktop) {
+            max-width: 640px;
+         }
+
+         @include mq(monitor) {
+            max-width: 880px;
+            font-size: 70px;
+            line-height: 1.28;
+         }
+    }
+
+    &__discription {
+        font-family: $info-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+        color: $color-black;
+        text-align: center;
+        max-width: 220px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    
+         @include mq(tablet) {
+            max-width: 460px;
+            font-size: 16px;
+            line-height: 1.75;
+            margin-bottom: 50px;
+         }
+
+         @include mq(desktop) {
+            margin-bottom: 60px;
+         }
+
+         @include mq(monitor) {
+            max-width: 540px;
+            font-size: 20px;
+            line-height: 1.7;
+         }
+    }
+    &__list { 
+        position: relative;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+        // align-items: flex-end;
+
+        @include mq(mobile-only) {    
+            width: 330px;
+            height: 400px;
+        }
+
+        @include mq(tablet) {    
+            width: 714px;
+            height: 235px;
+        }
+
+        @include mq(desktop) {    
+            width: 1200px;
+            height: 530px;
+        }
+
+        @include mq(monitor) {    
+            width: 1720px;
+            height: 600px;
+        }
+    }
+
+    &__item-1 {
+        @include mq(mobile-only) {    
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        @include mq(tablet) {    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        @include mq(desktop) {    
+            position: absolute;
+            bottom: 90px;
+            left: 0;
+        }
+    }
+    &__item-2 {
+        @include mq(mobile-only) {    
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        @include mq(tablet) {    
+            position: absolute;
+            bottom: 0;
+            left: 180px;
+        }
+
+        @include mq(desktop) {    
+            position: absolute;
+            bottom: 0;
+            left: 305px;
+        }
+
+        @include mq(monitor) {    
+            position: absolute;
+            bottom: 0;
+            left: 440px;
+        }
+    }
+    &__item-3 {
+        @include mq(mobile-only) {    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        @include mq(tablet) {    
+            position: absolute;
+            bottom: 0;
+            right: 180px;
+        }
+
+        @include mq(desktop) {    
+            position: absolute;
+            bottom: 0;
+            right: 305px;
+        }
+
+        @include mq(monitor) {    
+            position: absolute;
+            bottom: 0;
+            right: 440px;
+        }
+    }
+    &__item-4 {
+        @include mq(mobile-only) {    
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        @include mq(tablet) {    
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        @include mq(desktop) {    
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+        }
+    }
+
+    &__img--rectangle {
+        border-radius: 20px;
+        width: 160px;
+        max-height: 230px;
+
+        @include mq(tablet) {    
+            width: 170px;
+            max-height: 230px;
+        }
+
+        @include mq(desktop) {    
+            width: 285px;
+            max-height: 385px;
+        }
+
+        @include mq(monitor) {    
+            width: 400px;
+            max-height: 500px;
+        }
+    }
+
+    &__img--quarter {
+        border-radius: 20px;
+        width: 160px;
+        max-height: 160px;
+
+        @include mq(tablet) {    
+            width: 170px;
+            max-height: 170px;
+        }
+
+        @include mq(desktop) {    
+            width: 285px;
+            max-height: 285px;
+        }
+
+        @include mq(monitor) {    
+            width: 400px;
+            max-height: 400px;
+        }
+    }
+}
