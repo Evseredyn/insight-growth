@@ -67,9 +67,7 @@ html {
     background-color: $color-white;
  }
  
-.current {
-   color: $color-akcent;
-}
+
 
 .active {
    font-weight: 500;
@@ -169,4 +167,8 @@ img {
    display: block;
    max-width: 100%;
    height: auto;
+}
+
+.current {
+   color: $color-akcent;
 }
