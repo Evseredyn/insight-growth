@@ -307,6 +307,14 @@ body {
   background-color: #FFFFFF;
 }
 
+.current {
+  color: #1C74E9;
+}
+
+.site-nav__link .current {
+  color: #1C74E9;
+}
+
 .active {
   font-weight: 500;
 }
@@ -403,10 +411,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.current {
-  color: #1C74E9;
 }
 
 @media screen and (min-width: 1366px) {
