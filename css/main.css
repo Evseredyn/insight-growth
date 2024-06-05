@@ -1354,7 +1354,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .benefites__item {
-    max-width: 278px;
+    max-width: 277px;
     height: 330px;
     padding: 20px 10px 40px;
   }
@@ -1468,6 +1468,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1488,12 +1489,12 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .services__item:not(:first-child) {
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1920px) {
   .services__item:not(:first-child) {
-    margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -1544,19 +1545,19 @@ img {
 }
 @media screen and (min-width: 744px) {
   .services__img {
-    width: 170px;
+    width: 310px;
     max-height: 230px;
   }
 }
 @media screen and (min-width: 1440px) {
   .services__img {
-    width: 285px;
+    width: 340px;
     max-height: 385px;
   }
 }
 @media screen and (min-width: 1920px) {
   .services__img {
-    width: 400px;
+    width: 360px;
     max-height: 500px;
   }
 }
