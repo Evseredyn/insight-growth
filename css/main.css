@@ -2403,7 +2403,7 @@ img {
   font-weight: 500;
   line-height: 1.46;
   text-align: center;
-  width: 300px;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -2444,8 +2444,8 @@ img {
 }
 .benefites-services__item {
   position: relative;
-  width: 380px;
-  height: 250px;
+  max-width: 330px;
+  height: 300px;
   border-radius: 30px;
   padding: 0px 10px 20px;
 }
@@ -2475,6 +2475,16 @@ img {
     margin-bottom: 20px;
   }
 }
+.benefites-services__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #EBF4FF;
+  z-index: -1;
+}
 .benefites-services__title {
   font-family: "Raleway", sans-serif;
   color: #1C74E9;
@@ -2482,7 +2492,7 @@ img {
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  width: 300px;
+  width: 90%;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -2499,13 +2509,6 @@ img {
     line-height: 1.4;
     width: 340px;
   }
-}
-.benefites-services__title::after {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 250px;
-  background-color: #EBF4FF;
 }
 .benefites-services__discription {
   font-family: "Inter", sans-serif;
@@ -2541,7 +2544,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: solid 2px #1C74E9;
   border-radius: 50%;
   width: 100px;
