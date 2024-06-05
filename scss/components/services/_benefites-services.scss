@@ -1,6 +1,5 @@
 .benefites-services {
 
-
     &__heading {
         font-family: $main-font;
         font-size: 30px;
@@ -9,7 +8,7 @@
         text-align: center;
         width: 300px;
         margin: 0 auto;
-        margin-bottom: 90px;
+        margin-bottom: 40px;
         
         @include mq(tablet) {
             width: 90%;
@@ -44,19 +43,13 @@
             gap: 40px;
         }
     }
-        
-    &__list:not(:last-child) {
-        @include mq(mobile-only) {
-            margin-bottom: 20px;
-        }
-    }
     
     &__item {
-        background-color: $color-bg-item;
-        max-width: 330px;
+        position: relative;
+        width: 380px;
         height: 250px;
         border-radius: 30px;
-        padding: 20px 10px;
+        padding: 0px 10px 20px;
     
         @include mq(tablet) {
             width: 342px;
@@ -77,17 +70,11 @@
         }
     }
         
-    &__item:not(:first-child) {
+    &__item:not(:last-child) {
         @include mq(mobile-only) {
-            margin-top: 70px;
+            margin-bottom: 20px;
         }
     }
-            
-    // &__item:not(:firstst-child) {
-    //     @include mq(mobile-only) {
-    //         margin-top: 140px;
-    //     }
-    // }
 
     &__title {
         font-family: $main-font;
@@ -99,7 +86,7 @@
         width: 300px;
         margin: 0 auto;
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     
         @include mq(desktop) {
             font-size: 20px;
@@ -113,6 +100,14 @@
             width: 340px;
         }
     }
+    
+    &__title::after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 250px;
+        background-color: $color-bg-item;
+    }
 
     
     &__discription {
@@ -124,7 +119,6 @@
         text-align: center;
         width: 100%;
         margin: 0 auto;
-        margin-top: 20px;
 
         @include mq(tablet) {
             font-size: 16px;
@@ -150,7 +144,6 @@
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -70px;
 }
 
 .services__circul-2 {

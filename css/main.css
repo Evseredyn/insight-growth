@@ -1326,11 +1326,6 @@ img {
     gap: 40px;
   }
 }
-@media screen and (max-width: 743.98px) {
-  .benefites__list:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 .benefites__item {
   background-color: #1C74E9;
   max-width: 320px;
@@ -2410,7 +2405,7 @@ img {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__heading {
@@ -2447,17 +2442,12 @@ img {
     gap: 40px;
   }
 }
-@media screen and (max-width: 743.98px) {
-  .benefites-services__list:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 .benefites-services__item {
-  background-color: #EBF4FF;
-  max-width: 330px;
+  position: relative;
+  width: 380px;
   height: 250px;
   border-radius: 30px;
-  padding: 20px 10px;
+  padding: 0px 10px 20px;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__item {
@@ -2481,8 +2471,8 @@ img {
   }
 }
 @media screen and (max-width: 743.98px) {
-  .benefites-services__item:not(:first-child) {
-    margin-top: 70px;
+  .benefites-services__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 .benefites-services__title {
@@ -2495,7 +2485,7 @@ img {
   width: 300px;
   margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1440px) {
   .benefites-services__title {
@@ -2510,6 +2500,13 @@ img {
     width: 340px;
   }
 }
+.benefites-services__title::after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #EBF4FF;
+}
 .benefites-services__discription {
   font-family: "Inter", sans-serif;
   color: #1E1E1E;
@@ -2519,7 +2516,6 @@ img {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 20px;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__discription {
@@ -2552,7 +2548,6 @@ img {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -70px;
 }
 
 .services__circul-2 {

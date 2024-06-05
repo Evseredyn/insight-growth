@@ -48,13 +48,6 @@
             gap: 40px;
         }
     }
-    
-    &__list:not(:last-child) {
-        @include mq(mobile-only) {
-            margin-bottom: 20px;
-
-        }
-    }
 
     &__item {
         background-color: $color-akcent;
