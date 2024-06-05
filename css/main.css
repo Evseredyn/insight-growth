@@ -1304,12 +1304,6 @@ img {
     line-height: 1.23;
   }
 }
-
-@media screen and (max-width: 743.98px) {
-  .benefites__list:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 @media screen and (min-width: 744px) {
   .benefites__list {
     display: -webkit-box;
@@ -1332,18 +1326,17 @@ img {
     gap: 40px;
   }
 }
-
+@media screen and (max-width: 743.98px) {
+  .benefites__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .benefites__item {
   background-color: #1C74E9;
   max-width: 320px;
   height: 320px;
   border-radius: 30px;
   padding: 20px 30px;
-}
-@media screen and (max-width: 743.98px) {
-  .benefites__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (min-width: 744px) {
   .benefites__item {
@@ -1367,14 +1360,17 @@ img {
     padding: 30px 20px;
   }
 }
-
+@media screen and (max-width: 743.98px) {
+  .benefites__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .benefites__icon {
   display: block;
   fill: #FFFFFF;
   text-align: center;
   margin: 0 auto;
 }
-
 .benefites__title {
   font-family: "Raleway", sans-serif;
   color: #FFFFFF;
@@ -1401,14 +1397,12 @@ img {
     width: 340px;
   }
 }
-
 .benefites__line {
   display: block;
   fill: #FFFFFF;
   text-align: center;
   margin: 0 auto;
 }
-
 .benefites__discription {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
@@ -2408,7 +2402,7 @@ img {
   }
 }
 
-.benefites__heading {
+.benefites-services__heading {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -2419,50 +2413,50 @@ img {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 744px) {
-  .benefites__heading {
+  .benefites-services__heading {
     width: 90%;
     font-size: 40px;
     line-height: 1.35;
   }
 }
 @media screen and (min-width: 1440px) {
-  .benefites__heading {
+  .benefites-services__heading {
     width: 1060px;
     font-size: 50px;
     line-height: 1.28;
   }
 }
 @media screen and (min-width: 1920px) {
-  .benefites__heading {
+  .benefites-services__heading {
     font-size: 60px;
     line-height: 1.23;
   }
 }
 
 @media screen and (max-width: 743.98px) {
-  .benefites__list:not(:last-child) {
+  .benefites-services__list:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 744px) {
-  .benefites__list {
+  .benefites-services__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     margin-left: 15px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .benefites__list {
+  .benefites-services__list {
     gap: 30px;
     margin-left: 0px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .benefites__list {
+  .benefites-services__list {
     gap: 40px;
   }
 }

@@ -1,7 +1,7 @@
-.benefites {
+.benefites-services {
 }
 
-.benefites__heading {
+.benefites-services__heading {
     font-family: $main-font;
     font-size: 30px;
     font-weight: 500;
@@ -29,12 +29,11 @@
     }
 }
 
-.benefites__list {
+.benefites-services__list {
 
     &:not(:last-child) {
         @include mq(mobile-only) {
             margin-bottom: 20px;
-
         }
     }
     
@@ -43,7 +42,7 @@
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 20px;
         margin-left: 15px;
     }
 
