@@ -53,20 +53,20 @@
     
         @include mq(tablet) {
             width: 342px;
-            height: 280px;
-            padding: 20px 20px;
+            height: 340px;
+            padding: 0px 20px 20зч;
         }
     
         @include mq(desktop) {
             max-width: 380px;
-            height: 290px;
-            padding: 20px 10px 40px;
+            height: 350px;
+            padding: 0px 10px 40px;
         }
     
         @include mq(monitor) {
             width: 400px;
-            height: 320px;
-            padding: 30px 20px;
+            height: 390px;
+            padding: 0px 20px 30px;
         }
     }
         
@@ -85,6 +85,19 @@
         height: 250px;
         background-color: $color-bg-item;
         z-index: -1;
+
+        
+    @include mq(tablet) {
+        height: 280px;
+    }
+
+    @include mq(desktop) {
+        height: 290px;
+    }
+
+    @include mq(monitor) {
+        height: 320px;
+    }
     }
 
     &__title {
@@ -146,6 +159,19 @@
     height: 100px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mq(tablet) {
+        width: 120px;
+        height: 120px;
+    }
+
+    @include mq(desktop) {
+    }
+
+    @include mq(monitor) {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .services__circul-2 {
@@ -158,6 +184,19 @@
     border: solid 2px $color-akcent;
     border-radius: 50%;
     color: $color-akcent;
+
+    @include mq(tablet) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include mq(desktop) {
+    }
+
+    @include mq(monitor) {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .services____icon {

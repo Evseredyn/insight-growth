@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -2452,22 +2453,22 @@ img {
 @media screen and (min-width: 744px) {
   .benefites-services__item {
     width: 342px;
-    height: 280px;
-    padding: 20px 20px;
+    height: 340px;
+    padding: 0px 20px 20зч;
   }
 }
 @media screen and (min-width: 1440px) {
   .benefites-services__item {
     max-width: 380px;
-    height: 290px;
-    padding: 20px 10px 40px;
+    height: 350px;
+    padding: 0px 10px 40px;
   }
 }
 @media screen and (min-width: 1920px) {
   .benefites-services__item {
     width: 400px;
-    height: 320px;
-    padding: 30px 20px;
+    height: 390px;
+    padding: 0px 20px 30px;
   }
 }
 @media screen and (max-width: 743.98px) {
@@ -2484,6 +2485,21 @@ img {
   height: 250px;
   background-color: #EBF4FF;
   z-index: -1;
+}
+@media screen and (min-width: 744px) {
+  .benefites-services__item::after {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefites-services__item::after {
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites-services__item::after {
+    height: 320px;
+  }
 }
 .benefites-services__title {
   font-family: "Raleway", sans-serif;
@@ -2552,6 +2568,18 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 744px) {
+  .services__circul-1 {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .services__circul-1 {
+    width: 140px;
+    height: 140px;
+  }
+}
 
 .services__circul-2 {
   display: -webkit-box;
@@ -2569,6 +2597,18 @@ img {
   border: solid 2px #1C74E9;
   border-radius: 50%;
   color: #1C74E9;
+}
+@media screen and (min-width: 744px) {
+  .services__circul-2 {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .services__circul-2 {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .services____icon {
