@@ -44,11 +44,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
-        margin-left: 18px;
+        margin-left: 15px;
     }
 
     @include mq(desktop) {
-        gap: 29px;
+        gap: 30px;
         margin-left: 0px;
     }
 

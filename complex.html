@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Inter:wght@300;400;500;900&family=Roboto+Condensed:wght@300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 <!--Header-->
@@ -23,34 +27,182 @@
             </button>
         </div>
         <ul class="site-nav__list list">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link current">Головна</a></li>
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Головна</a></li>
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Послуги</a></li>
             <!-- <li class="site-nav__item"><a href="./complex.html" class="site-nav__link link">Бухгалтерія під ключ</a></li>
             <li class="site-nav__item"><a href="./personal.html" class="site-nav__link link">Управлінський облік для власника бізнесу</a></li>
             <li class="site-nav__item"><a href="./management.html" class="site-nav__link link">Кадровий облік</a></li> -->
-            <li class="site-nav__item"><a href="./about.html" class="site-nav__link link">Про нас</a></li>
-            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link">Контакти</a></li>
+            <li class="site-nav__item"><a href="./about.html" class="site-nav__link link current">Про нас</a></li>
+            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link current">Контакти</a></li>
         </ul>
         <a class="header__call-me link" href="tel:+380972747200">зателефонувати</a>
     </div>
 </header>
     <main>
 <!--Hero-->
-    <section>
-       <div>
-           <h1>Професійний <span>податковий консалтинг</span> для Вашого бізнесу</h1>
-           <!-- <button type="button">Вибрати послугу</button> -->
-           <a href="">Вибрати послугу</a>
-           <ul>
-               <li><img src="" alt="керівник говорить по телефону" width="400px" height="500px"></li>
-               <li><img src="" alt="персонал спілкується із клієнтом" width="400px" height="400px"></li>
-               <li><img src="" alt="керівник проводить нараду" width="400px" height="400px"></li>
-               <li><img src="" alt="керівник працює за комп'ютером" width="400px" height="500px"></li>
-           </ul>
-       </div>
-    </section>
+<!-- <section class="hero-services section">
+    <div class="container">
+        <h1 class="hero-services__title"><span class="current">Бухгалтерія під ключ – </span>Ваш надійний фінансовий партнер у бізнесі</h1>
+        <p class="hero-services__discription">Заповни форму та отримай безкоштовний міні-аудит!</p>
+        <a class="btn-contact__link link" href="">замовити послугу<svg class="btn-contact__icon" width="26px" height="20px"><use href="./images/icons.svg#icon-arrow-right"></use></svg></a>
+        <ul class="hero-services__list list">
+            <li class="hero-services__item-1">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-1_ulg.webp 1x, ./images/general/hero/gen-hero-1_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-1_ulg.jpg 1x, ./images/general/hero/gen-hero-1_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-1_lg.webp 1x, ./images/general/hero/gen-hero-1_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-1_lg.jpg 1x, ./images/general/hero/gen-hero-1_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-1_md.webp 1x, ./images/general/hero/gen-hero-1_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-1_md.jpg 1x, ./images/general/hero/gen-hero-1_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-1_sm.webp 1x, ./images/general/hero/gen-hero-1_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-1_sm.jpg 1x, ./images/general/hero/gen-hero-1_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--rectangle"
+                     src="./images/general/hero/gen-hero-1_ulg.jpg"
+                     alt="керівник говорить по телефону"
+                     width="400" 
+                     height="500"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-2">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-2_ulg.webp 1x, ./images/general/hero/gen-hero-2_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-2_ulg.jpg 1x, ./images/general/hero/gen-hero-2_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-2_lg.webp 1x, ./images/general/hero/gen-hero-2_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-2_lg.jpg 1x, ./images/general/hero/gen-hero-2_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-2_md.webp 1x, ./images/general/hero/gen-hero-2_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-2_md.jpg 1x, ./images/general/hero/gen-hero-2_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-2_sm.webp 1x, ./images/general/hero/gen-hero-2_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-2_sm.jpg 1x, ./images/general/hero/gen-hero-2_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--quarter"
+                     src="./images/general/hero/gen-hero-2_ulg.jpg"
+                     alt="персонал спілкується із клієнтом"
+                     width="400" 
+                     height="400"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-3">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-3_ulg.webp 1x, ./images/general/hero/gen-hero-3_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-3_ulg.jpg 1x, ./images/general/hero/gen-hero-3_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-3_lg.webp 1x, ./images/general/hero/gen-hero-3_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-3_lg.jpg 1x, ./images/general/hero/gen-hero-3_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-3_md.webp 1x, ./images/general/hero/gen-hero-3_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-3_md.jpg 1x, ./images/general/hero/gen-hero-3_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-3_sm.webp 1x, ./images/general/hero/gen-hero-3_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-3_sm.jpg 1x, ./images/general/hero/gen-hero-3_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--quarter"
+                     src="./images/general/hero/gen-hero-3_ulg.jpg"
+                     alt="керівник проводить нараду"
+                     width="400" 
+                     height="400"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-4">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-4_ulg.webp 1x, ./images/general/hero/gen-hero-4_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-4_ulg.jpg 1x, ./images/general/hero/gen-hero-4_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-4_lg.webp 1x, ./images/general/hero/gen-hero-4_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-4_lg.jpg 1x, ./images/general/hero/gen-hero-4_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-4_md.webp 1x, ./images/general/hero/gen-hero-4_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-4_md.jpg 1x, ./images/general/hero/gen-hero-4_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-4_sm.webp 1x, ./images/general/hero/gen-hero-4_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-4_sm.jpg 1x, ./images/general/hero/gen-hero-4_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--rectangle"
+                     src="./images/general/hero/gen-hero-4_ulg.jpg"
+                     alt="керівник працює за комп'ютером"
+                     width="400" 
+                     height="500"
+                     loading="lazy">
+                 </picture>
+             </li>
+        </ul>
+    </div>
+ </section> -->
 <!--about-->
-    <section class="about">
+    <!-- <section class="about">
         <div class="container">
             <h2 class="about-heading">Чому обирають нас!</h2>
             <ul class="about-list">
@@ -71,9 +223,86 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 <!--Benefites-->
-    <section class="benefites">
+<!-- <section class="benefites section">
+    <div class="container">
+        <h2 class="benefites__heading"><span class="current">Основні переваги</span> нашої податкової консалтингової послуги:</h2>
+        <ul class="benefites__list list">
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-focus"></use>
+                </svg>
+                <h4 class="benefites__title">Індивідуальний підхід</h4>
+                <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Розробляємо плани, що точно відповідають унікальним вимогам кожного клієнта, забезпечуючи найвищу ефективність податкового планування.</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-optimization"></use>
+                </svg>
+                <h4 class="benefites__title">Оптимізація витрат</h4>
+                <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Допомагаємо клієнтам зекономити час і гроші, вибираючи найкращі способи зниження податкових зобов'язань.</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-trend-down"></use>
+                </svg>
+                <h4 class="benefites__title">Зниження податкових ризиків</h4>
+                                        <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Досвід проведення податкових аудитів, проходження податкових перевірок та досконале знання законодавства допомагають зменшити ризики донарахування штрафів.</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-expert"></use>
+                </svg>
+                <h4 class="benefites__title">Експертний<br>досвід</h4>
+                                        <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Персоналізовані консультації досвідчених професіоналів, які детально розуміють податкове законодавство</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-security"></use>
+                </svg>
+                <h4 class="benefites__title">Конфіденційність та безпека:</h4>
+                                        <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Гарантія анонімності та захист фінансових даних клієнтів.</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-partner"></use>
+                </svg>
+                <h4 class="benefites__title">Довгострокове партнерство</h4>
+                                        <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Тривала підтримка та допомога клієнтам розв'язувати складні податкові задачі.</p>
+            </li>
+            <li class="benefites__item">
+                <svg class="benefites__icon" width="60" height="60">
+                    <use href="./images/icons.svg#icon-justice"></use>
+                </svg>
+                <h4 class="benefites__title">Прозорість та відповідність нормам законодавства</h4>
+                <svg class="benefites__line" width="100" height="5">
+                    <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+                <p class="benefites__discription">Допомагаємо забезпечити дотримання всіх податкових законів.</p>
+            </li>
+        </ul>
+    </div>
+</section> -->
+    <!-- <section class="benefites">
         <div class="grid">
             <h2><span>Основні переваги</span> нашої податкової консалтингової послуги:</h2>
             <ul class="benefites__list">
@@ -142,9 +371,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 <!--Our services-->
-    <section>
+    <!-- <section>
         <div>
             <h2>Наші <span>послуги</span></h2>
             <ul>
@@ -171,9 +400,9 @@
                 </li>
             </ul>
         </div>
-    </section>
-<!--Say about us-->
-    <section>
+    </section> -->
+<!--Reviews-->
+  <!-- <section>
         <div>
             <h2><span>Відгуки</span> наших клієнтів</h2>
             <ul>
@@ -216,9 +445,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section>   -->
 <!--FAQ-->
-    <section>
+    <!-- <section>
         <div>
             <h2>Часті <span>запитання</span></h2>
             <ul>
@@ -254,9 +483,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 <!--Contact us-->
-    <section>
+    <!-- <section>
         <div>
             <h2>Не знаєте з чого почати? Наші експерти <span>завжди готові Вам допомогти!</span></h2>
             <p>Залишайте заявку і наші фахівці допоможуть вирішити питання у Вашій ситуації</p>
@@ -270,9 +499,9 @@
                 <img src="" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__wrap">
             <a class="footer__link link" href="./index.html">
                 <svg class="footer__logo" width="89" height="94">
@@ -326,6 +555,6 @@
             </div>
         </div>
         <a class="footer_policy link" href="">&#169; Усі права захищені 2024</a>
-    </footer>
+    </footer> -->
 </body>
 </html>

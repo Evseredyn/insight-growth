@@ -260,11 +260,15 @@ body {
 @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 @media screen and (min-width: 1920px) {
   .container {
     width: 1920px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -941,7 +945,7 @@ img {
 }
 
 .hero__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.35;
@@ -1314,12 +1318,12 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 40px;
-    margin-left: 15px;
+    margin-left: 18px;
   }
 }
 @media screen and (min-width: 1440px) {
   .benefites__list {
-    gap: 30px;
+    gap: 29px;
     margin-left: 0px;
   }
 }
@@ -1836,6 +1840,7 @@ img {
     width: 90%;
     font-size: 40px;
     line-height: 1.35;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1843,12 +1848,14 @@ img {
     width: 1060px;
     font-size: 50px;
     line-height: 1.28;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1920px) {
   .questions__heading {
     font-size: 60px;
     line-height: 1.23;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -2397,5 +2404,158 @@ img {
   .hero-services__img--quarter {
     width: 400px;
     max-height: 400px;
+  }
+}
+
+.benefites__heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.46;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 744px) {
+  .benefites__heading {
+    width: 90%;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefites__heading {
+    width: 1060px;
+    font-size: 50px;
+    line-height: 1.28;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites__heading {
+    font-size: 60px;
+    line-height: 1.23;
+  }
+}
+
+@media screen and (max-width: 743.98px) {
+  .benefites__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .benefites__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefites__list {
+    gap: 30px;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites__list {
+    gap: 40px;
+  }
+}
+
+.benefites__item {
+  background-color: #1C74E9;
+  max-width: 320px;
+  height: 320px;
+  border-radius: 30px;
+  padding: 20px 30px;
+}
+@media screen and (max-width: 743.98px) {
+  .benefites__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .benefites__item {
+    width: 320px;
+    height: 320px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .benefites__item {
+    max-width: 278px;
+    height: 330px;
+    padding: 20px 10px 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites__item {
+    max-width: 550px;
+    width: 400px;
+    height: 400px;
+    padding: 30px 20px;
+  }
+}
+
+.benefites__icon {
+  display: block;
+  fill: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.benefites__title {
+  font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .benefites__title {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 260px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites__title {
+    font-size: 26px;
+    line-height: 1.4;
+    width: 340px;
+  }
+}
+
+.benefites__line {
+  display: block;
+  fill: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.benefites__discription {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.42;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .benefites__discription {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }/*# sourceMappingURL=main.css.map */
