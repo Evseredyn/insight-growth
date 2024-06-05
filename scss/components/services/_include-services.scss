@@ -1,0 +1,155 @@
+.include-services {
+    background-color: $color-bg-item;
+    border-radius: 30px;
+
+    &__heading {
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+        @include mq(tablet) {
+            width: 90%;
+            font-size: 40px;
+            line-height: 1.25;
+        }
+    
+        @include mq(desktop) {
+            width: 1060px;
+            font-size: 50px;
+        }
+    
+        @include mq(monitor) {
+            font-size: 60px;
+            line-height: 1.1;
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        @include mq(tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    
+        @include mq(desktop) {
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+    
+        @include mq(monitor) {
+            margin-bottom: 60px;
+        }
+    }
+    
+    &__description {
+        width: 90%;
+        font-family: $info-font;
+        color: $color-first-title;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.7;
+        text-align: center;
+        margin: 0 auto;
+
+        @include mq(tablet) {
+            width: 420px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @include mq(desktop) {
+            width: 640px;
+        }
+    
+        @include mq(monitor) {
+            width: 740px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.include-label {
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 312px;
+        height: 140px;
+        padding: 30px 20px;
+        background-color: $color-white;
+        border-radius: 50px;
+    
+        @include mq(desktop) {
+            gap: 15px;
+            width: 380px;
+            height: 160px;
+        }
+    
+        @include mq(monitor) {
+            width: 460px;
+            height: 160px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        @include mq(mobile-only) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__thumb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: $color-akcent;
+        border-radius: 50px;
+    
+        @include mq(desktop) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__numb {
+        font-family: $main-font;
+        color: $color-white;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    &__value {
+        width: 180px;
+        font-family: $main-font;
+        color: $color-first-title;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+    
+        @include mq(desktop) {
+            width: 220px;
+            font-size: 20px;
+            line-height: 1.33;
+        }
+    
+        @include mq(monitor) {
+            width: 280px;
+            font-size: 24px;
+            line-height: 1.25;
+        }
+    }
+}
