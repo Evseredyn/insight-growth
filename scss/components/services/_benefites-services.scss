@@ -9,7 +9,7 @@
         text-align: center;
         width: 300px;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
         
         @include mq(tablet) {
             width: 90%;
@@ -30,17 +30,15 @@
     }
     
     &__list {
-        // width: 350px;
-
         @include mq(tablet) {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
-        }
-    
-        @include mq(desktop) {
             gap: 30px;
         }
+    
+        // @include mq(desktop) {
+        //     gap: 30px;
+        // }
     
         @include mq(monitor) {
             gap: 40px;
@@ -56,46 +54,41 @@
     &__item {
         background-color: $color-bg-item;
         max-width: 330px;
-        height: 340px;
+        height: 250px;
         border-radius: 30px;
-        padding: 20px 30px;
+        padding: 20px 10px;
     
         @include mq(tablet) {
-            width: 350px;
-            height: 320px;
+            width: 342px;
+            height: 280px;
             padding: 20px 20px;
         }
     
         @include mq(desktop) {
             max-width: 380px;
-            height: 330px;
+            height: 290px;
             padding: 20px 10px 40px;
         }
     
         @include mq(monitor) {
             width: 400px;
-            height: 400px;
+            height: 320px;
             padding: 30px 20px;
         }
     }
         
-    &__item:not(:last-child) {
+    &__item:not(:first-child) {
         @include mq(mobile-only) {
-            margin-bottom: 70px;
+            margin-top: 70px;
         }
     }
-    
-    &__icon {
-        display: block;
-        fill: $color-akcent;
-        background-color: $color-white;
-        border: solid 1px $color-akcent;
-        border-radius: 50%;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: -50px;
-    }
-    
+            
+    // &__item:not(:firstst-child) {
+    //     @include mq(mobile-only) {
+    //         margin-top: 140px;
+    //     }
+    // }
+
     &__title {
         font-family: $main-font;
         color: $color-akcent;
@@ -103,7 +96,7 @@
         font-weight: 500;
         line-height: 1.4;
         text-align: center;
-        width: 220px;
+        width: 300px;
         margin: 0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -111,7 +104,7 @@
         @include mq(desktop) {
             font-size: 20px;
             line-height: 1.4;
-            width: 260px;
+            // width: 260px;
         }
     
         @include mq(monitor) {
@@ -143,4 +136,37 @@
             line-height: 1.5;
         }
     }
+}
+
+.services__circul-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: solid 2px $color-akcent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -70px;
+}
+
+.services__circul-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: solid 2px $color-akcent;
+    border-radius: 50%;
+    color: $color-akcent;
+}
+
+.services____icon {
+    display: block;
+    fill: currentColor;
+    margin: 0 auto;
 }

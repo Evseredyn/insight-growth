@@ -2410,7 +2410,7 @@ img {
   text-align: center;
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__heading {
@@ -2439,11 +2439,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .benefites-services__list {
     gap: 30px;
   }
 }
@@ -2460,45 +2455,35 @@ img {
 .benefites-services__item {
   background-color: #EBF4FF;
   max-width: 330px;
-  height: 340px;
+  height: 250px;
   border-radius: 30px;
-  padding: 20px 30px;
+  padding: 20px 10px;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__item {
-    width: 350px;
-    height: 320px;
+    width: 342px;
+    height: 280px;
     padding: 20px 20px;
   }
 }
 @media screen and (min-width: 1440px) {
   .benefites-services__item {
     max-width: 380px;
-    height: 330px;
+    height: 290px;
     padding: 20px 10px 40px;
   }
 }
 @media screen and (min-width: 1920px) {
   .benefites-services__item {
     width: 400px;
-    height: 400px;
+    height: 320px;
     padding: 30px 20px;
   }
 }
 @media screen and (max-width: 743.98px) {
-  .benefites-services__item:not(:last-child) {
-    margin-bottom: 70px;
+  .benefites-services__item:not(:first-child) {
+    margin-top: 70px;
   }
-}
-.benefites-services__icon {
-  display: block;
-  fill: #1C74E9;
-  background-color: #FFFFFF;
-  border: solid 1px #1C74E9;
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: -50px;
 }
 .benefites-services__title {
   font-family: "Raleway", sans-serif;
@@ -2507,7 +2492,7 @@ img {
   font-weight: 500;
   line-height: 1.4;
   text-align: center;
-  width: 220px;
+  width: 300px;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -2516,7 +2501,6 @@ img {
   .benefites-services__title {
     font-size: 20px;
     line-height: 1.4;
-    width: 260px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -2548,4 +2532,49 @@ img {
     font-size: 18px;
     line-height: 1.5;
   }
+}
+
+.services__circul-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: solid 2px #1C74E9;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+}
+
+.services__circul-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: solid 2px #1C74E9;
+  border-radius: 50%;
+  color: #1C74E9;
+}
+
+.services____icon {
+  display: block;
+  fill: currentColor;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
