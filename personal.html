@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Inter:wght@300;400;500;900&family=Roboto+Condensed:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<!--Header-->
+<header class="header">
+    <div class="header__flex container">
+        <div class="header__thumb">
+            <a class="header__link link" href="./index.html">
+                <svg class="header__logo" width="39" height="41">
+                    <use href="./images/icons.svg#icon-main-logo"></use>
+                </svg>
+            </a>
+            <button class="header__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header__icon" width="36" height="36" aria-label="Перемикач мобільного меню">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="site-nav__list list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Головна</a></li>
+            <!-- <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Послуги</a></li>
+            <li class="site-nav__item"><a href="./complex.html" class="site-nav__link link current">Бухгалтерія під ключ</a></li>
+            <li class="site-nav__item"><a href="./personal.html" class="site-nav__link link">Управлінський облік для власника бізнесу</a></li> -->
+            <li class="site-nav__item"><a href="./management.html" class="site-nav__link link">Кадровий облік</a></li>
+            <li class="site-nav__item"><a href="./about.html" class="site-nav__link link">Про нас</a></li>
+            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link current">Контакти</a></li>
+        </ul>
+        <a class="header__call-me link" href="tel:+380972747200">зателефонувати</a>
+    </div>
+</header>
+<main>
+<!--Hero-->
+    <section class="hero-services section">
+        <div class="container">
+        <h1 class="hero-services__title"><span class="current">Кадровий облік та нарахування заробітної плати</span> – Ваше рішення для ефективного управління персоналом</h1>
+        <p class="hero-services__discription">Заповни форму та отримай безкоштовний міні-аудит!</p>
+        <a class="btn-contact__link link" href="#contact-us-2">замовити послугу<svg class="btn-contact__icon" width="26px" height="20px"><use href="./images/icons.svg#icon-arrow-right"></use></svg></a>
+        <ul class="hero-services__list list">
+            <li class="hero-services__item-1">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-1_ulg.webp 1x, ./images/general/hero/gen-hero-1_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-1_ulg.jpg 1x, ./images/general/hero/gen-hero-1_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-1_lg.webp 1x, ./images/general/hero/gen-hero-1_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-1_lg.jpg 1x, ./images/general/hero/gen-hero-1_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-1_md.webp 1x, ./images/general/hero/gen-hero-1_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-1_md.jpg 1x, ./images/general/hero/gen-hero-1_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-1_sm.webp 1x, ./images/general/hero/gen-hero-1_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-1_sm.jpg 1x, ./images/general/hero/gen-hero-1_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--rectangle"
+                     src="./images/general/hero/gen-hero-1_ulg.jpg"
+                     alt="керівник говорить по телефону"
+                     width="400" 
+                     height="500"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-2">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-2_ulg.webp 1x, ./images/general/hero/gen-hero-2_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-2_ulg.jpg 1x, ./images/general/hero/gen-hero-2_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-2_lg.webp 1x, ./images/general/hero/gen-hero-2_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-2_lg.jpg 1x, ./images/general/hero/gen-hero-2_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-2_md.webp 1x, ./images/general/hero/gen-hero-2_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-2_md.jpg 1x, ./images/general/hero/gen-hero-2_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-2_sm.webp 1x, ./images/general/hero/gen-hero-2_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-2_sm.jpg 1x, ./images/general/hero/gen-hero-2_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--quarter"
+                     src="./images/general/hero/gen-hero-2_ulg.jpg"
+                     alt="персонал спілкується із клієнтом"
+                     width="400" 
+                     height="400"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-3">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-3_ulg.webp 1x, ./images/general/hero/gen-hero-3_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-3_ulg.jpg 1x, ./images/general/hero/gen-hero-3_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-3_lg.webp 1x, ./images/general/hero/gen-hero-3_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-3_lg.jpg 1x, ./images/general/hero/gen-hero-3_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-3_md.webp 1x, ./images/general/hero/gen-hero-3_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-3_md.jpg 1x, ./images/general/hero/gen-hero-3_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-3_sm.webp 1x, ./images/general/hero/gen-hero-3_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-3_sm.jpg 1x, ./images/general/hero/gen-hero-3_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--quarter"
+                     src="./images/general/hero/gen-hero-3_ulg.jpg"
+                     alt="керівник проводить нараду"
+                     width="400" 
+                     height="400"
+                     loading="lazy">
+                 </picture>
+             </li>
+             <li class="hero-services__item-4">
+                 <picture>
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-4_ulg.webp 1x, ./images/general/hero/gen-hero-4_ulg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1920px)"
+                     srcset="./images/general/hero/gen-hero-4_ulg.jpg 1x, ./images/general/hero/gen-hero-4_ulg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-4_lg.webp 1x, ./images/general/hero/gen-hero-4_lg@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 1366px)"
+                     srcset="./images/general/hero/gen-hero-4_lg.jpg 1x, ./images/general/hero/gen-hero-4_lg@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-4_md.webp 1x, ./images/general/hero/gen-hero-4_md@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(min-width: 744px)"
+                     srcset="./images/general/hero/gen-hero-4_md.jpg 1x, ./images/general/hero/gen-hero-4_md@2x.jpg 2x"
+                     type="image/jpg">
+ 
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-4_sm.webp 1x, ./images/general/hero/gen-hero-4_sm@2x.webp 2x"
+                     type="image/webp">
+                     <source media="(max-width: 743px)"
+                     srcset="./images/general/hero/gen-hero-4_sm.jpg 1x, ./images/general/hero/gen-hero-4_sm@2x.jpg 2x"
+                     type="image/jpg">
+                     
+                     <img class="hero-services__img--rectangle"
+                     src="./images/general/hero/gen-hero-4_ulg.jpg"
+                     alt="керівник працює за комп'ютером"
+                     width="400" 
+                     height="500"
+                     loading="lazy">
+                 </picture>
+             </li>
+        </ul>
+        </div>
+    </section>
+<!--Benefites-->
+    <section class="benefites-services">
+        <div class="container">
+            <h2 class="benefites-services__heading"><span class="current">Основні переваги</span> роботи з нами:</h2>
+            <ul class="benefites-services__list list">
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                    <div class="services__circul-2">
+                        <svg class="services__icon" width="50" height="50">
+                            <use href="./images/icons.svg#icon-service"></use>
+                        </svg>
+                    </div>
+                    </div>
+                    <h4 class="benefites-services__title">Точність та своєчасність</h4>
+                    <p class="benefites-services__discription">Гарантуємо точне та своєчасне нарахування заробітної плати, внески до соціальних фондів та податкові відрахування.</p>
+                </li>
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#icon-economic-crisis"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Відповідність законодавству</h4>
+                    <p class="benefites-services__discription">Слідкуємо за останніми змінами у трудовому та податковому законодавстві, гарантуючи повну відповідність кадрового обліку вашої компанії.</p>
+                </li>
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#icon-protection"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Ефективне управління персоналом</h4>
+                    <p class="benefites-services__discription">Ведемо повний супровід управління персоналом, включаючи відпустки, лікарняні, відрядження</p>
+                </li>
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#icon-law"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Зниження адміністративного тягаря</h4>
+                    <p class="benefites-services__discription">Наші послуги дозволяють вам мінімізувати адміністративні зусилля та витрати, пов'язані з кадровим обліком.</p>
+                </li>
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#private-address"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Конфіденційність та безпека даних</h4>
+                    <p class="benefites-services__discription">Забезпечуємо високий рівень конфіденційності та безпеки всіх кадрових даних.</p>
+                </li>
+                <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#icon-organization"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Індивідуальний підхід</h4>
+                    <p class="benefites-services__discription">Розробляємо рішення, які враховують унікальні потреби вашого бізнесу.</p>
+                </li>
+                <!-- <li class="benefites-services__item">
+                    <div class="services__circul-1">
+                        <div class="services__circul-2">
+                            <svg class="services__icon" width="50" height="50">
+                                <use href="./images/icons.svg#icon-partner"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="benefites-services__title">Довгострокове партнерство</h4>
+                    <p class="benefites-services__discription">Ми прагнемо до побудови тривалих відносин з нашими клієнтами, надаючи неперервну підтримку і допомогу.</p>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+<!-- Include -->
+    <section class="include-services section">
+        <div class="container">
+            <h2 class="include-services__heading">Наші послуги <span class="current">включають</span></h2>
+            <ul class="include-services_list list">
+                <li class="include-label__item">
+                    <div class="include-label__thumb">
+                        <span class="include-label__numb">01</span>
+                    </div>
+                    <p class="include-label__value">Нарахування заробітної плати та відрахувань</p>
+                </li>
+                <li class="include-label__item">
+                    <div class="include-label__thumb">
+                        <span class="include-label__numb">02</span>
+                    </div>
+                    <p class="include-label__value">Облік відпусток, лікарняних та інших соціальних виплат чи премій</p>
+                </li>
+                <li class="include-label__item">
+                    <div class="include-label__thumb">
+                        <span class="include-label__numb">03</span>
+                    </div>
+                    <p class="include-label__value">Податкові звіти з нарахування заробітної плати</p>
+                </li>
+                <li class="include-label__item">
+                    <div class="include-label__thumb">
+                        <span class="include-label__numb">04</span>
+                    </div>
+                    <p class="include-label__value">Консультації з питань трудового законодавства</p>
+                </li>
+                <li class="include-label__item">
+                    <div class="include-label__thumb">
+                        <span class="include-label__numb">05</span>
+                    </div>
+                    <p class="include-label__value">Підготовка документації з кадрового обліку</p>
+                </li>
+            </ul>
+            <p class="include-services__description">З послугою "кадровий облік та нарахування заробітної плати" ви отримуєте надійного партнера, який допоможе вам оптимізувати управління вашими трудовими ресурсами.</p>
+        </div>
+    </section>
+<!--Reviews-->
+    <section class="reviews section">
+        <div class="container">
+            <h2 class="reviews__heading"><span class="current">Відгуки</span> наших клієнтів</h2>
+            <ul class="reviews__list list">
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!--Contact us-->
+    <section id="contact-us-2" class="contact-us section">
+        <div class="contact-us__flex container">
+            <div class="contact-us__inner">
+                <h2 class="contact-us__heading">Не знаєте з чого почати? Наші експерти <span class="current">завжди готові Вам допомогти!</span></h2>
+                <p class="contact-us__text">Залишайте заявку і наші фахівці допоможуть вирішити питання у Вашій ситуації</p>
+                <form class="contact-us__form" action="">
+                    <!-- <label  for=""><input type="text"></label>
+                    <label  for=""><input type="text"></label>
+                    <button class="contact-us__button" type="submit"></button> -->
+                    <input class="contact-us__input" type="text" name="subscripe" placeholder="Ваше імʼя">
+                    <input class="contact-us__input" type="text" name="subscripe" placeholder="Номер телефону">
+                    <button class="contact-us__btn" type="submit">Залишити заявку
+                    <a class="cu__radius">
+                        <svg class="contact-us__icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                    </button>
+                </form>
+            </div>
+            <div class="contack-us__thumb">
+                <picture>
+                    <source media="(min-width: 1920px)"
+                    srcset="./images/general\contactus/gen-contactus-1_ulg.webp 1x, ./images/general\contactus/gen-contactus-1_ulg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 1920px)"
+                    srcset="./images/general\contactus/gen-contactus-1_ulg.jpg 1x, ./images/general\contactus/gen-contactus-1_ulg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(min-width: 1440px)"
+                    srcset="./images/general\contactus/gen-contactus-1_lg.webp 1x, ./images/general\contactus/gen-contactus-1_lg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 1440px)"
+                    srcset="./images/general\contactus/gen-contactus-1_lg.jpg 1x, ./images/general\contactus/gen-contactus-1_lg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(min-width: 744px)"
+                    srcset="./images/general\contactus/gen-contactus-1_lg.webp 1x, ./images/general\contactus/gen-contactus-1_lg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 744px)"
+                    srcset="./images/general\contactus/gen-contactus-1_lg.jpg 1x, ./images/general\contactus/gen-contactus-1_lg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(max-width: 743px)"
+                    srcset="./images/general\contactus/gen-contactus-1_sm.webp 1x, ./images/general\contactus/gen-contactus-1_sm@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(max-width: 743px)"
+                    srcset="./images/general\contactus/gen-contactus-1_sm.jpg 1x, ./images/general\contactus/gen-contactus-1_sm@2x.jpg 2x"
+                    type="image/jpg">
+                    
+                    <img class="contact-us__img-1"
+                    src="./images\general\contactus\gen-contactus-1_lg.jpg"
+                    alt="керівник говорить по телефону"
+                    width="420" 
+                    height="264"
+                    loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(min-width: 1920px)"
+                    srcset="./images/general/services/gen-contactus-2_ulg.webp 1x, ./images/general\contactus/gen-contactus-2_ulg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 1920px)"
+                    srcset="./images/general\contactus/gen-contactus-2_ulg.jpg 1x, ./images/general\contactus/gen-contactus-2_ulg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(min-width: 1440px)"
+                    srcset="./images/general\contactus/gen-contactus-2_lg.webp 1x, ./images/general\contactus/gen-contactus-2_lg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 1440px)"
+                    srcset="./images/general\contactus/gen-contactus-2_lg.jpg 1x, ./images/general\contactus/gen-contactus-2_lg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(min-width: 744px)"
+                    srcset="./images/general\contactus/gen-contactus-2_lg.webp 1x, ./images/general/services/gen-contactus-2_lg@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(min-width: 744px)"
+                    srcset="./images/general\contactus/gen-contactus-2_lg.jpg 1x, ./images/general\contactus/gen-contactus-2_lg@2x.jpg 2x"
+                    type="image/jpg">
+    
+                    <source media="(max-width: 743px)"
+                    srcset="./images/general\contactus/gen-contactus-2_sm.webp 1x, ./images/general\contactus/gen-contactus-2_sm@2x.webp 2x"
+                    type="image/webp">
+                    <source media="(max-width: 743px)"
+                    srcset="./images/general\contactus/gen-contactus-2_sm.jpg 1x, ./images/general\contactus/gen-contactus-2_sm@2x.jpg 2x"
+                    type="image/jpg">
+                    
+                    <img class="contact-us__img-2"
+                    src="./images/general/contactus/gen-contactus-2_lg.jpg"
+                    alt="керівник проводить нараду"
+                    width="421" 
+                    height="265"
+                    loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </section>
+</main>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer__wrap">
+        <a class="footer__link link" href="./index.html">
+            <svg class="footer__logo" width="89" height="94">
+                <use href="./images/icons.svg#icon-main-logo"></use>
+            </svg>
+        </a>
+        <div class="footer__inner">
+            <ul class="footer-site-nav__list list">
+                <li class="footer-site-nav__item"><a class="footer-site-nav__link link active" href="./index.html">Головна</a></li>
+                <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./index.html">Послуги</a></li>
+                <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./about.html">Про нас</a></li>
+                <li class="footer-site-nav__item"><a class="footer-site-nav__link link" href="./contacts.html">Контакти</a></li>
+            </ul>
+            <ul class="socials-footer__list list">
+                <li class="socials-footer__item">
+                    <a class="socials-footer__link link" href="">
+                        <svg class="socials-footer__icon" width="30" height="30">
+                            <use href="./images/icons.svg#icon-viber"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-footer__item">
+                    <a class="socials-footer__link link" href="">
+                        <svg class="socials-footer__icon" width="30" height="30">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-footer__item">
+                    <a class="socials-footer__link link" href="">
+                        <svg class="socials-footer__icon" width="30" height="30">
+                            <use href="./images/icons.svg#icon-whats-app"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-footer__item">
+                    <a class="socials-footer__link link" href="">
+                        <svg class="socials-footer__icon" width="30" height="30">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-footer__item">
+                    <a class="socials-footer__link link" href="">
+                        <svg class="socials-footer__icon" width="30" height="30">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a class="footer_policy link" href="">&#169; Усі права захищені 2024</a>
+</footer>
+<!--Mobile menu-->
+<div class="mobile-menu__nav js-menu-container" id="mobile-menu">
+    <div class="mobile-menu__thumb">
+        <a class="mobile-menu__link" href="./index.html">
+            <svg class="mobile-menu__logo" width="39" height="41">
+                <use href="./images/icons.svg#icon-main-logo"></use>
+            </svg>
+        </a>
+        <!-- <a class="mobile-menu__link link" href="./index.html">
+            <svg class="mobile-menu__logo" widht="39px" height="41px">
+                <use href="./images/icons.svg#icon-main_logo"></use>
+            </svg>
+        </a> -->
+        <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="26" height="26">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+    <ul class="mob-nav__list list">
+        <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link link current">Головна</a></li>
+        <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link link">Послуги</a></li>
+        <!-- <li class="mob-nav__item"><a href="./complex.html" class="mob-nav__link link">Бухгалтерія під ключ</a></li>
+        <li class="mob-nav__item"><a href="./personal.html" class="mob-nav__link link">Управлінський облік для власника бізнесу</a></li>
+        <li class="mob-nav__item"><a href="./management.html" class="mob-nav__link link">Кадровий облік</a></li> -->
+        <li class="mob-nav__item"><a href="./about.html" class="mob-nav__link link">Про нас</a></li>
+        <li class="mob-nav__item"><a href="./contacts.html" class="mob-nav__link link">Контакти</a></li>
+    </ul>
+    <a class="mob-nav__call-me link" href="tel:+380972747200">зателефонувати</a>
+    <!-- <ul class="mobile-socials__list list">
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Telegram</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Viber</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Whats App</a></li>
+    </ul> -->
+</div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+</body>
+</html>

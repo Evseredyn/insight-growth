@@ -5,6 +5,7 @@ html {
  
  body {
    font-family: $main-font;
+   width: 100vw;
  }
  
  .container {
@@ -81,6 +82,11 @@ html {
 
 .btn-contact {
    &__link {
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      padding: 8px 10px 8px 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -94,24 +100,19 @@ html {
       background-color: $color-akcent;
       border: solid 2px $color-akcent;
       border-radius: 40px;
-      max-width: 260px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 60px;
-      padding: 8px 10px 8px 25px;
       transition: color $duration $timing-function, background-color $duration $timing-function;
       cursor: pointer;
       
       @include mq(tablet) {
-         font-size: 18px;
-         line-height: 1,1;
          max-width: 300px;
          margin-bottom: 0px;
          padding: 8px 10px 8px 20px;
+         font-size: 18px;
+         line-height: 1,1;
       }
 
       @include mq(desktop) {
-         max-width: 300px;
+         // max-width: 300px;
          padding: 8px 10px 8px 25px;
       }
    }
@@ -148,6 +149,11 @@ html {
       align-items: center;
       justify-content: space-between;
       gap:20px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      padding: 8px 10px 8px 25px;
       font-family: $main-font;
       font-size: 16px;
       font-weight: 500;
@@ -157,11 +163,6 @@ html {
       background-color: $color-akcent;
       border: solid 2px $color-akcent;
       border-radius: 40px;
-      max-width: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 60px;
-      padding: 8px 10px 8px 25px;
       transition: color $duration $timing-function, background-color $duration $timing-function;
 
       @include mq(tablet) {
