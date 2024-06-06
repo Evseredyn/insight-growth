@@ -3,27 +3,28 @@
     border-radius: 30px;
 
     &__heading {
-        font-family: $main-font;
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 1.4;
         text-align: center;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 30px;
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.4;
         
         @include mq(tablet) {
-            width: 90%;
+            width: 560px;
             font-size: 40px;
             line-height: 1.25;
         }
     
         @include mq(desktop) {
-            width: 1060px;
+            width: 660px;
             font-size: 50px;
         }
     
         @include mq(monitor) {
+            width: 760px;
             font-size: 60px;
             line-height: 1.1;
         }

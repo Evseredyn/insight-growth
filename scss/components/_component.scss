@@ -100,7 +100,8 @@ html {
       margin-bottom: 60px;
       padding: 8px 10px 8px 25px;
       transition: color $duration $timing-function, background-color $duration $timing-function;
-
+      cursor: pointer;
+      
       @include mq(tablet) {
          font-size: 18px;
          line-height: 1,1;
