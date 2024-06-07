@@ -41,12 +41,24 @@
     }
 
     &__list {
+        
+        @include mq(tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    
+        @include mq(desktop) {
+        }
+    
+        @include mq(monitor) {
+        }
     }
 
     &__item {
         width: 100%;
-        max-height: 200px;
-        padding: 30px;
+        max-height: 220px;
+        padding: 0px 30px 30px;
         text-align: center;
         background-color: $color-bg-item;
         border-radius: 20px;
@@ -56,7 +68,7 @@
         }
     
         @include mq(desktop) {
-        width: 380зч;
+        width: 380px;
         max-height: 250px;
         }
     
@@ -65,7 +77,7 @@
         }
     }
 
-    &__item:not(:last-child) {
+    &__item:not(:first-child) {
         @include mq(mobile-only) {
             margin-top: 10px;
         }
@@ -73,45 +85,108 @@
 }
 
 .address {
-}
-.address__list {
-}
-.address__item {
-}
-.address__label {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.address__link {
-    color: $color-first-title;
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__label {
+        margin: 0;
+        margin-bottom: 15px;
+        padding-top: 30px;
+        font-family: $main-font;
+        color: $color-first-title;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.1;
+    
+        @include mq(desktop) {
+            font-size: 24px;
+        }
+    
+        @include mq(monitor) {
+            font-size: 30px;
+        }
+    }
+    
+    // &__label:not(:first-child) {
+    //     @include mq(mobile-only) {
+    //         margin-top: 30px;
+    //     }
+    // }
+    
+    &__link {
+        margin: 0;
+        margin-bottom: 15px;
+        padding-top: 30px;
+        font-family: $main-font;
+        color: $color-akcent;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.1;
+    
+        @include mq(desktop) {
+            font-size: 24px;
+        }
+    
+        @include mq(monitor) {
+            font-size: 30px;
+        }
+    }
 }
 .contacts-socials__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-top: 5px;
        
     @include mq(tablet) {
-        justify-content: flex-end;
-        margin-top: 50px;
+        padding-top: 20px;
     }
 
     @include mq(desktop) {
-        align-content: center;
-        margin-top: 0;
-        margin-left: 50px;
+
     }
     
     @include mq(monitor) {
-        margin-left: 300px;
+
     }
 }
 
 .contacts-socials__item {
 }
+
 .contacts-socials__link {
+    color: $color-akcent;
 }
+
 .contacts-socials__icon {
+    fill: currentColor;
 }
+
 .address-maps {
+    @include mq(desktop) {
+        padding-top: 15px;
+    }    
+}
+
+.address-maps__link {
+    margin: 0;
+    font-family: $main-font;
+    color: $color-akcent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    @include mq(tablet) {
+        padding-top: 0px;
+    }
+}
+
+.grey {
+        color: $color-first-title;
 }
