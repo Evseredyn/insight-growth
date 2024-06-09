@@ -2,7 +2,6 @@
     &__flex {
         @include mq(desktop) {    
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
     }
@@ -47,8 +46,6 @@
         margin: 0;
         cursor: pointer;
 
-        // margin-left: 200px;
-
         @include mq(desktop) {    
             display: none;
         }
@@ -68,7 +65,7 @@
         @include mq(desktop) {
             display: block;
             font-family: $secondary-font;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
             line-height: 1.25;
             text-transform: uppercase;
@@ -82,35 +79,89 @@
     }
 }
 
-.site-nav {   
-    &__item {
-
-    }
-           
-    &__item:not(:last-child) {
-        margin-right: 60px;
-    }
+.site-nav {
+    margin-left: auto;
 
     &__list {
         display: none;
         
         @include mq(desktop) {
             display: flex;
-            align-items: center;
-            margin-left: auto;
+            // height: 100px;
+            // align-items: center;
         }
-    } 
+    }
 
+    &__item {
+        position: relative;
+        // height: 100%;
+    }
+           
+    &__item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    &__link {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: $info-font;
+        font-size: 20px;
+        font-weight: 300;
+        color: $color-black;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $color-akcent;
+    }
+}
+
+.site-subnav {
+
+    &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 460px;
+    padding: 20px;
+    max-height: 0;
+    background-color: $color-bg-item;
+    border-radius: 10px;
+    // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    transition: max-height $duration $timing-function;
+    }
+
+    &__item {
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+        // @include mq(desktop) {
+        //     margin-bottom: 20px;
+        // }
+    }
+    
     &__link {
         font-family: $info-font;
         font-size: 20px;
         font-weight: 300;
         color: $color-black;
-        // margin-left: 60px;
-
+    }
+ 
+    &__link:hover,
+    &__link:focus {
+        color: $color-akcent;
     }
 }
-
+    
+nav li:hover > .site-subnav__list,
+.site-subnav__list:hover {
+    display: block;
+    max-height: 150px;
+}
 
 // .mobile-menu__call-me:hover,
 // .mobile-menu__call-me:focus {

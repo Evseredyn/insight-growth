@@ -3,8 +3,6 @@
     padding: 50px 40px;
     margin-left: auto;
     margin-right: auto;
-    // padding-top: 50px;
-    // padding-bottom: 40px;
 
     @include mq(tablet) {
         width: 744px;
@@ -13,12 +11,13 @@
 
     @include mq(desktop) {
         width: 1440px;
-        padding: 60px 120px;
+        // padding: 60px 120px;
+        padding: 60px 120px 60px;
     }
 
     @include mq(monitor) {
         min-width: 1920px;
-        //width: 100%;
+        // padding: 70px 100px 80px;
         padding: 70px 100px 80px;
     }
 }
@@ -53,70 +52,140 @@
     }
 }
 
-.footer-site-nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    @include mq(tablet) {
+.footer-nav {
+        &__list {
         display: flex;
-        flex-direction: row;
-        gap: 30px;
-        padding: 0;
-    }
-
-    @include mq(desktop) {
-        align-content: flex-start;
-    }
-}
-
-.footer-site-nav__item {
-
-}
-
-.footer-site-nav__item:not(:first-child) {
-    margin-top: 20px;
-    @include mq(tablet) {
-        margin-top: 0px;
-    }
-
-    @include mq(desktop) {
-        margin-left: 30px;
-    }
-
-    @include mq(monitor) {
-        margin-left: 60px;
-    }
-}
-
-.footer-site-nav__link .active {
-    font-weight: 500;
-}
-
-.footer-site-nav__link {
-    font-family: $main-font;
-    color: $color-white;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
     
-    // @include mq(tablet) {
-    //     font-size: 40px;
-    //     line-height: 1.35;
-    // }
-
-    @include mq(desktop) {
-        font-size: 20px;
+        @include mq(tablet) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding: 0;
+        }
+    
+        @include mq(desktop) {
+            align-content: flex-start;
+        }
     }
 
-    // @include mq(monitor) {
-    //     font-size: 60px;
-    //     line-height: 1.23;
-    // }
+    &__item {
 
+        @include mq(tablet) {
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 20px;
+        @include mq(tablet) {
+            margin-top: 0px;
+        }
+    
+        @include mq(desktop) {
+            margin-left: 30px;
+        }
+    
+        @include mq(monitor) {
+            margin-left: 60px;
+        }
+    }
+
+    &__link {
+        font-family: $main-font;
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+        
+        // @include mq(tablet) {
+        //     font-size: 40px;
+        //     line-height: 1.35;
+        // }
+    
+        @include mq(desktop) {
+            font-size: 20px;
+        }
+    
+        // @include mq(monitor) {
+        //     font-size: 60px;
+        //     line-height: 1.23;
+        // }
+    
+    }
+    
+    &__link.active {
+        font-weight: 500;
+    }
+}
+
+.footer-subnav {
+    &__list {
+        display: none;
+        padding: 20px;
+        max-height: 0;
+        background-color: rgba(28, 116, 233,0.8);
+        border: solid 2px $color-white;
+        border-radius: 10px;
+        // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+        transition: max-height $duration $timing-function;
+
+        @include mq(tablet) {
+            position: absolute;
+            top: 90%;
+            left: 0;
+            width: 300px;
+        }
+
+        @include mq(tablet) {
+            width: 500px;
+        }
+    }
+
+    &__item {
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+
+        @include mq(desktop) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__link {
+        font-family: $info-font;
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-white;
+
+        @include mq(desktop) {
+            font-size: 20px;
+        }
+    }
+ 
+    &__link:hover,
+    &__link:focus {
+        font-size: 21px;
+    }
+
+}
+    
+nav li:hover > .footer-subnav__list,
+.footer-subnav__list:hover {
+    display: block;
+    max-height: 450px;
+        
+    @include mq(tablet) {
+        max-height: 150px;
+    }
 }
 
 .socials-footer__list {
@@ -170,14 +239,14 @@
 
 .footer_policy {
     display: block;
+    margin: 0 auto;
+    margin-top: 40px;
     font-family: $info-font;
-    color: $color-white;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.43;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 40px;
+    color: $color-white;
     
     // @include mq(tablet) {
     //     font-size: 40px;
@@ -185,6 +254,7 @@
     // }
 
     @include mq(desktop) {
+        margin-top: 140px;
         font-size: 20px;
     }
 

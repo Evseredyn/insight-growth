@@ -26,15 +26,21 @@
                 </svg>
             </button>
         </div>
-        <ul class="site-nav__list list">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Головна</a></li>
-            <!-- <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Послуги</a></li>
-            <li class="site-nav__item"><a href="./complex.html" class="site-nav__link link current">Бухгалтерія під ключ</a></li>
-            <li class="site-nav__item"><a href="./personal.html" class="site-nav__link link">Управлінський облік для власника бізнесу</a></li> -->
-            <li class="site-nav__item"><a href="./management.html" class="site-nav__link link">Кадровий облік</a></li>
-            <li class="site-nav__item"><a href="./about.html" class="site-nav__link link">Про нас</a></li>
-            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link current">Контакти</a></li>
-        </ul>
+        <nav class="site-nav">
+            <ul class="site-nav__list list">
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Головна</a></li>
+                <li class="site-nav__item">
+                    <a href="javaScript:void(0);" class="site-nav__link link">Послуги</a>
+                    <ul class="site-subnav__list list">
+                        <li class="site-subnav__item"><a href="./complex.html" class="site-subnav__link link">Бухгалтерія під ключ</a></li>
+                        <li class="site-subnav__item current"><a href="./personal.html" class="site-subnav__link link">Управлінський облік для власника бізнесу</a></li>
+                        <li class="site-subnav__item"><a href="./management.html" class="site-subnav__link link">Кадровий облік</a></li>
+                    </ul>
+                </li>
+                <li class="site-nav__item"><a href="./about.html" class="site-nav__link link">Про нас</a></li>
+                <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link">Контакти</a></li>
+            </ul>
+        </nav>
         <a class="header__call-me link" href="tel:+380972747200">зателефонувати</a>
     </div>
 </header>
@@ -42,7 +48,7 @@
 <!--Hero-->
     <section class="hero-services section">
         <div class="container">
-        <h1 class="hero-services__title"><span class="current">Управлінський облік для власника бізнесу</span> – Ваш ключ до прийняття  стратегічних рішень</h1>
+        <h1 class="hero-services__title"><span class="current">Кадровий облік та нарахування заробітної плати</span> – Ваше рішення для ефективного управління персоналом</h1>
         <p class="hero-services__discription">Заповни форму та отримай безкоштовний міні-аудит!</p>
         <a class="btn-contact__link link" href="#contact-us-2">замовити послугу<svg class="btn-contact__icon" width="26px" height="20px"><use href="./images/icons.svg#icon-arrow-right"></use></svg></a>
         <ul class="hero-services__list list">
@@ -214,8 +220,8 @@
                         </svg>
                     </div>
                     </div>
-                    <h4 class="benefites-services__title">Ключові фінансові показники</h4>
-                    <p class="benefites-services__discription">Детальний аналіз ключових показників ефективності допомагає вам зрозуміти фінансове становище вашого бізнесу.</p>
+                    <h4 class="benefites-services__title">Точність та своєчасність</h4>
+                    <p class="benefites-services__discription">Гарантуємо точне та своєчасне нарахування заробітної плати, внески до соціальних фондів та податкові відрахування.</p>
                 </li>
                 <li class="benefites-services__item">
                     <div class="services__circul-1">
@@ -225,8 +231,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Підтримка рішень</h4>
-                    <p class="benefites-services__discription">Звіти та аналітика забезпечують необхідну інформацію для прийняття обґрунтованих управлінських рішень.</p>
+                    <h4 class="benefites-services__title">Відповідність законодавству</h4>
+                    <p class="benefites-services__discription">Слідкуємо за останніми змінами у трудовому та податковому законодавстві, гарантуючи повну відповідність кадрового обліку вашої компанії.</p>
                 </li>
                 <li class="benefites-services__item">
                     <div class="services__circul-1">
@@ -236,8 +242,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Оптимізація витрат</h4>
-                    <p class="benefites-services__discription">Виявлення потенційних місць для зниження витрат, підвищуючи таким чином вашу прибутковість.</p>
+                    <h4 class="benefites-services__title">Ефективне управління персоналом</h4>
+                    <p class="benefites-services__discription">Ведемо повний супровід управління персоналом, включаючи відпустки, лікарняні, відрядження</p>
                 </li>
                 <li class="benefites-services__item">
                     <div class="services__circul-1">
@@ -247,8 +253,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Планування та бюджетування</h4>
-                    <p class="benefites-services__discription">Розробка ефективних фінансових планів та бюджетів, що відповідають вашим бізнес-цілям.</p>
+                    <h4 class="benefites-services__title">Зниження адміністративного тягаря</h4>
+                    <p class="benefites-services__discription">Наші послуги дозволяють вам мінімізувати адміністративні зусилля та витрати, пов'язані з кадровим обліком.</p>
                 </li>
                 <li class="benefites-services__item">
                     <div class="services__circul-1">
@@ -258,8 +264,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Гнучкість та адаптивність</h4>
-                    <p class="benefites-services__discription">Інформація, яка допомагає швидко адаптуватися до змін у ринкових умовах.</p>
+                    <h4 class="benefites-services__title">Конфіденційність та безпека даних</h4>
+                    <p class="benefites-services__discription">Забезпечуємо високий рівень конфіденційності та безпеки всіх кадрових даних.</p>
                 </li>
                 <li class="benefites-services__item">
                     <div class="services__circul-1">
@@ -269,10 +275,10 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Прозорість у звістності</h4>
-                    <p class="benefites-services__discription">Забезпечення ясною та зрозумілою фінансовою звітністю.</p>
+                    <h4 class="benefites-services__title">Індивідуальний підхід</h4>
+                    <p class="benefites-services__discription">Розробляємо рішення, які враховують унікальні потреби вашого бізнесу.</p>
                 </li>
-                <li class="benefites-services__item">
+                <!-- <li class="benefites-services__item">
                     <div class="services__circul-1">
                         <div class="services__circul-2">
                             <svg class="services__icon" width="50" height="50">
@@ -280,9 +286,9 @@
                             </svg>
                         </div>
                     </div>
-                    <h4 class="benefites-services__title">Індивідуальний підхід</h4>
-                    <p class="benefites-services__discription">Кожен бізнес - це унікальна структура та індивідуальні показники. Ми підлаштовуємось під специфіку Вашого бізнесу.</p>
-                </li>
+                    <h4 class="benefites-services__title">Довгострокове партнерство</h4>
+                    <p class="benefites-services__discription">Ми прагнемо до побудови тривалих відносин з нашими клієнтами, надаючи неперервну підтримку і допомогу.</p>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -295,34 +301,34 @@
                     <div class="include-label__thumb">
                         <span class="include-label__numb">01</span>
                     </div>
-                    <p class="include-label__value">Розробка та аналіз управлінських звітів CashFlow, BalanceSheet та P&L</p>
+                    <p class="include-label__value">Нарахування заробітної плати та відрахувань</p>
                 </li>
                 <li class="include-label__item">
                     <div class="include-label__thumb">
                         <span class="include-label__numb">02</span>
                     </div>
-                    <p class="include-label__value">Фінансове планування та оптимальну модель управління</p>
+                    <p class="include-label__value">Облік відпусток, лікарняних та інших соціальних виплат чи премій</p>
                 </li>
                 <li class="include-label__item">
                     <div class="include-label__thumb">
                         <span class="include-label__numb">03</span>
                     </div>
-                    <p class="include-label__value">Аналіз витрат і прибутковості бізнесу чи окремих стратегічних напрямків</p>
+                    <p class="include-label__value">Податкові звіти з нарахування заробітної плати</p>
                 </li>
                 <li class="include-label__item">
                     <div class="include-label__thumb">
                         <span class="include-label__numb">04</span>
                     </div>
-                    <p class="include-label__value">Підготовка фінансових показників для управлінських рішень</p>
+                    <p class="include-label__value">Консультації з питань трудового законодавства</p>
                 </li>
                 <li class="include-label__item">
                     <div class="include-label__thumb">
                         <span class="include-label__numb">05</span>
                     </div>
-                    <p class="include-label__value">Консультації з управлінського обліку та фінансового планування</p>
+                    <p class="include-label__value">Підготовка документації з кадрового обліку</p>
                 </li>
             </ul>
-            <p class="include-services__description">З послугою "управлінський облік для власника бізнесу" ви отримуєте стратегічний ресурс для розвитку вашого бізнесу.</p>
+            <p class="include-services__description">З послугою "кадровий облік та нарахування заробітної плати" ви отримуєте надійного партнера, який допоможе вам оптимізувати управління вашими трудовими ресурсами.</p>
         </div>
     </section>
 <!--Reviews-->
