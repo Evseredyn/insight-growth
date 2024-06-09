@@ -118,6 +118,10 @@
 
         }
     }
+
+    &__link.active {
+        font-weight: 500;
+    }
 }
 
 .mob-subnav {

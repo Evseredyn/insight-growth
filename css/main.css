@@ -758,6 +758,10 @@ nav li:hover > .site-subnav__list,
   font-weight: 300;
   text-align: center;
 }
+.mob-nav__link.active {
+  font-weight: 500;
+}
+
 .mob-subnav__list {
   display: none;
   padding: 10px 20px 10px;
