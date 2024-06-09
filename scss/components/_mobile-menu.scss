@@ -126,14 +126,18 @@
         display: none;
         padding: 10px 20px 10px;
         max-height: 0;
-        background-color: rgba(28, 116, 233,0.8);
-        border: solid 2px $color-white;
-        border-radius: 10px;
-        // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        // background-color: $color-menu-bg;
+        // border: solid 2px $color-menu-bg;
+        // border-radius: 10px;
+        // // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        // box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
         transition: max-height $duration $timing-function;
 
         @include mq(tablet) {
+            width: 300px;
         }
     }
 

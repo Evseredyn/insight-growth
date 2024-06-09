@@ -6,7 +6,7 @@
 
     @include mq(tablet) {
         width: 744px;
-        padding: 60px 15px 45px;
+        padding: 50px 15px 45px;
     }
 
     @include mq(desktop) {
@@ -28,9 +28,9 @@
     justify-content: space-between;
     align-items: center;
 
-
     @include mq(tablet) {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
@@ -78,8 +78,6 @@
 
         @include mq(tablet) {
             position: relative;
-            padding-top: 30px;
-            padding-bottom: 30px;
         }
     }
 
@@ -99,12 +97,14 @@
     }
 
     &__link {
+        margin: 0 auto;
+        // padding-top: 20px;
+        padding-bottom: 20px;
         font-family: $info-font;
         color: $color-white;
         font-size: 16px;
         font-weight: 300;
         text-align: center;
-        margin: 0 auto;
         
         // @include mq(tablet) {
         //     font-size: 40px;
@@ -130,8 +130,8 @@
 .footer-subnav {
     &__list {
         display: none;
-        margin-top: 20px;
-        padding: 10px 20px 10px;
+        padding: 5px 15px 5px;
+        width: 240px;
         max-height: 0;
         background-color: rgba(28, 116, 233,0.8);
         border: solid 2px $color-white;
@@ -142,9 +142,9 @@
 
         @include mq(tablet) {
             position: absolute;
-            top: 75%;
-            left: -250%;
-            width: 220px;
+            top: 70%;
+            left: -50%;
+            width: 230px;
             margin-top: 0;
         }
 
@@ -181,17 +181,16 @@
         }
     }
  
-    &__link:hover,
-    &__link:focus {
-        font-size: 21px;
-    }
-
+    // &__link:hover,
+    // &__link:focus {
+    //     font-size: 20px;
+    // }
 }
     
 nav li:hover > .footer-subnav__list,
 .footer-subnav__list:hover {
     display: block;
-    max-height: 250px;
+    max-height: 150px;
         
     @include mq(tablet) {
         max-height: 150px;
@@ -206,7 +205,7 @@ nav li:hover > .footer-subnav__list,
         
     @include mq(tablet) {
         justify-content: flex-end;
-        margin-top: 50px;
+        margin-top: 110px;
         }
     
         @include mq(desktop) {
