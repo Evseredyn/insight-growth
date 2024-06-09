@@ -23,9 +23,9 @@
     }
     
     &__thumb {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
         padding-top: 15px;
 
         @include mq(tablet) {    
@@ -84,9 +84,9 @@
 
 .mob-nav {   
     &__list {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         // gap: 60px;
         margin: 0 auto;
         margin-top: 120px;
@@ -97,6 +97,8 @@
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 40px;
     }
     
@@ -109,10 +111,8 @@
         color: $color-black;
         font-size: 20px;
         font-weight: 300;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
         text-align: center;
-        // width: 300px;
-        // margin: 0 auto;
     
         @include mq(tablet) {
 
@@ -120,11 +120,71 @@
     }
 }
 
+.mob-subnav {
+
+    &__list {
+        display: none;
+        padding: 10px 20px 10px;
+        max-height: 0;
+        background-color: rgba(28, 116, 233,0.8);
+        border: solid 2px $color-white;
+        border-radius: 10px;
+        // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+        transition: max-height $duration $timing-function;
+
+        @include mq(tablet) {
+        }
+    }
+
+    &__item {
+        margin-top: 20px;
+    }
+
+    // &__item:not(:last-child) {
+    //     margin-bottom: 20px;
+
+    //     @include mq(desktop) {
+    //         // margin-bottom: 20px;
+    //     }
+    // }
+    
+    &__link {
+        display: inline-block;
+        // margin-left: auto;
+        // margin-right: auto;
+        font-family: $info-font;
+        font-size: 20px;
+        font-weight: 300;
+        color: $color-black;
+
+        @include mq(desktop) {
+            font-size: 20px;
+        }
+    }
+ 
+    &__link:hover,
+    &__link:focus {
+        font-weight: 500;
+    }
+
+}
+    
+nav li:hover > .mob-subnav__list,
+.mob-subnav__list:hover {
+    display: block;
+    max-height: 250px;
+        
+    @include mq(tablet) {
+        max-height: 250px;
+    }
+}
+
 .mob-nav__call-me {
         display: block;
         text-align: center;
         // width: 155px;
-        height: 55px;
+        // height: 55px;
         font-family: $secondary-font;
         font-size: 20px;
         font-weight: 500;

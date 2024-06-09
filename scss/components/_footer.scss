@@ -73,6 +73,8 @@
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
 
         @include mq(tablet) {
             position: relative;
@@ -97,7 +99,7 @@
     }
 
     &__link {
-        font-family: $main-font;
+        font-family: $info-font;
         color: $color-white;
         font-size: 16px;
         font-weight: 300;
@@ -128,6 +130,7 @@
 .footer-subnav {
     &__list {
         display: none;
+        margin-top: 20px;
         padding: 10px 20px 10px;
         max-height: 0;
         background-color: rgba(28, 116, 233,0.8);
@@ -140,14 +143,15 @@
         @include mq(tablet) {
             position: absolute;
             top: 75%;
-            left: -400%;
-            width: 300px;
+            left: -250%;
+            width: 220px;
+            margin-top: 0;
         }
 
         @include mq(desktop) {
             top: 80%;
             left: 0;
-            width: 500px;
+            width: 400px;
             // padding: 20px;
         }
     }
@@ -159,14 +163,14 @@
         margin-bottom: 10px;
 
         @include mq(desktop) {
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
     }
     
     &__link {
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
         font-family: $info-font;
         font-size: 16px;
         font-weight: 300;
@@ -187,7 +191,7 @@
 nav li:hover > .footer-subnav__list,
 .footer-subnav__list:hover {
     display: block;
-    max-height: 450px;
+    max-height: 250px;
         
     @include mq(tablet) {
         max-height: 150px;

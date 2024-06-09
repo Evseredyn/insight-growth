@@ -606,7 +606,7 @@ img {
 
 .site-subnav__list {
   position: absolute;
-  top: 100%;
+  top: 90%;
   left: 0;
   display: none;
   width: 460px;
@@ -664,15 +664,6 @@ nav li:hover > .site-subnav__list,
           transform: translateX(0);
 }
 .mobile-menu__thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 15px;
 }
 @media screen and (min-width: 744px) {
@@ -732,6 +723,16 @@ nav li:hover > .site-subnav__list,
 }
 
 .mob-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   margin-top: 120px;
 }
@@ -741,6 +742,13 @@ nav li:hover > .site-subnav__list,
   }
 }
 .mob-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 40px;
 }
 .mob-nav__link {
@@ -748,13 +756,54 @@ nav li:hover > .site-subnav__list,
   color: #000000;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 40px;
   text-align: center;
 }
+.mob-subnav__list {
+  display: none;
+  padding: 10px 20px 10px;
+  max-height: 0;
+  background-color: rgba(28, 116, 233, 0.8);
+  border: solid 2px #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-subnav__item {
+  margin-top: 20px;
+}
+.mob-subnav__link {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+@media screen and (min-width: 1440px) {
+  .mob-subnav__link {
+    font-size: 20px;
+  }
+}
+.mob-subnav__link:hover, .mob-subnav__link:focus {
+  font-weight: 500;
+}
+
+nav li:hover > .mob-subnav__list,
+.mob-subnav__list:hover {
+  display: block;
+  max-height: 250px;
+}
+@media screen and (min-width: 744px) {
+  nav li:hover > .mob-subnav__list,
+  .mob-subnav__list:hover {
+    max-height: 250px;
+  }
+}
+
 .mob-nav__call-me {
   display: block;
   text-align: center;
-  height: 55px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -878,6 +927,15 @@ nav li:hover > .site-subnav__list,
         align-content: flex-start;
   }
 }
+.footer-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 @media screen and (min-width: 744px) {
   .footer-nav__item {
     position: relative;
@@ -904,7 +962,7 @@ nav li:hover > .site-subnav__list,
   }
 }
 .footer-nav__link {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 300;
@@ -922,6 +980,7 @@ nav li:hover > .site-subnav__list,
 
 .footer-subnav__list {
   display: none;
+  margin-top: 20px;
   padding: 10px 20px 10px;
   max-height: 0;
   background-color: rgba(28, 116, 233, 0.8);
@@ -936,29 +995,23 @@ nav li:hover > .site-subnav__list,
   .footer-subnav__list {
     position: absolute;
     top: 75%;
-    left: -400%;
-    width: 300px;
+    left: -250%;
+    width: 220px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-subnav__list {
     top: 80%;
     left: 0;
-    width: 500px;
+    width: 400px;
   }
 }
 .footer-subnav__item:not(:last-child) {
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1440px) {
-  .footer-subnav__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 .footer-subnav__link {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -976,7 +1029,7 @@ nav li:hover > .site-subnav__list,
 nav li:hover > .footer-subnav__list,
 .footer-subnav__list:hover {
   display: block;
-  max-height: 450px;
+  max-height: 250px;
 }
 @media screen and (min-width: 744px) {
   nav li:hover > .footer-subnav__list,
