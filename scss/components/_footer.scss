@@ -128,7 +128,7 @@
 .footer-subnav {
     &__list {
         display: none;
-        padding: 20px;
+        padding: 10px 20px 10px;
         max-height: 0;
         background-color: rgba(28, 116, 233,0.8);
         border: solid 2px $color-white;
@@ -139,13 +139,16 @@
 
         @include mq(tablet) {
             position: absolute;
-            top: 90%;
-            left: 0;
+            top: 75%;
+            left: -400%;
             width: 300px;
         }
 
-        @include mq(tablet) {
+        @include mq(desktop) {
+            top: 80%;
+            left: 0;
             width: 500px;
+            // padding: 20px;
         }
     }
 
@@ -161,6 +164,9 @@
     }
     
     &__link {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
         font-family: $info-font;
         font-size: 16px;
         font-weight: 300;
@@ -254,7 +260,7 @@ nav li:hover > .footer-subnav__list,
     // }
 
     @include mq(desktop) {
-        margin-top: 140px;
+        margin-top: 120px;
         font-size: 20px;
     }
 

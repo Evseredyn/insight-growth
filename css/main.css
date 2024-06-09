@@ -922,7 +922,7 @@ nav li:hover > .site-subnav__list,
 
 .footer-subnav__list {
   display: none;
-  padding: 20px;
+  padding: 10px 20px 10px;
   max-height: 0;
   background-color: rgba(28, 116, 233, 0.8);
   border: solid 2px #FFFFFF;
@@ -935,13 +935,15 @@ nav li:hover > .site-subnav__list,
 @media screen and (min-width: 744px) {
   .footer-subnav__list {
     position: absolute;
-    top: 90%;
-    left: 0;
+    top: 75%;
+    left: -400%;
     width: 300px;
   }
 }
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 1440px) {
   .footer-subnav__list {
+    top: 80%;
+    left: 0;
     width: 500px;
   }
 }
@@ -954,6 +956,9 @@ nav li:hover > .site-subnav__list,
   }
 }
 .footer-subnav__link {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -1043,7 +1048,7 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .footer_policy {
-    margin-top: 140px;
+    margin-top: 120px;
     font-size: 20px;
   }
 }
