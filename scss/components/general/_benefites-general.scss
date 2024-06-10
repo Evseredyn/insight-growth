@@ -81,6 +81,24 @@
             margin-bottom: 20px;
         }
     }
+// Декорація останнього ряду
+    &__item:nth-child(7) {
+        @include mq(tablet-only) {
+            margin-left: 180px;
+        }
+    }
+
+    &__item:nth-child(5) {
+        @include mq(desktop-only) {
+            margin-left: 140px;
+        }
+    }
+    
+    &__item:nth-child(5) {
+        @include mq(monitor) {
+            margin-left: 220px;
+        }
+    }
 
     &__icon {
         display: block;

@@ -1526,6 +1526,21 @@ nav li:hover > .footer-subnav__list,
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 744px) and (max-width: 1439.98px) {
+  .benefites__item:nth-child(7) {
+    margin-left: 180px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1919.98px) {
+  .benefites__item:nth-child(5) {
+    margin-left: 140px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefites__item:nth-child(5) {
+    margin-left: 220px;
+  }
+}
 .benefites__icon {
   display: block;
   fill: #FFFFFF;
@@ -1740,54 +1755,56 @@ nav li:hover > .footer-subnav__list,
 }
 
 .reviews__heading {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 500;
   line-height: 1.46;
   text-align: center;
-  width: 300px;
-  margin: 0 auto;
-  margin-bottom: 50px;
 }
 @media screen and (min-width: 744px) {
   .reviews__heading {
-    width: 90%;
+    width: 500px;
+    margin-left: 0;
+    margin-bottom: 70px;
     font-size: 40px;
     line-height: 1.35;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1440px) {
   .reviews__heading {
-    width: 1060px;
+    width: 600px;
+    margin-bottom: 60px;
     font-size: 50px;
     line-height: 1.28;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__heading {
+    width: 700px;
     font-size: 60px;
     line-height: 1.23;
   }
 }
-
 .reviews__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 90px;
+  overflow: hidden;
 }
 @media screen and (min-width: 744px) {
   .reviews__list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    padding-bottom: 0px;
   }
 }
 .reviews__item {
-  width: 100%;
-  background-color: #EBF4FF;
-  border-radius: 30px;
-  width: 100%;
-  height: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1798,84 +1815,44 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 10px 25px;
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #EBF4FF;
 }
 @media screen and (min-width: 744px) {
   .reviews__item {
     width: 330px;
     height: 340px;
-    padding: 10px 10px 25px;
   }
 }
 @media screen and (min-width: 1440px) {
   .reviews__item {
-    max-width: 380px;
+    width: 380px;
     height: 420px;
-    padding: 30px 30px 40px;
+    padding: 30px;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__item {
     width: 400px;
-    height: 500px;
-    padding: 30px 30px;
+    height: 490px;
   }
 }
-
 .reviews__item:not(:first-child) {
-  display: none;
+  margin-left: 20px;
 }
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 1440px) {
   .reviews__item:not(:first-child) {
     margin-left: 30px;
-    display: block;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reviews__item:not(:first-child) {
-    margin-left: 40px;
-    display: block;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__item:not(:first-child) {
-    display: block;
     margin-left: 40px;
   }
 }
-
-@media screen and (min-width: 744px) {
-  .reviews__item:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reviews__item:nth-child(3) {
-    display: block;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews__item:nth-child(3) {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 744px) {
-  .reviews__item:nth-child(4) {
-    display: none;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reviews__item:nth-child(4) {
-    display: none;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews__item:nth-child(4) {
-    display: block;
-  }
-}
-
 .reviews__title {
   font-family: "Raleway", sans-serif;
   color: #1c74e9;
@@ -1897,7 +1874,6 @@ nav li:hover > .footer-subnav__list,
     line-height: 1.33;
   }
 }
-
 .reviews__description {
   font-family: "Inter", sans-serif;
   color: #1E1E1E;
@@ -1911,6 +1887,7 @@ nav li:hover > .footer-subnav__list,
   .reviews__description {
     font-size: 14px;
     line-height: 1.86;
+    margin: 20px 0px 30px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1919,18 +1896,17 @@ nav li:hover > .footer-subnav__list,
     line-height: 1.87;
   }
 }
-
 .reviews__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .reviews__img {
+  width: 80px;
+  height: auto;
   border-radius: 50%;
   margin-right: 20px;
 }
-
 .reviews__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1940,7 +1916,6 @@ nav li:hover > .footer-subnav__list,
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .reviews__name {
   font-family: "Raleway", sans-serif;
   font-size: 22px;
@@ -1960,12 +1935,106 @@ nav li:hover > .footer-subnav__list,
     font-size: 30px;
   }
 }
-
 .reviews__company {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-weight: 400;
   margin: 0;
+}
+
+.carusel {
+  position: relative;
+}
+.carusel::before {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "";
+  bottom: 0;
+  left: 125px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1c74e9;
+  cursor: pointer;
+}
+@media screen and (min-width: 744px) {
+  .carusel::before {
+    top: 0;
+    left: auto;
+    right: 85px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carusel::before {
+    top: 0;
+    left: auto;
+    right: 190px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .carusel::before {
+    top: 0;
+    left: auto;
+    right: 170px;
+  }
+}
+.carusel::after {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "";
+  bottom: 0;
+  right: 125px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1c74e9;
+  cursor: pointer;
+}
+@media screen and (min-width: 744px) {
+  .carusel::after {
+    top: 0;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carusel::after {
+    top: 0;
+    left: auto;
+    right: 120px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .carusel::after {
+    top: 0;
+    left: auto;
+    right: 100px;
+  }
+}
+.carusel::before {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z' fill='white'/%3E%3C/svg%3E");
+}
+.carusel::after {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z' fill='white'/%3E%3C/svg%3E");
 }
 
 .questions {
@@ -2097,6 +2166,7 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #FFFFFF;
 }
 .questions__title {
   font-family: "Raleway", sans-serif;
@@ -2128,7 +2198,9 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .questions__icon {
-  fill: #1c74e9;
+  border-radius: 50%;
+  background-color: #1c74e9;
+  fill: #FFFFFF;
 }
 @media screen and (min-width: 744px) {
   .questions__icon {

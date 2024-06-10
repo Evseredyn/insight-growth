@@ -1,4 +1,5 @@
 .questions {
+    // width: 100vw;
     padding: 100px 15px;
     background-color: $color-bg-item;
     border-radius: 30px;
@@ -112,6 +113,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        color: $color-white;
     }
     
     &__title {
@@ -142,7 +144,9 @@
     }
     
     &__icon {
-        fill: $color-akcent;
+        border-radius: 50%;
+        background-color: $color-akcent;
+        fill: $color-white;
 
         @include mq(tablet) {
             width: 60px;
