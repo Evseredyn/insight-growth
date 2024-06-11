@@ -32,6 +32,7 @@
 
     &_list {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         margin-top: 30px;
         margin-bottom: 40px;
@@ -80,9 +81,7 @@
             line-height: 1.5;
         }
     }
-}
 
-.include-label {
     &__item {
         display: flex;
         align-items: center;
@@ -111,6 +110,25 @@
         }
     }
     
+    // Декорація останнього ряду
+    // &__item:nth-child(5) {
+    //     @include mq(tablet-only) {
+    //         margin-left: 156px;
+    //     }
+    // }
+
+    // &__item:nth-child(4) {
+    //     @include mq(desktop-only) {
+    //         margin-left: 190px;
+    //     }
+    // }
+    
+    // &__item:nth-child(4) {
+    //     @include mq(monitor) {
+    //         margin-left: 230px;
+    //     }
+    // }
+
     &__thumb {
         display: flex;
         justify-content: center;

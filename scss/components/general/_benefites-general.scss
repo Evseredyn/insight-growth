@@ -34,6 +34,7 @@
         
         @include mq(tablet) {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 40px;
             margin-left: 18px;
@@ -82,23 +83,23 @@
         }
     }
 // Декорація останнього ряду
-    &__item:nth-child(7) {
-        @include mq(tablet-only) {
-            margin-left: 180px;
-        }
-    }
+    // &__item:nth-child(7) {
+    //     @include mq(tablet-only) {
+    //         margin-left: 180px;
+    //     }
+    // }
 
-    &__item:nth-child(5) {
-        @include mq(desktop-only) {
-            margin-left: 140px;
-        }
-    }
+    // &__item:nth-child(5) {
+    //     @include mq(desktop-only) {
+    //         margin-left: 140px;
+    //     }
+    // }
     
-    &__item:nth-child(5) {
-        @include mq(monitor) {
-            margin-left: 220px;
-        }
-    }
+    // &__item:nth-child(5) {
+    //     @include mq(monitor) {
+    //         margin-left: 220px;
+    //     }
+    // }
 
     &__icon {
         display: block;
