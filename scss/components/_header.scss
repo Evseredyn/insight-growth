@@ -27,6 +27,7 @@
 
     &__logo {
         fill: currentColor;
+        
         @include mq(tablet) {    
             width: 51px;
             height: 54px;
