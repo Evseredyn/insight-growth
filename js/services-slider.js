@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.reviews__slider>.reviews__list').slick({
+    $('.services__slider>.services__list').slick({
       slidesToShow: 1, // Кількість відгуків, які відображаються одночасно
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
@@ -30,20 +30,14 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 3,
           }
-        },
-        {
-          breakpoint: 1921,
-          settings: {
-            slidesToShow: 4,
-          }
         }
       ]
     });
 
-    $('.reviews-slider__prev-button').click(function() {
-        $('.reviews__slider>.reviews__list').slick('slickPrev');
+    $('.services-slider__prev-button').click(function() {
+        $('.services__slider>.services__list').slick('slickPrev');
     });
-    $('.reviews-slider__next-button').click(function() {
-        $('.reviews__slider>.reviews__list').slick('slickNext');
+    $('.services-slider__next-button').click(function() {
+        $('.services__slider>.services__list').slick('slickNext');
     });
   });

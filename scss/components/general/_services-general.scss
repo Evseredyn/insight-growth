@@ -1,134 +1,214 @@
 .services {
 
-}
+    &__heading {
+        width: 220px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.46;
+        text-align: center;
 
-.services__heading {
-    font-family: $main-font;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 1.46;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    
-    @include mq(tablet) {
-        width: 90%;
-        font-size: 40px;
-        line-height: 1.35;
+        @include mq(tablet) {
+            width: 280px;
+            font-size: 40px;
+            line-height: 1.35;
+            text-align: start;
+        }
+
+        @include mq(desktop) {
+            width: 420px;
+            font-size: 50px;
+            line-height: 1.28;
+            text-align: center;
+        }
+
+        @include mq(monitor) {
+            font-size: 60px;
+            line-height: 1.23;
+        }
     }
 
-    @include mq(desktop) {
-        width: 1060px;
-        font-size: 50px;
-        line-height: 1.28;
+    &__list {
+        display: flex;
+
+        @include mq(tablet) {
+            justify-content: start;
+            overflow-x: hidden;
+        }
+
+        @include mq(desktop) {
+            justify-content: center;
+        }
     }
 
-    @include mq(monitor) {
-        font-size: 60px;
-        line-height: 1.23;
-    }
-}
 
-.services__list {
-    display: flex;
-
-    @include mq(tablet) {
-        justify-content: start;
-        overflow-x: hidden;
-    }
-    
-    @include mq(desktop) {
-        justify-content: center;
-    }
-}
-
-.services__item:not(:first-child) {
-    margin-left: 20px;
-    
-    @include mq(mobile-only) {
-        display: none;
-    }
-    @include mq(desktop) {
-        margin-left: 30px;
-    }
-
-    @include mq(monitor) {
-        margin-left: 40px;
-    }
-}
-
-.services__item {
-    width: 100%;
-    background-color: $color-bg-item;
-    border-radius: 30px;
-    width: 100%;
-    max-height: 460px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 10px 30px;
-
-    @include mq(tablet) {
-        max-width: 330px;
-        height: 370px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 330px;
+        height: 460px;
         padding: 10px 10px 30px;
+        background-color: $color-bg-item;
+        border-radius: 30px;
+
+        @include mq(tablet) {
+            width: 330px;
+            height: 480px;
+            padding: 10px 10px 30px;
+        }
+
+        @include mq(desktop) {
+            width: 380px;
+            height: 500px;
+            padding: 20px 20px 30px;
+        }
+
+        @include mq(monitor) {
+            width: 400px;
+            height: 500px;
+            padding: 20px 20px 30px;
+        }
     }
+    
+    // &__item:not(:first-child) {
+    //     margin-left: 20px;
 
-    @include mq(desktop) {
-        max-width: 380px;
-        height: 500px;
-        padding: 20px 20px 30px;
-    }
+    //     @include mq(mobile-only) {
+    //         display: none;
+    //     }
+    //     @include mq(desktop) {
+    //         margin-left: 30px;
+    //     }
 
-    @include mq(monitor) {
-        width: 400px;
-        height: 500px;
-        padding: 20px 20px 30px;
-    }
-}
+    //     @include mq(monitor) {
+    //         margin-left: 40px;
+    //     }
+    // }
 
-.services__img {
-    border-radius: 20px;
-    width: 310px;
-    max-height: 240px;
-
-    @include mq(tablet) {    
+    &__img {
+        border-radius: 20px;
         width: 310px;
-        max-height: 230px;
+        height: auto;
+        // max-height: 240px;
+
+        @include mq(tablet) {    
+            width: 310px;
+            height: auto;
+        }
+
+        @include mq(desktop) {    
+            width: 340px;
+            height: auto;
+        }
+
+        @include mq(monitor) {    
+            width: 360px;
+            height: auto;
+        }
     }
 
-    @include mq(desktop) {    
-        width: 340px;
-        max-height: 385px;
+    &__title {
+        width: 210px;
+        margin: 20px auto;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+        color: $color-black;
+
+        @include mq(desktop) {
+            width: 240px;
+            font-size: 24px;
+            line-height: 1.38;
+        }
+
+        @include mq(monitor) {
+            width: 250px;
+            font-size: 26px;
+            line-height: 1.38;
+        }
+    }
+  
+    &-slider__prev-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "";
+        bottom: 0;
+        left: 125px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;
+        border: 0px;
+        color: $color-white;
+        background: $color-akcent;
+        cursor: pointer;
+
+        @include mq(tablet) {
+            top: 0;
+            left: auto;
+            right: 85px;
+            width: 60px;
+            height: 60px;
+        }
+
+        @include mq(desktop) {
+            top: 0;
+            left: auto;
+            right: 190px;
+        }
+                
+        @include mq(monitor) {
+            top: 0;
+            left: auto;
+            right: 170px;
+        }
     }
 
-    @include mq(monitor) {    
-        width: 360px;
-        max-height: 500px;
+    &-slider__next-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "";
+        bottom: 0;
+        right: 125px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 50%;
+        border: 0px;
+        color: $color-white;
+        background: $color-akcent;
+        cursor: pointer;
+
+        @include mq(tablet) {
+            top: 0;
+            right: 15px;
+            width: 60px;
+            height: 60px;
+        }
+        
+        @include mq(desktop) {
+            top: 0;
+            left: auto;
+            right: 120px;
+        }
+        
+        @include mq(monitor) {
+            top: 0;
+            left: auto;
+            right: 100px;
+        }
     }
-}
 
-.services__title {
-    width: 210px;
-    font-family: $main-font;
-    color: $color-black;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.4;
-    text-align: center;
-    // width: 300px;
-    margin: 20px auto;
-
-    @include mq(desktop) {
-        width: 240px;
-        font-size: 24px;
-        line-height: 1.38;
-    }
-
-    @include mq(monitor) {
-        width: 250px;
-        font-size: 26px;
-        line-height: 1.38;
+    &carusel__icon {
+        fill: currentColor;
     }
 }

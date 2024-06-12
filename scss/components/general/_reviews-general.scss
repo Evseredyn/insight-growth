@@ -93,66 +93,6 @@
         }
     }
     
-    // &__item:not(:first-child) {
-    //     margin-left: 120px;
-    
-    //     @include mq(tablet) {
-    //     }
-    
-    //     @include mq(desktop) {
-    //         margin-left: 30px;
-    //     }
-    
-    //     @include mq(monitor) {
-    //         margin-left: 40px;
-    //     }
-    // }
-
-    // Утилітарний клас
-    // &__item:not(:first-child) {
-    //     display: none;
-    
-    //     @include mq(tablet) {
-    //         margin-left: 30px;
-    //         display: block;
-    //     }
-    
-    //     @include mq(desktop) {
-    //         margin-left: 40px;
-    //     }
-    
-    //     @include mq(monitor) {
-    //     }
-    // }
-    // Утилітарний клас
-    // &__item:nth-child(3) {
-    //     @include mq(tablet) {
-    //         display: none;
-    //     }
-           
-    //     @include mq(desktop) {
-    //         display: block;
-    //     }
-    
-    //     @include mq(monitor) {
-    //         display: block;
-    //     }
-    // }
-
-    // &__item:nth-child(4) {
-    //     @include mq(tablet) {
-    //         display: none;
-    //     }
-       
-    //     @include mq(desktop) {
-    //         display: none;
-    //     }
-    
-    //     @include mq(monitor) {
-    //         display: block;
-    //     }
-    // }
-    
     &__title {
         width: 240px;
         margin: 0;
@@ -206,8 +146,6 @@
         margin-right: 20px;
         height: auto;
         border-radius: 50%;
-        // margin-left: 10px;
-        // margin-bottom: 25px;
     }
     
     &__inner {
