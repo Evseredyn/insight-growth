@@ -1,6 +1,7 @@
 .reviews {
 
     &__slider {
+        position: relative;
         // .container {
         //     margin-left: auto;
         //     margin-right: auto;
@@ -275,7 +276,7 @@
     position: relative;
     
     &__prev-button {
-        position: absolute;
+        // position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -312,7 +313,7 @@
     }
 
     &__next-button {
-        position: absolute;
+        // position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;

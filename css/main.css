@@ -1745,6 +1745,9 @@ nav li:hover > .footer-subnav__list,
   }
 }
 
+.reviews__slider {
+  position: relative;
+}
 @media screen and (min-width: 744px) {
   .reviews__slider {
     width: 744px;
@@ -1975,7 +1978,6 @@ nav li:hover > .footer-subnav__list,
   position: relative;
 }
 .reviews-slider__prev-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2020,7 +2022,6 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .reviews-slider__next-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
