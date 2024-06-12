@@ -110,6 +110,7 @@
 }
 
 .services__title {
+    width: 210px;
     font-family: $main-font;
     color: $color-black;
     font-size: 20px;
@@ -120,11 +121,13 @@
     margin: 20px auto;
 
     @include mq(desktop) {
+        width: 240px;
         font-size: 24px;
         line-height: 1.38;
     }
 
     @include mq(monitor) {
+        width: 250px;
         font-size: 26px;
         line-height: 1.38;
     }
