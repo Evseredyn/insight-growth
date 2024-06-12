@@ -47,5 +47,3 @@ $(document).ready(function() {
         $('.reviews__slider>.reviews__list').slick('slickNext');
     });
   });
-
-  

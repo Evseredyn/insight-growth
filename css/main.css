@@ -239,7 +239,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
@@ -1748,25 +1748,6 @@ nav li:hover > .footer-subnav__list,
 .reviews__slider {
   position: relative;
 }
-@media screen and (min-width: 744px) {
-  .reviews__slider {
-    width: 744px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reviews__slider {
-    width: 1440px;
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews__slider {
-    width: 1920px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
 .reviews__heading {
   width: 300px;
   margin: 0 auto;
@@ -1872,54 +1853,44 @@ nav li:hover > .footer-subnav__list,
     margin-right: 30px;
   }
 }
-.reviews__item:not(:first-child) {
-  margin-left: 20px;
-}
-@media screen and (min-width: 1440px) {
-  .reviews__item:not(:first-child) {
-    margin-left: 30px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews__item:not(:first-child) {
-    margin-left: 40px;
-  }
-}
 .reviews__title {
+  width: 240px;
+  margin: 0;
   font-family: "Raleway", sans-serif;
-  color: #1c74e9;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
-  width: 300px;
-  margin: 0;
+  color: #1c74e9;
 }
 @media screen and (min-width: 1440px) {
   .reviews__title {
+    width: 280px;
     font-size: 26px;
     line-height: 1.33;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__title {
+    width: 330px;
     font-size: 30px;
     line-height: 1.33;
   }
 }
 .reviews__description {
+  width: 290px;
+  margin: 20px 0px;
   font-family: "Inter", sans-serif;
-  color: #1E1E1E;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.83;
-  text-align: center;
-  margin: 20px 0px;
+  color: #1E1E1E;
 }
 @media screen and (min-width: 1440px) {
   .reviews__description {
+    width: 330px;
+    margin: 20px 0px 30px;
     font-size: 14px;
     line-height: 1.86;
-    margin: 20px 0px 30px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1935,9 +1906,9 @@ nav li:hover > .footer-subnav__list,
 }
 .reviews__img {
   width: 80px;
+  margin-right: 20px;
   height: auto;
   border-radius: 50%;
-  margin-right: 20px;
 }
 .reviews__inner {
   display: -webkit-box;
@@ -1949,13 +1920,13 @@ nav li:hover > .footer-subnav__list,
           flex-direction: column;
 }
 .reviews__name {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 15px;
 }
 @media screen and (min-width: 1440px) {
   .reviews__name {
@@ -1968,16 +1939,13 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .reviews__company {
+  margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin: 0;
-}
-
-.reviews-slider {
-  position: relative;
 }
 .reviews-slider__prev-button {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1992,6 +1960,7 @@ nav li:hover > .footer-subnav__list,
   left: 125px;
   width: 50px;
   height: 50px;
+  padding: 0;
   border-radius: 50%;
   border: 0px;
   color: #FFFFFF;
@@ -2022,6 +1991,7 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .reviews-slider__next-button {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2036,6 +2006,7 @@ nav li:hover > .footer-subnav__list,
   right: 125px;
   width: 50px;
   height: 50px;
+  padding: 0;
   border-radius: 50%;
   border: 0px;
   color: #FFFFFF;
@@ -2064,8 +2035,12 @@ nav li:hover > .footer-subnav__list,
     right: 100px;
   }
 }
-.reviews-slidercarusel__icon {
+.reviewscarusel__icon {
   fill: currentColor;
+}
+
+.reviews.section > div > ul > button.reviews-slider__prev-button.slick-arrow {
+  position: absolute;
 }
 
 .questions {
