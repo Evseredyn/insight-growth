@@ -2,6 +2,11 @@
 
     &__slider {
         position: relative;
+        padding-bottom: 90px;
+
+        @include mq(tablet) {
+            padding-bottom: 0px;
+        }
     }
 
     &__heading {
@@ -41,15 +46,14 @@
 
     &__list {
         display: flex;
-        padding-bottom: 90px;
         overflow: hidden;
     
         @include mq(tablet) {
             justify-content: start;
-            padding-bottom: 0px;
         }
         
         @include mq(desktop) {
+            justify-content: center;
             padding-left: 105px;
             padding-right: 120px;
         }
@@ -253,7 +257,7 @@
         }
     }
 
-    &carusel__icon {
+    &-slider__icon {
         fill: currentColor;
     }
 }

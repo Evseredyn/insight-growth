@@ -4,7 +4,7 @@ $(document).ready(function() {
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
       easing: 'cubic-bezier(0.4,0,0.2,1)',
-      autoplay: true, // Автоматичне прокручування
+      // autoplay: true, // Автоматичне прокручування
       autoplaySpeed: 3000, // Затримка між автоматичним прокручуванням (у мілісекундах)
       infinite: true,
       pauseOnFocus: true,
@@ -17,18 +17,20 @@ $(document).ready(function() {
           breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
             slidesToShow: 1, // Кількість відгуків на планшеті
+            autoplay: true,
           }
         },
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2,
+            autoplay: true,
           }
         },
         {
           breakpoint: 1441,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 3
           }
         }
       ]
