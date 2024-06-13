@@ -15,4 +15,15 @@ questions.forEach(question => {
     // closeAllAnswers(); // Закриваємо всі відповіді
     answer.classList.toggle('open'); // Відкриваємо/закриваємо поточну відповідь
   });
+
+  // header.addEventListener('click', () => {
+  //   if (answer.classList.contains('open')) {
+  //     // Якщо відповідь вже відкрита, закриваємо її
+  //     answer.classList.remove('open');
+  //   } else {
+  //     // Інакше закриваємо всі відповіді і відкриваємо поточну
+  //     closeAllAnswers();
+  //     answer.classList.add('open');
+  //   }
+  // });
 });

@@ -11,9 +11,11 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 15px;
+        padding-bottom: 15px;
 
         @include mq(tablet) {    
             padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         @include mq(desktop) {    

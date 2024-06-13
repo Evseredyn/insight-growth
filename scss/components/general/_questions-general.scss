@@ -62,6 +62,7 @@
     }
     
     &__item {
+        // width: 330px;
         border-radius: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -163,9 +164,9 @@
         height: auto;
     }
 
-    &__item:first-child .questions__answer {
-        height: auto;
-    }
+    // &__item:first-child .questions__answer {
+    //     height: auto;
+    // }
 
     &__text {
         font-family: $info-font;
