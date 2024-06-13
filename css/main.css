@@ -1872,6 +1872,16 @@ nav li:hover > .footer-subnav__list,
     padding-bottom: 0px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .reviews__slider {
+    padding-left: 105px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .reviews__slider {
+    padding-left: 85px;
+  }
+}
 .reviews__heading {
   width: 300px;
   margin: 0 auto;
@@ -1927,14 +1937,6 @@ nav li:hover > .footer-subnav__list,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 105px;
-    padding-right: 120px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews__list {
-    padding-left: 85px;
-    padding-right: 100px;
   }
 }
 .reviews__item {

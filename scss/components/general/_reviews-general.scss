@@ -7,6 +7,16 @@
         @include mq(tablet) {
             padding-bottom: 0px;
         }
+
+        @include mq(desktop) {
+            padding-left: 105px;
+            // padding-right: 120px;
+        }
+            
+        @include mq(monitor) {
+            padding-left: 85px;
+            // padding-right: 100px;
+         }
     }
 
     &__heading {
@@ -54,13 +64,13 @@
         
         @include mq(desktop) {
             justify-content: center;
-            padding-left: 105px;
-            padding-right: 120px;
+            // padding-left: 105px;
+            // padding-right: 120px;
         }
     
         @include mq(monitor) {
-           padding-left: 85px;
-           padding-right: 100px;
+        //    padding-left: 85px;
+        //    padding-right: 100px;
         }
     }
     

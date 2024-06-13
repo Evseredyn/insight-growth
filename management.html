@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Inter:wght@300;400;500;900&family=Roboto+Condensed:wght@300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
 <!--Header-->
@@ -332,10 +336,11 @@
         </div>
     </section>
 <!--Reviews-->
-    <section class="reviews section">
-        <div class="container">
-            <h2 class="reviews__heading"><span class="current">Відгуки</span> наших клієнтів</h2>
-            <ul class="reviews__list list">
+<section class="reviews section">
+    <div class="reviews__slider">
+        <h2 class="reviews__heading"><span class="current">Відгуки</span> наших клієнтів</h2>
+        <ul class="reviews__list list">
+            <div>
                 <li class="reviews__item">
                     <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
                     <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
@@ -347,6 +352,8 @@
                         </div>
                     </div>
                 </li>
+            </div>
+            <div>
                 <li class="reviews__item">
                     <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
                     <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
@@ -358,6 +365,8 @@
                         </div>
                     </div>
                 </li>
+            </div>
+            <div>
                 <li class="reviews__item">
                     <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
                     <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
@@ -369,6 +378,8 @@
                         </div>
                     </div>
                 </li>
+            </div>
+            <div>
                 <li class="reviews__item">
                     <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
                     <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
@@ -380,9 +391,33 @@
                         </div>
                     </div>
                 </li>
-            </ul>
-        </div>
-    </section>
+            </div>
+            <div>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <button class="reviews-slider__prev-button">
+            <svg class="reviews-slider__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button class="reviews-slider__next-button">
+            <svg class="reviews-slider__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</section>
 <!--Contact us-->
     <section id="contact-us-2" class="contact-us section">
         <div class="contact-us__flex container">
@@ -589,5 +624,6 @@
     crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/reviews-slider.js"></script>
 </body>
 </html>
