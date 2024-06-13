@@ -1,5 +1,4 @@
 .questions {
-    // width: 100vw;
     padding: 100px 15px;
     background-color: $color-bg-item;
     border-radius: 30px;
@@ -23,34 +22,30 @@
     }
 
     &__heading {
+        margin: 0 auto;
+        margin-bottom: 40px;
         font-family: $main-font;
-        color: $color-first-title;
         font-size: 30px;
         font-weight: 500;
         line-height: 1.46;
         text-align: center;
-        // width: 300px;
-        margin: 0 auto;
-        margin-bottom: 40px;
+        color: $color-first-title;
         
         @include mq(tablet) {
-            // width: 90%;
+            margin-bottom: 50px;
             font-size: 40px;
             line-height: 1.35;
-            margin-bottom: 50px;
         }
     
         @include mq(desktop) {
-            // width: 1060px;
+            margin-bottom: 60px;
             font-size: 50px;
             line-height: 1.28;
-            margin-bottom: 60px;
         }
     
         @include mq(monitor) {
             font-size: 60px;
             line-height: 1.23;
-            // margin-bottom: 60px;
         }
     }
 
@@ -67,11 +62,12 @@
     }
     
     &__item {
-        background-color: $color-white;
         border-radius: 50px;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
+        background-color: $color-white;
+        cursor: pointer;
 
         @include mq(tablet) {
             width: 674px;
@@ -83,9 +79,9 @@
         }
     
         @include mq(monitor) {
+            margin: 0;
             font-size: 60px;
             line-height: 1.23;
-            margin: 0;
         }
     }
     
@@ -117,13 +113,13 @@
     }
     
     &__title {
+        max-width: 240px;
+        margin: 0;
         font-family: $main-font;
-        color: $color-akcent;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.37;
-        max-width: 240px;
-        margin: 0;
+        color: $color-akcent;
         
         @include mq(tablet) {
             max-width: 550px;
@@ -132,7 +128,7 @@
         }
     
         @include mq(desktop) {
-            width: 560px;
+            max-width: 560px;
             font-size: 24px;
             line-height: 1.25;
         }
@@ -154,6 +150,23 @@
         }
     }
     
+    &__answer {
+        // display: none;
+        overflow: hidden;
+        height: 0;
+        transition: max-height $duration $timing-function;
+    }
+      
+    &__answer.open {
+        display: block;
+        // max-height: 100px;
+        height: auto;
+    }
+
+    &__item:first-child .questions__answer {
+        height: auto;
+    }
+
     &__text {
         font-family: $info-font;
         color: $color-first-title;

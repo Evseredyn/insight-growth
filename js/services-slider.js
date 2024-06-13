@@ -23,12 +23,18 @@ $(document).ready(function() {
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 2.05
             autoplay: true,
           }
         },
         {
           breakpoint: 1441,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 1921,
           settings: {
             slidesToShow: 3
           }

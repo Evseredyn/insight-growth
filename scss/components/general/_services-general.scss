@@ -52,6 +52,13 @@
 
         @include mq(desktop) {
             justify-content: center;
+            padding-left: 105px;
+            padding-right: 115px;
+        }
+
+        @include mq(monitor) {
+            padding-left: 85px;
+            padding-right: 95px;
         }
     }
 
