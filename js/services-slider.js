@@ -18,6 +18,8 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 1, // Кількість відгуків на планшеті
             autoplay: true,
+            // centerMode: true,
+            // centerPadding: '15px',
           }
         },
         {
@@ -31,13 +33,18 @@ $(document).ready(function() {
           breakpoint: 1441,
           settings: {
             slidesToShow: 3,
-            centerMode: true
+            slideWidth: 400, // Ширина слайда 400px
+            centerMode: true,
+            centerPadding: '120px',
           }
         },
         {
           breakpoint: 1921,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 3,
+            slideWidth: 400, // Ширина слайда 400px
+            centerMode: true, // Центрувати активний слайд
+            centerPadding: '240px' // Додати відступ 40px праворуч і ліворуч
           }
         }
       ]
@@ -50,3 +57,22 @@ $(document).ready(function() {
         $('.services__slider>.services__list').slick('slickNext');
     });
   });
+
+  // $('.your-carousel').slick({
+  //   slidesToShow: 1, // Показувати по одному слайду
+  //   slideWidth: 400, // Ширина слайда 400px
+  //   centerMode: true, // Центрувати активний слайд
+  //   centerPadding: '40px' // Додати відступ 40px праворуч і ліворуч
+  // });
+
+  // cssEase: 'linear', // Рівномірна анімація переходу
+  // centerPadding: '60px', // Початковий відступ для центрованих слайдів
+  // cssEase: function(a, b, c) { // Функція для налаштування відступу
+  //   if (c < b) {
+  //     // Якщо слайд пересувається вліво, зменшити відступ
+  //     return 'margin-left: -' + (60 + (b - c) * 80) + 'px;';
+  //   } else {
+  //     // Якщо слайд пересувається вправо, збільшити відступ
+  //     return 'margin-left: -' + (60 - (c - b) * 80) + 'px;';
+  //   }
+  // }
