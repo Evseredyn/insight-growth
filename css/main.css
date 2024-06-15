@@ -352,7 +352,8 @@ body {
 }
 @media screen and (min-width: 744px) {
   .btn-contact__link {
-    max-width: 300px;
+    max-width: 310px;
+    width: 310px;
     margin-bottom: 0px;
     padding: 8px 10px 8px 20px;
     font-size: 18px;

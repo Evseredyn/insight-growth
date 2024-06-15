@@ -104,7 +104,8 @@ html {
       cursor: pointer;
       
       @include mq(tablet) {
-         max-width: 300px;
+         max-width: 310px;
+         width: 310px;
          margin-bottom: 0px;
          padding: 8px 10px 8px 20px;
          font-size: 18px;
