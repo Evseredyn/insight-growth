@@ -1,11 +1,9 @@
-news {
+.news {
     padding: 100px 15px;
     background-color: $color-bg-item;
     border-radius: 30px;
 
     @include mq(tablet) {
-        // margin-left: 15px;
-        // margin-right: 15px;
         padding: 120px 15px;
     }
 
@@ -19,6 +17,15 @@ news {
         margin-left: 100px;
         margin-right: 100px;
         padding: 140px;
+    }
+
+    & > a {
+        width: 250px;
+        margin: 40px auto 0;
+        
+        @include mq(tablet) {
+            width: 288px;
+        }
     }
 
     &__heading {
@@ -37,6 +44,7 @@ news {
         }
     
         @include mq(desktop) {
+            width: 800px;
             font-size: 50px;
             line-height: 1.28;
         }
@@ -50,60 +58,58 @@ news {
     &__list {
 
         @include mq(monitor) {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 40px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            // align-items: flex-start;
+            // flex-wrap: wrap;
+            // gap: 40px;
         }
     }
     
     &__img {
-        width: 100px;
-        height: auto;
+        width: 60px;
+        height: 60px;
         margin-right: 10px 10px 5px 10px;
-        border-radius: 50%;
+        border-radius: 10px;
+        
+        @include mq(tablet) {
+            width: 120px;
+            height: 120px;
+            border-radius: 30px;
+        }
     }
 
     &__item {
-        // width: 330px;
-        border-radius: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
+        position: relative;
+        // display: flex;
+        // flex-direction: column;
+        padding: 10px;
+        border-radius: 30px;
         background-color: $color-white;
         cursor: pointer;
 
         @include mq(tablet) {
-            width: 674px;
-            padding: 15px 15px 15px 30px;
+            // width: 674px;
+            // padding: 15px 15px 15px 30px;
         }
 
         @include mq(desktop) {
-            width: 700px;
+            // width: 700px;
         }
     
         @include mq(monitor) {
-            margin: 0;
-            font-size: 60px;
-            line-height: 1.23;
+            // margin: 0;
+            // font-size: 60px;
+            // line-height: 1.23;
         }
     }
     
     &__item:not(:first-child) {
         margin-top: 15px;
-    
-        @include mq(tablet) {
-            margin-top: 20px;
-        }
         
         @include mq(desktop) {
-            margin-top: 40px;
-        }
-        
-        @include mq(monitor) {
-            margin-top: 0;
+            margin-top: 20px;
         }
     }
     
@@ -115,33 +121,52 @@ news {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: $color-white;
-    }
-    
-    &__title {
-        max-width: 240px;
-        margin: 0;
-        font-family: $main-font;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.37;
-        color: $color-akcent;
-        
+        gap: 10px;
         @include mq(tablet) {
-            max-width: 550px;
-            font-size: 24px;
-            line-height: 1.25;
+            // align-items: flex-start;
+            gap: 15px;
         }
     
         @include mq(desktop) {
-            max-width: 560px;
+            gap: 30px;
+        }
+    
+        @include mq(monitor) {
+            // font-size: 24px;
+            // line-height: 1.25;
+        } 
+    }
+    
+    &__title {
+        // max-width: 240px;
+        // width: 230px;
+        width: 170px;
+        // margin: 0;
+        margin-right: auto;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.44;
+        text-align: left;
+        color: $color-akcent;
+        
+        @include mq(tablet) {
+            width: 290px;
+            // max-width: 550px;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+    
+        @include mq(desktop) {
+            width: 760px;
             font-size: 24px;
             line-height: 1.25;
         }
     
         @include mq(monitor) {
-            font-size: 24px;
-            line-height: 1.25;
+            width: 960px;
+            // font-size: 24px;
+            // line-height: 1.25;
         }  
     }
     
@@ -155,12 +180,26 @@ news {
             height: 60px;
         }
     }
+
+    &__answer.open .news__icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
     
     &__answer {
         // display: none;
         overflow: hidden;
         height: 0;
         transition: max-height $duration $timing-function;
+        
+        @include mq(tablet) {
+            height: 70px; 
+        }
+            
+        @include mq(desktop) {
+            height: 100px; 
+        }
     }
       
     &__answer.open {
@@ -176,29 +215,25 @@ news {
     &__text {
         font-family: $info-font;
         color: $color-first-title;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 300;
-        line-height: 1.66;
+        line-height: 1.5;
         // width: 100%;
         margin: 0;
-        margin-top: 20px;
+        margin-top: 10px;
         
         @include mq(tablet) {
             padding-right: 10px;
             font-size: 16px;
-            line-height: 1.62;
+            line-height: 1.6;
+            margin-top: 15px;
         }
     
         @include mq(desktop) {
             padding-right: 20px;
             // width: 1060px;
-            // font-size: 24px;
-            line-height: 1.25;
+            font-size: 24px;
+            line-height: 1.6;
         }
-    
-        @include mq(monitor) {
-            // font-size: 24px;
-            line-height: 1.25;
-        }  
     }
 }

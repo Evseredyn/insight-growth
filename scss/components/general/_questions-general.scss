@@ -78,12 +78,6 @@
         @include mq(desktop) {
             width: 700px;
         }
-    
-        @include mq(monitor) {
-            margin: 0;
-            font-size: 60px;
-            line-height: 1.23;
-        }
     }
     
     &__item:not(:first-child) {
@@ -110,7 +104,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: $color-white;
+        // color: $color-white;
     }
     
     &__title {

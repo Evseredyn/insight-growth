@@ -16,14 +16,14 @@
         font-size: 30px;
         font-weight: 500;
         line-height: 1.46;
-        // text-align: center;
+        text-align: center;
 
         @include mq(tablet) {
             width: 280px;
+            margin-left: 15px;
             font-size: 40px;
             line-height: 1.35;
-            // ???
-            text-align: start;
+            text-align: left;
         }
 
         @include mq(desktop) {
