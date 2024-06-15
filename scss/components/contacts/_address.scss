@@ -58,14 +58,14 @@
     
     &__item:nth-child(1) {
         
-        @include mq(tablet) {
+        @include mq(tablet-only) {
             width: 352px;
         }
     }
         
     &__item:nth-child(2) {
         
-        @include mq(tablet) {
+        @include mq(tablet-only) {
             width: 352px;
         }
     }
