@@ -135,12 +135,13 @@
     &__link {
         margin: 0;
         margin-bottom: 15px;
-        padding-top: 30px;
+        // padding-top: 30px;
         font-family: $main-font;
         color: $color-akcent;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.1;
+        font-style: normal;
     
         @include mq(desktop) {
             font-size: 24px;
@@ -195,6 +196,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+    font-style: normal;
 
     @include mq(tablet) {
         padding-top: 0px;

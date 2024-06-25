@@ -3589,12 +3589,12 @@ nav li:hover > .footer-subnav__list,
 .address__link {
   margin: 0;
   margin-bottom: 15px;
-  padding-top: 30px;
   font-family: "Raleway", sans-serif;
   color: #1c74e9;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.1;
+  font-style: normal;
 }
 @media screen and (min-width: 1440px) {
   .address__link {
@@ -3646,6 +3646,7 @@ nav li:hover > .footer-subnav__list,
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
+  font-style: normal;
 }
 @media screen and (min-width: 744px) {
   .address-maps__link {
