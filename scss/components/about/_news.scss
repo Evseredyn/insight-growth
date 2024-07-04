@@ -68,10 +68,10 @@
     }
     
     &__img {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         margin-right: 10px 10px 5px 10px;
-        border-radius: 10px;
+        border-radius: 20px;
         
         @include mq(tablet) {
             width: 120px;
@@ -81,15 +81,16 @@
     }
 
     &__item {
-        position: relative;
-        // display: flex;
+        display: flex;
+        align-items: flex-start;
+        // justify-content: space-between;
         // flex-direction: column;
         padding: 10px;
         border-radius: 30px;
         background-color: $color-white;
-        cursor: pointer;
 
         @include mq(tablet) {
+            position: relative;
             // width: 674px;
             // padding: 15px 15px 15px 30px;
         }
@@ -117,18 +118,30 @@
     //     height: 100%;
     // }
 
+    &__thumb {
+        display: flex;
+        flex-direction: column;
+    }
+    
     &__inner {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        align-items: center;
+        // gap: 10px;
+        margin-left: 10px;
+        // margin-right: auto;
+        // width: 170px;
+        cursor: pointer;
+
         @include mq(tablet) {
             // align-items: flex-start;
-            gap: 15px;
+            // gap: 15px;
+            margin-left: 15px;
         }
     
         @include mq(desktop) {
             gap: 30px;
+            margin-left: 30px;
         }
     
         @include mq(monitor) {
@@ -142,7 +155,7 @@
         // width: 230px;
         width: 170px;
         // margin: 0;
-        margin-right: auto;
+        // margin-right: auto;
         font-family: $main-font;
         font-size: 16px;
         font-weight: 500;
@@ -176,6 +189,9 @@
         fill: $color-white;
 
         @include mq(tablet) {
+            position: absolute;
+            top: 15px;
+            right: 15px;
             width: 60px;
             height: 60px;
         }
@@ -187,6 +203,11 @@
         right: 15px;
     }
     
+    // &__answer.open .news__img {
+    //     width: 180px;
+    //     height: 180px;
+    // }
+    
     &__answer {
         // display: none;
         overflow: hidden;
@@ -194,11 +215,13 @@
         transition: max-height $duration $timing-function;
         
         @include mq(tablet) {
-            height: 70px; 
+            height: 60px;
+            margin-left: 15px;
         }
             
         @include mq(desktop) {
-            height: 100px; 
+            height: 100px;
+            margin-left: 30px;
         }
     }
       
@@ -220,13 +243,14 @@
         line-height: 1.5;
         // width: 100%;
         margin: 0;
-        margin-top: 10px;
+        padding-top: 10px;
         
         @include mq(tablet) {
+            width: 90%;
             padding-right: 10px;
             font-size: 16px;
             line-height: 1.6;
-            margin-top: 15px;
+            padding-top: 15px;
         }
     
         @include mq(desktop) {

@@ -82,10 +82,10 @@
         }
     }
 
-    &__item:not(:first-child) {
-        margin-top: 20px;
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
         @include mq(tablet) {
-            margin-top: 0px;
+            margin-bottom: 0px;
         }
     
         @include mq(desktop) {
@@ -100,7 +100,7 @@
     &__link {
         margin: 0 auto;
         // padding-top: 20px;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
         font-family: $info-font;
         color: $color-white;
         font-size: 16px;
@@ -131,11 +131,12 @@
 .footer-subnav {
     &__list {
         display: none;
-        padding: 5px 15px 5px;
-        width: 240px;
+        margin-top: 15px;
+        padding: 10px 15px 10px;
+        max-width: 240px;
         max-height: 0;
         background-color: rgba(28, 116, 233,0.8);
-        border: solid 2px $color-white;
+        // border: solid 2px $color-white;
         border-radius: 10px;
         // box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
@@ -143,8 +144,8 @@
 
         @include mq(tablet) {
             position: absolute;
-            top: 70%;
-            left: -50%;
+            top: 150%;
+            // left: -50%;
             width: 230px;
             margin-top: 0;
         }
@@ -158,24 +159,29 @@
     }
 
     &__item {
+        // padding-left: auto;
+        // padding-right: auto;
     }
 
     &__item:not(:last-child) {
         margin-bottom: 10px;
 
         @include mq(desktop) {
-            // margin-bottom: 20px;
+            margin-bottom: 20px;
         }
     }
     
     &__link {
-        display: inline-block;
-        // margin-left: auto;
-        // margin-right: auto;
+        display: block;
+        text-align: center;
         font-family: $info-font;
         font-size: 16px;
         font-weight: 300;
         color: $color-white;
+        
+        @include mq(tablet) {
+            display: inline-block;
+        }
 
         @include mq(desktop) {
             font-size: 20px;
@@ -206,18 +212,18 @@ nav li:hover > .footer-subnav__list,
         
     @include mq(tablet) {
         justify-content: flex-end;
-        margin-top: 110px;
-        }
+        margin-top: 115px;
+    }
     
-        @include mq(desktop) {
-            align-content: center;
-            margin-top: 0;
-            margin-left: 50px;
-        }
+    @include mq(desktop) {
+        align-content: center;
+        margin-top: 0;
+        margin-left: 50px;
+    }
 
-        @include mq(monitor) {
-            margin-left: 300px;
-        }
+    @include mq(monitor) {
+        margin-left: 300px;
+    }
 }
 
 // .socials-footer__item:not(:last-child) {
