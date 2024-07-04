@@ -197,11 +197,11 @@
         }
     }
 
-    &__answer.open .news__icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
+    // &__answer.open .news__icon {
+    //     position: absolute;
+    //     top: 15px;
+    //     right: 15px;
+    // }
     
     // &__answer.open .news__img {
     //     width: 180px;
@@ -210,6 +210,7 @@
     
     &__answer {
         // display: none;
+        // margin-left: 10px;
         overflow: hidden;
         height: 0;
         transition: max-height $duration $timing-function;

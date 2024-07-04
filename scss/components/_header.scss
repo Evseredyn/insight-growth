@@ -118,6 +118,10 @@
     &__link:focus {
         color: $color-akcent;
     }
+
+    &__link.active {
+        font-weight: 500;
+    }
 }
 
 .site-subnav {
@@ -165,13 +169,16 @@ nav li:hover > .site-subnav__list,
     display: block;
     max-height: 150px;
 }
+    
+ 
+.current {
+    color: $color-akcent;
+ }
 
 // .mobile-menu__call-me:hover,
 // .mobile-menu__call-me:focus {
 //     color: $color-akcent;
 // }
-
-
 
 
 

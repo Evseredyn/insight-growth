@@ -31,7 +31,6 @@
 
     @include mq(tablet) {
         flex-direction: row;
-        align-items: flex-start;
     }
 }
 
@@ -70,6 +69,7 @@
     
         @include mq(desktop) {
             align-content: flex-start;
+            gap: 0px;
         }
     }
 
@@ -89,11 +89,11 @@
         }
     
         @include mq(desktop) {
-            margin-left: 30px;
+            margin-right: 40px;
         }
     
         @include mq(monitor) {
-            margin-left: 60px;
+            margin-right: 60px;
         }
     }
 
@@ -151,7 +151,7 @@
         }
 
         @include mq(desktop) {
-            top: 80%;
+            top: 150%;
             left: 0;
             width: 400px;
             // padding: 20px;
@@ -218,11 +218,11 @@ nav li:hover > .footer-subnav__list,
     @include mq(desktop) {
         align-content: center;
         margin-top: 0;
-        margin-left: 50px;
+        margin-left: 150px;
     }
 
     @include mq(monitor) {
-        margin-left: 300px;
+        margin-left: 350px;
     }
 }
 

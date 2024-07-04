@@ -33,11 +33,11 @@
                     <a href="javaScript:void(0);" class="site-nav__link link">Послуги</a>
                     <ul class="site-subnav__list list">
                         <li class="site-subnav__item current"><a href="./complex.html" class="site-subnav__link link">Бухгалтерія під ключ</a></li>
-                        <li class="site-subnav__item"><a href="./personal.html" class="site-subnav__link link">Управлінський облік для власника бізнесу</a></li>
+                        <li class="site-subnav__item"><a href="./personal.html" class="site-subnav__link link">Управлінський облік</a></li>
                         <li class="site-subnav__item"><a href="./management.html" class="site-subnav__link link">Кадровий облік</a></li>
                     </ul>
                 </li>
-                <li class="site-nav__item"><a href="./about.html" class="site-nav__link link current">Про нас</a></li>
+                <li class="site-nav__item"><a href="./about.html" class="site-nav__link link current active">Про нас</a></li>
                 <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link link">Контакти</a></li>
             </ul>
         </nav>
@@ -136,6 +136,23 @@
     </ul>
     <a class="btn-contact__link link" href="">більше новин<svg class="btn-contact__icon" width="26px" height="20px"><use href="./images/icons.svg#icon-arrow-right"></use></svg></a>
 </section>
+<!-- <script>
+    let openBlock = document.getElementsByClassName('news__inner');
+    for (let i=0; i<openBlock.length; i++) {
+        openBlock[i].addEventListener('click', function(e) {
+            let blockStatus = 1;
+            let selectedBlock = this.parentNode.parentNode.parentNode;
+            let isOpen = this.parentNode.parentNode.getElementsByClassName('news__answer')[0];
+            if(isOpen.classList.contains('open')){
+                blockStatus *= (-1);
+            }
+            let w = document.querySelector('.news__img').width;
+            let h = document.querySelector('.news__img').height;
+            document.querySelector('.news__img').style.width = w + (100 * blockStatus) + 'px';
+            document.querySelector('.news__img').style.height = h + (100 * blockStatus) + 'px';          
+        });
+    }
+</script> -->
 <!--Contact us-->
 <section id="contact-us-1" class="contact-us section">
     <div class="contact-us__flex container">
@@ -250,7 +267,7 @@
                             <a href="javaScript:void(0);" class="footer-nav__link link">Послуги</a>
                             <ul class="footer-subnav__list list">
                                 <li class="footer-subnav__item"><a href="./complex.html" class="footer-subnav__link link">Бухгалтерія під ключ</a></li>
-                                <li class="footer-subnav__item"><a href="./personal.html" class="footer-subnav__link link">Управлінський облік для власника бізнесу</a></li>
+                                <li class="footer-subnav__item"><a href="./personal.html" class="footer-subnav__link link">Управлінський облік</a></li>
                                 <li class="footer-subnav__item"><a href="./management.html" class="footer-subnav__link link">Кадровий облік</a></li>
                             </ul>
                         </li>
@@ -320,7 +337,7 @@
                     <a href="javaScript:void(0);" class="mob-nav__link link">Послуги</a>
                     <ul class="mob-subnav__list list">
                         <li class="mob-subnav__item"><a href="./complex.html" class="mob-subnav__link link">Бухгалтерія під ключ</a></li>
-                        <li class="mob-subnav__item"><a href="./personal.html" class="mob-subnav__link link">Управлінський облік для власника бізнесу</a></li>
+                        <li class="mob-subnav__item"><a href="./personal.html" class="mob-subnav__link link">Управлінський облік</a></li>
                         <li class="mob-subnav__item"><a href="./management.html" class="mob-subnav__link link">Кадровий облік</a></li>
                     </ul>
                 </li>

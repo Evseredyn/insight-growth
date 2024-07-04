@@ -130,7 +130,7 @@
         display: none;
         padding: 10px 20px 10px;
         max-height: 0;
-        width: 85%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         // background-color: $color-menu-bg;
@@ -158,15 +158,19 @@
     // }
     
     &__link {
-        display: inline-block;
-        // margin-left: auto;
-        // margin-right: auto;
+        display: block;
+        text-align: center;
         font-family: $info-font;
         font-size: 20px;
         font-weight: 300;
         color: $color-black;
+        
+        @include mq(tablet) {
+
+        }
 
         @include mq(desktop) {
+            display: inline-block;
             font-size: 20px;
         }
     }
@@ -186,6 +190,11 @@ nav li:hover > .mob-subnav__list,
     @include mq(tablet) {
         max-height: 250px;
     }
+}
+    
+nav li:hover > .mob-subnav__link,
+.mob-subnav__list:hover {
+    font-weight: 500;
 }
 
 .mob-nav__call-me {
