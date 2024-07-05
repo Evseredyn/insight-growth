@@ -31,6 +31,11 @@
 
     @include mq(tablet) {
         flex-direction: row;
+        align-items: flex-start;
+    }
+
+    @include mq(desktop) {
+        align-items: center;
     }
 }
 

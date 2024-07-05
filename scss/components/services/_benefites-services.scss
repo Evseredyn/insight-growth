@@ -60,6 +60,7 @@
         height: 300px;
         padding: 0px 10px 20px;
         border-radius: 30px;
+        color: $color-akcent;
     
         @include mq(tablet) {
             width: 342px;
@@ -222,7 +223,13 @@
 }
 
 .services____icon {
-    display: block;
-    margin: 0 auto;
-    fill: currentColor;
+    // display: block;
+    // margin: 0 auto;
+    // fill: currentColor;
+    // display: inline-block;
+    // width: 1em;
+    // height: 1em;
+    // stroke-width: 0;
+    // stroke: currentColor;
+    // fill: currentColor;
 }

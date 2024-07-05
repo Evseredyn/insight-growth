@@ -885,6 +885,16 @@ nav li:hover > .mob-subnav__link,
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2944,6 +2954,7 @@ nav li:hover > .footer-subnav__list,
   height: 300px;
   padding: 0px 10px 20px;
   border-radius: 30px;
+  color: #1c74e9;
 }
 @media screen and (min-width: 744px) {
   .benefites-services__item {
@@ -3105,12 +3116,6 @@ nav li:hover > .footer-subnav__list,
     width: 120px;
     height: 120px;
   }
-}
-
-.services____icon {
-  display: block;
-  margin: 0 auto;
-  fill: currentColor;
 }
 
 .include-services {
