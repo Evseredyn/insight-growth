@@ -1566,8 +1566,13 @@ nav li:hover > .footer-subnav__list,
 .benefites__icon {
   display: block;
   fill: #FFFFFF;
-  text-align: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 1920px) {
+  .benefites__icon {
+    width: 90px;
+    height: 90px;
+  }
 }
 .benefites__title {
   font-family: "Raleway", sans-serif;
@@ -3115,6 +3120,24 @@ nav li:hover > .footer-subnav__list,
   .services__circul-2 {
     width: 120px;
     height: 120px;
+  }
+}
+
+.services__icon {
+  display: block;
+  margin: 0 auto;
+  fill: currentColor;
+}
+@media screen and (min-width: 744px) {
+  .services__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .services__icon {
+    width: 60px;
+    height: 60px;
   }
 }
 

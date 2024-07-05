@@ -104,8 +104,12 @@
     &__icon {
         display: block;
         fill: $color-white;
-        text-align: center;
         margin: 0 auto;
+
+        @include mq(monitor) {
+            width: 90px;
+            height: 90px;
+        }
     }
 
     &__title {
