@@ -59,6 +59,70 @@
             line-height: 1.7;
          }
     }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding: 8px 10px 8px 25px;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1,25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $color-akcent;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        transition: color $duration $timing-function, background-color $duration $timing-function;
+
+        @include mq(tablet) {
+           gap: 10px;
+           font-size: 18px;
+           line-height: 1,1;
+           max-width: 290px;
+           margin-bottom: 0px;
+           padding: 8px 10px 8px 20px;
+        }
+     }
+
+     &__link:hover,
+     &__link:focus {
+        color: $color-akcent;
+        background-color: $color-light-bg;
+     }
+
+     &__link:hover &__icon,
+     &__link:focus &__icon {
+        fill: $color-white;
+     }
+
+     &__icon:hover,
+     &__icon:focus {
+        fill: $color-white;
+     }
+
+     &__circ {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: currentColor;
+     }
+
+     &__icon {
+        fill: $color-akcent;
+        transition: color $duration $timing-function, background-color $duration $timing-function;  
+     }
+
     &__list { 
         position: relative;
         // display: flex;
