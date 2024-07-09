@@ -10,11 +10,7 @@ $color-menu-bg: #F3F8FF;
 $color-footer-bg: #1060CA;
 $color-light-bg: #F5F5F5;
 $color-bg-item: #EBF4FF;
-$color-gradient: linear-gradient(
-    to right bottom,
-    rgba(28,116,233,1),
-    rgba(16,96,202,1)
-   );
+$color-gradient: linear-gradient(to right bottom, rgba(28, 116, 233, 1) 0%, rgba(16, 96, 202, 1) 100%);
 // Animations
 $duration: 250ms;
 $timing-function: cubic-bezier(0.4,0,0.2,1);

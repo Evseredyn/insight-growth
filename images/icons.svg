@@ -16,6 +16,11 @@
     <symbol id="icon-close" viewBox="0 0 32 32">
     <path d="m17.88 16 8.4-8.387a1.34 1.34 0 0 0-1.894-1.894l-8.387 8.4-8.387-8.4a1.34 1.34 0 0 0-1.894 1.894l8.4 8.387-8.4 8.387a1.334 1.334 0 0 0 0 1.894 1.334 1.334 0 0 0 1.894 0l8.387-8.4 8.387 8.4a1.334 1.334 0 0 0 1.894 0 1.334 1.334 0 0 0 0-1.894L17.88 16z"/>
     </symbol>
+    <symbol id="icon-ar-down" viewBox="0 0 32 32">
+      <path stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M2.286 2.286l27.429 27.428M29.714 29.714h-20.571M29.714 29.714v-20.571"></path>
+    </symbol>
+
+
     <symbol id="icon-arrow-forward" viewBox="0 0 31 32">
     <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.7826" d="M-3.228 15.627l31.411-0.169M28.183 15.457l-11.837 12.986M28.183 15.457l-11.721-12.859"></path>
     </symbol>
@@ -154,12 +159,17 @@
     <symbol id="icon-arrow-right" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.1333" stroke="#666" d="M3.070 16h25.86M28.93 16l-9.697 9.697M28.93 16l-9.697-9.697"/>
     </symbol>
-    <symbol id="icon-arrow-down" viewBox="0 0 32 32">
-      <path d="m1.428 1.429 17.143 17.143m0 0H5.714m12.857 0V5.713" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
+    <!-- <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path d="m1.428 1.429 17.143 17.143m0 0H5.714m12.857 0V5.713" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol> -->
     <symbol id="icon-subtract" viewBox="0 0 32 32">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M30 60c16.569 0 30-13.431 30-30C60 13.431 46.569 0 30 0 13.431 0 0 13.431 0 30c0 16.569 13.431 30 30 30Zm-5.286-21.429a1 1 0 0 1 1-1h10.443L20.722 22.136a1 1 0 1 1 1.414-1.415L37.57 36.157V25.714a1 1 0 1 1 2 0v12.857a1 1 0 0 1-1 1H25.714a1 1 0 0 1-1-1Z"/>
     </symbol>
+    <!-- <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M2.286 2.286l27.429 27.428M29.714 29.714h-20.571M29.714 29.714v-20.571"></path>
+    </symbol> -->
+
+
 
   </defs>
 </svg>

@@ -38,11 +38,11 @@
         align-items: center;
         justify-content: space-between;
         gap: 15px;
-        max-width: 270px;
+        width: 270px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        padding: 8px 10px 8px 25px;
+        padding: 8px 10px 8px 20px;
         font-family: $main-font;
         font-size: 16px;
         font-weight: 500;
@@ -59,29 +59,29 @@
            gap: 10px;
            font-size: 18px;
            line-height: 1,1;
-           max-width: 280px;
+           width: 280px;
            margin-bottom: 0px;
            padding: 8px 10px 8px 20px;
         }
-     }
-     
-     &__link:hover,
-     &__link:focus {
-        color: $color-akcent;
-        background-color: $color-light-bg;
-     }
+    }
+    
+    &__link:hover,
+    &__link:focus {
+       color: $color-akcent;
+       background-color: $color-light-bg;
+    }
+
+    &__link:hover &__decor,
+    &__link:focus &__decor {
+       color: $color-white;
+    }
   
-     &__link:hover &__icon,
-     &__link:focus &__icon {
-        fill: $color-white;
-     }
+    //  &__icon:hover,
+    //  &__icon:focus {
+    //     fill: $color-white;
+    //  }
   
-     &__icon:hover,
-     &__icon:focus {
-        fill: $color-white;
-     }
-  
-     &__circ {
+    &__circle {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,12 +89,18 @@
         width: 50px;
         height: 50px;
         background-color: currentColor;
-     }
-  
-     &__icon {
-        fill: $color-akcent;
-        transition: color $duration $timing-function, background-color $duration $timing-function;
-     }
+    }
+
+    &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-akcent;
+    }
+    
+    &__icon {
+       fill: currentColor;
+    }
 
     &__list { 
         position: relative;

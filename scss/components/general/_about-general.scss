@@ -1,100 +1,217 @@
 .about {
-}
 
-.about__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    @include mq(desktop) {
-        flex-direction: row;
+    &__list {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+
+        @include mq(desktop) {
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+        }
+
+        @include mq(monitor) {
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
     }
 
-    @include mq(monitor) {
-        flex-direction: row;
-        align-items: center;
-        gap: 40px;
-    }
-}
-
-.about__item {
-    background-color: $color-bg-item;
-    width: 100%;
-    // max-height: 390px;
-    padding: 30px 10px 40px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @include mq(tablet) {
-        max-width: 714px;
-        height: 370px;
-        padding: 30px 65px 40px;
-    }
-
-    @include mq(desktop) {
-        max-width: 380px;
-        height: 600px;
-        padding: 30px 30px 40px;
-        // &__item>link {
-        //     margin-top: auto;
-        // }
-    }
-
-    @include mq(monitor) {
-        max-width: 550px;
-        max-height: 600px;
-        padding: 40px 50px;
-    }
-}
-
-.about-item:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.about__title {
-    // display: block;
-    font-family: $main-font;
-    color: $color-black;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.41;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-
-    @include mq(tablet) {
-        width: 90%;
-        font-size: 30px;
-        line-height: 1.33;
-    }
-
-    @include mq(desktop) {
-        font-size: 30px;
-        line-height: 1.33;
-        width: 90%;
-    }
-
-    @include mq(monitor) {
-        font-size: 46px;
-        line-height: 1.17;
+    &__item {
+        background-color: $color-bg-item;
         width: 100%;
+        // max-height: 390px;
+        padding: 30px 10px 40px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include mq(tablet) {
+            max-width: 714px;
+            height: 370px;
+            padding: 30px 65px 40px;
+        }
+
+        @include mq(desktop) {
+            max-width: 380px;
+            height: 600px;
+            padding: 30px 30px 40px;
+            // &__item>link {
+            //     margin-top: auto;
+            // }
+        }
+
+        @include mq(monitor) {
+            max-width: 550px;
+            height: 600px;
+            padding: 40px 50px;
+        }
     }
 
-}
-.about__discription {
-    font-family: $info-font;
-    color: $color-black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.57;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: auto;
-    padding: 10px;
-}
+    &-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 
+    &__button-wrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    &__button-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-gradient;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        transition: opacity $duration $timing-function;
+    }
+
+    &__button-wrapper:hover &__button-background,
+    &__button-wrapper:focus &__button-background {
+        opacity: 0;
+    }
+    &__button-wrapper:hover &__link,
+    &__button-wrapper:focus &__link {
+        color: $color-akcent;
+    }
+
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 252px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 10px 8px 30px;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1,25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-white;
+        transition: color $duration $timing-function,  opacity $duration $timing-function;
+        cursor: pointer;
+
+        @include mq(monitor) {
+            width: 270px;
+            height: 76px;
+            font-size: 18px;
+            line-height: 1,1;
+        }
+    }
+    
+         
+    // &__link:hover,
+    // &__link:focus {
+    //    color: $color-akcent;
+    // }
+  
+    &__link:hover &__decor,
+    &__link:focus &__decor {
+       color: $color-white;
+    }
+  
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: currentColor;
+    }
+ 
+    &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-akcent;
+    }
+
+    &__icon {
+        fill: $color-akcent;
+    }
+
+    // &__icon::after {
+    //     // z-index: -1;
+    //     content: "";
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     right: 8px;
+    //     width: 50px;
+    //     height: 50px;
+    //     border-radius: 50px;
+    //     background-color: $color-white;
+    // }
+
+    &__title {
+        font-family: $main-font;
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.41;
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+
+        @include mq(tablet) {
+            width: 90%;
+            font-size: 30px;
+            line-height: 1.33;
+        }
+
+        @include mq(desktop) {
+            font-size: 30px;
+            line-height: 1.33;
+            width: 90%;
+        }
+
+        @include mq(monitor) {
+            font-size: 46px;
+            line-height: 1.17;
+            width: 100%;
+        }
+    }
+
+    &__discription {
+        font-family: $info-font;
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding: 10px;
+    }
+    
+    @include mq(tablet) {
+        width: 85%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    @include mq(desktop) {
+        width: 90%;
+    }
+
+    @include mq(monitor) {
+        width: 450px;
+        font-size: 18px;
+    }
+}
