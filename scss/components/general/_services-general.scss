@@ -147,7 +147,94 @@
             line-height: 1.38;
         }
     }
+    
+    &__button-wrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    &__button-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-gradient;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        transition: opacity $duration $timing-function;
+    }
+
+    &__button-wrapper:hover &__button-background,
+    &__button-wrapper:focus &__button-background {
+        opacity: 0;
+    }
+    &__button-wrapper:hover &__link,
+    &__button-wrapper:focus &__link {
+        color: $color-akcent;
+    }
+    
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 250px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 10px 8px 15px;
+        border: solid 2px $color-akcent;
+        border-radius: 40px;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1,25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-white;
+        transition: color $duration $timing-function,  opacity $duration $timing-function;
+        cursor: pointer;
+
+        // @include mq(monitor) {
+        //     width: 270px;
+        //     height: 76px;
+        //     font-size: 18px;
+        //     line-height: 1,1;
+        // }
+    }
   
+    &__link:hover &__decor,
+    &__link:focus &__decor {
+       color: $color-white;
+    }
+  
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: currentColor;
+    }
+ 
+    &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: $color-akcent;
+    }
+
+    &__icon {
+        fill: $color-akcent;
+    }
+
     &-slider__prev-button {
         position: absolute;
         display: flex;
@@ -163,6 +250,7 @@
         border: 0px;
         color: $color-white;
         background: $color-akcent;
+        transform: rotate(135deg);
         cursor: pointer;
 
         @include mq(tablet) {
@@ -202,6 +290,7 @@
         border: 0px;
         color: $color-white;
         background: $color-akcent;
+        transform: rotate(-45deg);
         cursor: pointer;
 
         @include mq(tablet) {

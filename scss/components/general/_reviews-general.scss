@@ -207,6 +207,7 @@
         border: 0px;
         color: $color-white;
         background: $color-akcent;
+        transform: rotate(135deg);
         cursor: pointer;
 
         @include mq(tablet) {
@@ -245,6 +246,7 @@
         border: 0px;
         color: $color-white;
         background: $color-akcent;
+        transform: rotate(-45deg);
         cursor: pointer;
 
         @include mq(tablet) {

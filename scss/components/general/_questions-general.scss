@@ -134,17 +134,30 @@
         }  
     }
     
-    &__icon {
-        border-radius: 50%;
+    &__circul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: $color-white;
         background-color: $color-akcent;
-        fill: $color-white;
+        border-radius: 50%;
 
         @include mq(tablet) {
             width: 60px;
             height: 60px;
         }
     }
+
+    &__icon {
+        fill: currentColor;
+    }
     
+    &__icon.open {
+        transform: rotate(-90deg);
+    }
+
     &__answer {
         // display: none;
         overflow: hidden;
