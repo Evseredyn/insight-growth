@@ -152,14 +152,22 @@
 
     &__icon {
         fill: currentColor;
+        transition: transform $duration $timing-function;
     }
-    
-    &__icon.open {
+
+    // &__item {
+    //     &:has(.questions__answer.open) {
+    //         .questions__icon {
+    //           transform: rotate(-90deg);
+    //         }
+    //     }
+    // }
+
+    &__item > &__answer.open ~ &__inner &__icon {
         transform: rotate(-90deg);
     }
 
     &__answer {
-        // display: none;
         overflow: hidden;
         height: 0;
         transition: max-height $duration $timing-function;
@@ -169,6 +177,10 @@
         display: block;
         // max-height: 100px;
         height: auto;
+
+        // &__icon {
+        //     transform: rotate(-90deg);
+        // }
     }
 
     // &__item:first-child .questions__answer {
