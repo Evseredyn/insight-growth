@@ -90,7 +90,7 @@
         height: 66px;
         margin-left: auto;
         margin-right: auto;
-        padding: 8px 10px 8px 30px;
+        padding: 8px 8px 8px 30px;
         border: solid 2px $color-akcent;
         border-radius: 40px;
         font-family: $main-font;
@@ -110,12 +110,6 @@
             line-height: 1,1;
         }
     }
-    
-         
-    // &__link:hover,
-    // &__link:focus {
-    //    color: $color-akcent;
-    // }
   
     &__link:hover &__decor,
     &__link:focus &__decor {
@@ -142,7 +136,7 @@
     }
 
     &__icon {
-        fill: $color-akcent;
+        fill: currentColor;
     }
 
     // &__icon::after {
