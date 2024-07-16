@@ -164,6 +164,7 @@
         // border-radius: 50px;
         fill: $color-akcent;
         // padding: 10px;
+        transition: color $duration $timing-function;
     }
 
     &__thumb {

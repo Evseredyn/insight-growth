@@ -137,6 +137,7 @@
 
     &__icon {
         fill: currentColor;
+        transition: color $duration $timing-function;
     }
 
     // &__icon::after {

@@ -233,6 +233,7 @@
 
     &__icon {
         fill: $color-akcent;
+        transition: color $duration $timing-function;
     }
 
     &-slider__prev-button {
