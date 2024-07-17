@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.reviews__slider>.reviews__list').slick({
-      slidesToShow: 1, // Кількість відгуків, які відображаються одночасно
+      slidesToShow: 5, // Кількість відгуків, які відображаються одночасно
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
       easing: 'cubic-bezier(0.4,0,0.2,1)',
@@ -9,34 +9,54 @@ $(document).ready(function() {
       infinite: true,
       pauseOnFocus: true,
       pauseOnHover: true,
-      draggable: false,
+      draggable: false,     
+      initialSlide: 0,
+      infinite: false,
       // centerMode:true,
-      arrows: true, // Відображати стрілки навігації
+      arrows: true,
       responsive: [
         {
-          breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
+          breakpoint: 1921,
           settings: {
-            slidesToShow: 1, // Кількість відгуків на планшеті
-          }
-        },
-        {
-          breakpoint: 745,
-          settings: {
-            slidesToShow: 2,
+            slidesToShow: 3.3,
           }
         },
         {
           breakpoint: 1441,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 3.2,
           }
         },
         {
-          breakpoint: 1921,
+          breakpoint: 1025,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 2.9,
           }
-        }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2.2,
+          }
+        },
+        {
+          breakpoint: 428,
+          settings: {
+            slidesToShow: 1.2,
+          }
+        },
+        {
+          breakpoint: 376,
+          settings: {
+            slidesToShow: 1, 
+          }
+        },
+        {
+          breakpoint: 321,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
       ]
     });
 
