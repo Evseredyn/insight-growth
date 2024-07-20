@@ -10,8 +10,9 @@ $(document).ready(function() {
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
+      initialSlide: 0,
       // centerMode:true,
-      arrows: true, // Відображати стрілки навігації
+      arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
           breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
@@ -25,8 +26,10 @@ $(document).ready(function() {
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2.05,
+            slidesToShow: 2,
             autoplay: true,
+            initialSlide: 0,//починаємо з першого
+            infinite: false,
           }
         },
         {
@@ -35,7 +38,7 @@ $(document).ready(function() {
             slidesToShow: 3,
             slideWidth: 400, // Ширина слайда 400px
             centerMode: true,
-            centerPadding: '120px',
+            centerPadding: '120px'
           }
         },
         {
@@ -44,7 +47,7 @@ $(document).ready(function() {
             slidesToShow: 3,
             slideWidth: 400, // Ширина слайда 400px
             centerMode: true, // Центрувати активний слайд
-            centerPadding: '240px' // Додати відступ 40px праворуч і ліворуч
+            centerPadding: '320px' // Додати відступ 40px праворуч і ліворуч
           }
         }
       ]

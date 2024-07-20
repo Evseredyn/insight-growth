@@ -1048,7 +1048,44 @@ nav li:hover > .footer-subnav__list,
     margin-bottom: 80px;
   }
 }
+.hero__button-wrapper {
+  position: relative;
+  width: 260px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+@media screen and (min-width: 744px) {
+  .hero__button-wrapper {
+    width: 280px;
+    height: 76px;
+    margin-bottom: 0px;
+  }
+}
+.hero__button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(28, 116, 233)), to(rgb(16, 96, 202)));
+  background: linear-gradient(to right bottom, rgb(28, 116, 233) 0%, rgb(16, 96, 202) 100%);
+  border: solid 2px transparent;
+  border-radius: 40px;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button-wrapper:hover .hero__button-background, .hero__button-wrapper:focus .hero__button-background {
+  opacity: 0;
+}
+.hero__button-wrapper:hover .hero__link, .hero__button-wrapper:focus .hero__link {
+  color: #1c74e9;
+  border: solid 2px #1c74e9;
+}
 .hero__link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,11 +1095,10 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 15px;
-  width: 270px;
+  width: 260px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   padding: 8px 8px 8px 20px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -1071,28 +1107,56 @@ nav li:hover > .footer-subnav__list,
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #1c74e9;
-  border: solid 2px #1c74e9;
+  border: solid 2px transparent;
   border-radius: 40px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 @media screen and (min-width: 744px) {
   .hero__link {
-    gap: 10px;
+    width: 280px;
+    height: 76px;
     font-size: 18px;
     line-height: 1, 1;
-    width: 280px;
-    margin-bottom: 0px;
-    padding: 8px 10px 8px 20px;
   }
-}
-.hero__link:hover, .hero__link:focus {
-  color: #1c74e9;
-  background-color: #F5F5F5;
 }
 .hero__link:hover .hero__decor, .hero__link:focus .hero__decor {
   color: #FFFFFF;
+}
+.hero__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: currentColor;
+}
+.hero__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #1c74e9;
+}
+.hero__icon {
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__circle {
   display: -webkit-box;
@@ -1399,6 +1463,7 @@ nav li:hover > .footer-subnav__list,
 }
 .about__button-wrapper:hover .about__link, .about__button-wrapper:focus .about__link {
   color: #1c74e9;
+  border: solid 2px #1c74e9;
 }
 .about__link {
   position: relative;
@@ -1417,7 +1482,7 @@ nav li:hover > .footer-subnav__list,
   margin-left: auto;
   margin-right: auto;
   padding: 8px 8px 8px 30px;
-  border: solid 2px #1c74e9;
+  border: solid 2px transparent;
   border-radius: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -1763,7 +1828,7 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 330px;
+  width: 330px;
   height: 460px;
   padding: 10px 10px 30px;
   background-color: #EBF4FF;
@@ -1771,7 +1836,6 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .services__item {
-    max-width: auto;
     width: 330px;
     height: 480px;
     padding: 10px 10px 30px;
@@ -2128,15 +2192,16 @@ nav li:hover > .footer-subnav__list,
   .reviews__item {
     width: 330px;
     height: 340px;
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media screen and (min-width: 1440px) {
   .reviews__item {
     width: 380px;
     height: 420px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 30px;
   }
 }
@@ -2906,7 +2971,44 @@ nav li:hover > .footer-subnav__list,
     line-height: 1.7;
   }
 }
+.hero-services__button-wrapper {
+  position: relative;
+  width: 250px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+@media screen and (min-width: 744px) {
+  .hero-services__button-wrapper {
+    width: 288px;
+    height: 76px;
+    margin-bottom: 0px;
+  }
+}
+.hero-services__button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(28, 116, 233)), to(rgb(16, 96, 202)));
+  background: linear-gradient(to right bottom, rgb(28, 116, 233) 0%, rgb(16, 96, 202) 100%);
+  border: solid 2px transparent;
+  border-radius: 40px;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-services__button-wrapper:hover .hero-services__button-background, .hero-services__button-wrapper:focus .hero-services__button-background {
+  opacity: 0;
+}
+.hero-services__button-wrapper:hover .hero-services__link, .hero-services__button-wrapper:focus .hero-services__link {
+  color: #1c74e9;
+  border: solid 2px #1c74e9;
+}
 .hero-services__link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2916,12 +3018,11 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 15px;
-  width: 252px;
+  width: 250px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
-  padding: 8px 10px 8px 25px;
+  padding: 8px 8px 8px 15px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -2929,24 +3030,23 @@ nav li:hover > .footer-subnav__list,
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgb(28, 116, 233)), to(rgb(16, 96, 202)));
-  background: linear-gradient(to right bottom, rgb(28, 116, 233) 0%, rgb(16, 96, 202) 100%);
-  border: solid 2px #1c74e9;
+  border: solid 2px transparent;
   border-radius: 40px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 744px) {
   .hero-services__link {
-    gap: 10px;
+    width: 288px;
+    height: 76px;
     font-size: 18px;
     line-height: 1, 1;
-    width: 290px;
-    margin-bottom: 0px;
-    padding: 8px 10px 8px 20px;
   }
 }
-.hero-services__circ {
+.hero-services__link:hover .hero-services__decor, .hero-services__link:focus .hero-services__decor {
+  color: #FFFFFF;
+}
+.hero-services__circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2961,10 +3061,24 @@ nav li:hover > .footer-subnav__list,
   height: 50px;
   background-color: currentColor;
 }
+.hero-services__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #1c74e9;
+}
 .hero-services__icon {
-  fill: #1c74e9;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-services__list {
   position: relative;

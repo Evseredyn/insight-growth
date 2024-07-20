@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> -->
     <!-- jQuery (Slick Slider dependency) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- Slick Slider JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <!-- Dev -->
+
+    <!-- /Dev -->
 </head>
 <body>
 <!--Header-->
@@ -55,8 +58,12 @@
         <section class="hero section">
            <div class="container">
                <h1 class="hero__heading">Професійний <span class="current">податковий консалтинг</span> для Вашого бізнесу</h1>
+                <div class="hero__button-wrapper">
+                    <div class="hero__button-background"></div>
+                    <a class="hero__link link"  href="#contact-us-1">вибрати послугу<span class="hero__circle"><span class="hero__decor"><svg class="hero__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a>
+                </div>
                <!-- <button type="button">Вибрати послугу</button> -->
-               <a class="hero__link link" href="#contact-us-1">вибрати послугу<span class="hero__circle"><span class="hero__decor"><svg class="hero__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a>
+               <!-- <a class="hero__link link" href="#contact-us-1">вибрати послугу<span class="hero__circle"><span class="hero__decor"><svg class="hero__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a> -->
                <ul class="hero__list list">
                    <li class="hero__item-1">
                         <picture>
@@ -328,8 +335,7 @@
             <div class="services__slider">
                 <h2 class="services__heading">Наші <span class="current">послуги</span></h2>
                 <ul class="services__list list">
-                    <div>
-                        <li class="services__item">
+                    <li class="services__item">
                             <picture>
                                 <source media="(min-width: 1920px)"
                                 srcset="./images/general/services/gen-services-1_ulg.webp 1x, ./images/general/services/gen-services-1_ulg@2x.webp 2x"
@@ -371,10 +377,8 @@
                                 <div class="services__button-background"></div>
                                 <a class="services__link link" href="">вибрати послугу<span class="services__circle"><span class="services__decor"><svg class="services__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a>
                             </div>
-                        </li>
-                    </div>
-                    <div>
-                        <li class="services__item">
+                    </li>
+                    <li class="services__item">
                             <picture>
                                 <source media="(min-width: 1920px)"
                                 srcset="./images/general/services/gen-services-1_ulg.webp 1x, ./images/general/services/gen-services-1_ulg@2x.webp 2x"
@@ -416,10 +420,8 @@
                                 <div class="services__button-background"></div>
                                 <a class="services__link link" href="">вибрати послугу<span class="services__circle"><span class="services__decor"><svg class="services__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a>
                             </div>
-                        </li>
-                    </div>
-                    <div>
-                        <li class="services__item">
+                    </li>
+                    <li class="services__item">
                             <picture>
                                 <source media="(min-width: 1920px)"
                                 srcset="./images/general/services/gen-services-1_ulg.webp 1x, ./images/general/services/gen-services-1_ulg@2x.webp 2x"
@@ -461,8 +463,7 @@
                                 <div class="services__button-background"></div>
                                 <a class="services__link link" href="">вибрати послугу<span class="services__circle"><span class="services__decor"><svg class="services__icon" width="20px" height="20px"><use href="./images/icons.svg#icon-ar-down"></use></svg></span></span></a>
                             </div>
-                        </li>
-                    </div>
+                    </li>
                 </ul>
                 <button class="services-slider__prev-button">
                     <svg class="services-slider__icon" width="20" height="20">
@@ -477,7 +478,7 @@
             </div>
         </section>
 <!--Reviews-->
-    <section class="reviews section">
+    <!-- <section class="reviews section">
         <div class="reviews__slider">
             <h2 class="reviews__heading"><span class="current">Відгуки</span> наших клієнтів</h2>
             <ul class="reviews__list list">
@@ -546,6 +547,79 @@
                         </div>
                     </li>
                 </div>
+            </ul>
+            <button class="reviews-slider__prev-button">
+                <svg class="reviews-slider__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-ar-down"></use>
+                </svg>
+            </button>
+            <button class="reviews-slider__next-button">
+                <svg class="reviews-slider__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-ar-down"></use>
+                </svg>
+            </button>
+        </div>
+    </section> -->
+<!--Reviews-->
+    <section class="reviews section">
+        <div class="reviews__slider">
+            <h2 class="reviews__heading"><span class="current">Відгуки</span> наших клієнтів</h2>
+            <ul class="reviews__list list">
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <p class="reviews__title">“Дуже сподобався професійний підхід”</p>
+                    <p class="reviews__description">Дякуємо за відмінну роботу та високий рівень професіоналізму. Робота виконано дуже професійно та вчасно! Дякуємо за відданість роботі та готовність завжди допомогти. Будемо раді продовжувати співпрацю.</p>
+                    <div class="reviews__thumb">
+                        <img class="reviews__img" src="./images/general/reviews__test.jpg" alt="наш клієнт Марія" width="100px" height="100px">
+                        <div class="reviews__inner">
+                            <p class="reviews__name current">Марія</p>
+                            <p class="reviews__company">Riteyl Group</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <button class="reviews-slider__prev-button">
                 <svg class="reviews-slider__icon" width="20" height="20">
@@ -842,15 +916,27 @@
             <li class="mobile-socials__item"><a href="" class="mobile-socials__link link current">Whats App</a></li>
         </ul> -->
     </div>
-    <script
+    <!-- <script
         defer
         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous">
-    </script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script defer src="js/reviews-slider.js"></script>
-    <script defer src="js/services-slider.js"></script>
-    <script defer src="js/questions.js"></script>
+    </script> -->
+
+    <!-- Dev -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick-slider.js"></script>
+    <script src="./js/body-scroll-lock.js"></script>
+
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/reviews-slider.js"></script>
+    <script defer src="./js/services-slider.js"></script>
+    <script defer src="./js/questions.js"></script>
+    <!-- /Dev -->
+
+    <!-- <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/reviews-slider.js"></script>
+    <script defer src="./js/services-slider.js"></script>
+    <script defer src="./js/questions.js"></script> -->
 </body>
 </html>

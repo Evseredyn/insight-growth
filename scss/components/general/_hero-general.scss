@@ -33,15 +33,55 @@
          }
     }
 
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 15px;
-        width: 270px;
+    &__button-wrapper {
+        position: relative;
+        width: 260px;
+        height: 70px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
+        overflow: hidden;
+        
+        @include mq(tablet) {
+            width: 280px;
+            height: 76px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &__button-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-gradient;
+        border: solid 2px transparent;
+        border-radius: 40px;
+        transition: opacity $duration $timing-function;
+    }
+
+    &__button-wrapper:hover &__button-background,
+    &__button-wrapper:focus &__button-background {
+        opacity: 0;
+    }
+
+    &__button-wrapper:hover &__link,
+    &__button-wrapper:focus &__link {
+        color: $color-akcent;
+        border: solid 2px $color-akcent;
+    }
+
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // gap: 15px;
+        width: 260px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 8px 8px 8px 20px;
         font-family: $main-font;
         font-size: 16px;
@@ -50,31 +90,53 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: $color-white;
-        background-color: $color-akcent;
-        border: solid 2px $color-akcent;
+        // background-color: $color-akcent;
+        border: solid 2px transparent;
         border-radius: 40px;
         transition: color $duration $timing-function, background-color $duration $timing-function;
-  
+        cursor: pointer;
+
         @include mq(tablet) {
-           gap: 10px;
-           font-size: 18px;
-           line-height: 1,1;
-           width: 280px;
-           margin-bottom: 0px;
-           padding: 8px 10px 8px 20px;
+            width: 280px;
+            height: 76px;
+            font-size: 18px;
+            line-height: 1,1;
         }
     }
     
-    &__link:hover,
-    &__link:focus {
-       color: $color-akcent;
-       background-color: $color-light-bg;
-    }
-
     &__link:hover &__decor,
     &__link:focus &__decor {
        color: $color-white;
     }
+      
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: currentColor;
+    }
+ 
+    &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: $color-akcent;
+    }
+
+    &__icon {
+        fill: currentColor;
+        transition: color $duration $timing-function;
+    }
+
+    // &__link:hover &__decor,
+    // &__link:focus &__decor {
+    //    color: $color-white;
+    // }
   
     //  &__icon:hover,
     //  &__icon:focus {
