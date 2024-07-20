@@ -26,10 +26,10 @@ $(document).ready(function() {
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2,
-            autoplay: true,
-            initialSlide: 0,//починаємо з першого
-            infinite: false,
+            slidesToShow: 2.1;
+            autoplay: true;
+            initialSlide: 0; //починаємо з першого
+            infinite: false
           }
         },
         {
