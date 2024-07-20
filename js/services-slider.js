@@ -10,6 +10,7 @@ $(document).ready(function() {
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
+      initialSlide: 0,
       // centerMode:true,
       arrows: true, // Відображати стрілки навігації
       responsive: [
@@ -25,7 +26,7 @@ $(document).ready(function() {
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2.05,
+            slidesToShow: 2,
             autoplay: true,
           }
         },

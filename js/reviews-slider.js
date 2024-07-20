@@ -11,38 +11,38 @@ $(document).ready(function() {
       pauseOnHover: true,
       draggable: false,     
       initialSlide: 0,
-      infinite: false,
+      infinite: true,
       // centerMode:true,
       arrows: true,
       responsive: [
         {
           breakpoint: 1921,
           settings: {
-            slidesToShow: 3.3,
+            slidesToShow: 3,
           }
         },
         {
           breakpoint: 1441,
           settings: {
-            slidesToShow: 3.2,
+            slidesToShow: 3,
           }
         },
         {
           breakpoint: 1025,
           settings: {
-            slidesToShow: 2.9,
+            slidesToShow: 3,
           }
         },
         {
           breakpoint: 769,
           settings: {
-            slidesToShow: 2.2,
+            slidesToShow: 2,
           }
         },
         {
           breakpoint: 428,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1,
           }
         },
         {
