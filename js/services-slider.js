@@ -10,14 +10,14 @@ $(document).ready(function() {
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
-      initialSlide: 0,
+      initialSlide: 0, //починаємо з першого
       // centerMode:true,
       arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
           breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
-            slidesToShow: 1, // Кількість відгуків на планшеті
+            slidesToShow: 1, // Кількість відгуків на мобільному
             autoplay: true,
             // centerMode: true,
             // centerPadding: '15px',
@@ -26,9 +26,9 @@ $(document).ready(function() {
         {
           breakpoint: 745,
           settings: {
-            slidesToShow: 2.1;
-            autoplay: true;
-            initialSlide: 0; //починаємо з першого
+            slidesToShow: 2.15, // Кількість відгуків на планшеті
+            // autoplay: true,
+            // initialSlide: 0,
             infinite: false
           }
         },

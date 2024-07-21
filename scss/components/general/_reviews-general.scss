@@ -60,10 +60,12 @@
     
         @include mq(tablet) {
             justify-content: start;
+            margin-left: 5px;
         }
         
         @include mq(desktop) {
             justify-content: center;
+            margin-left: 0;
             // padding-left: 105px;
             // padding-right: 120px;
         }
@@ -104,7 +106,8 @@
         @include mq(monitor) {
             width: 400px;
             height: 490px;
-            margin-right: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     

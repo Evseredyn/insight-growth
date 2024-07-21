@@ -37,13 +37,13 @@
 
         @include mq(desktop) {
             max-width: 380px;
-            height: 600px;
+            height: 460px;
             padding: 30px 30px 40px;
         }
 
         @include mq(monitor) {
             max-width: 550px;
-            height: 600px;
+            height: 500px;
             padding: 40px 50px;
         }
     }
@@ -54,9 +54,16 @@
 
     &__button-wrapper {
         position: relative;
+        width: 252px;
+        height: 66px;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+        
+        @include mq(monitor) {
+            width: 270px;
+            height: 76px;
+        }
     }
 
     &__button-background {
@@ -66,7 +73,7 @@
         right: 0;
         bottom: 0;
         background: $color-gradient;
-        border: solid 2px $color-akcent;
+        border: solid 2px transparent;
         border-radius: 40px;
         transition: opacity $duration $timing-function;
     }
