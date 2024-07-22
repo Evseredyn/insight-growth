@@ -24,6 +24,9 @@
     }
 
     &__link {
+        display: flex;
+        align-items: start;
+        justify-content: center;
         color: $color-akcent;
     }
 
@@ -42,6 +45,9 @@
     }
 
     &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
         background-color: transparent;
         color: $color-blue;

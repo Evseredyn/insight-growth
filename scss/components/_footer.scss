@@ -244,7 +244,9 @@ nav li:hover > .footer-subnav__list,
 // }
 
 .socials-footer__link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials-footer__icon {
