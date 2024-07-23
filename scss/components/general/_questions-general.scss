@@ -108,17 +108,17 @@
     }
     
     &__title {
-        max-width: 240px;
+        max-width: 210px;
         margin: 0;
         font-family: $main-font;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1.37;
         color: $color-akcent;
         
         @include mq(tablet) {
-            max-width: 550px;
-            font-size: 24px;
+            max-width: 540px;
+            font-size: 22px;
             line-height: 1.25;
         }
     
@@ -127,11 +127,6 @@
             font-size: 24px;
             line-height: 1.25;
         }
-    
-        @include mq(monitor) {
-            font-size: 24px;
-            line-height: 1.25;
-        }  
     }
     
     &__circul {

@@ -4,51 +4,45 @@ $(document).ready(function() {
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
       easing: 'cubic-bezier(0.4,0,0.2,1)',
-      // autoplay: true, // Автоматичне прокручування
+      autoplay: true, // Автоматичне прокручування
       autoplaySpeed: 3000, // Затримка між автоматичним прокручуванням (у мілісекундах)
       infinite: false,
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
-      // centerMode:true,
       arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
           breakpoint: 360, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
+            // infinite: true,
             slidesToShow: 1, // Кількість відгуків на мобільному
           }
         },
         {
           breakpoint: 744,
           settings: {
+            // infinite: false,
             slidesToShow: 1, // Кількість відгуків на планшеті
           }
         },
-        // {
-        //   breakpoint: 745,
-        //   settings: {
-        //     slidesToShow: 2.15, // Кількість відгуків на планшеті
-        //   }
-        // },
         {
           breakpoint: 1440,
           settings: {
             slidesToShow: 2.15,
           }
         },
-        {
-          breakpoint: 1441,
-          settings: {
-            slidesToShow: 3.3,
-            // centerPadding: '120px'
-          }
-        },
+        // {
+        //   breakpoint: 1441,
+        //   settings: {
+        //     slidesToShow: 3.3,
+        //     // centerPadding: '120px'
+        //   }
+        // },
         {
           breakpoint: 1920,
           settings: {
             slidesToShow: 3.3,
-            // centerPadding: '120px'
           }
         },
         {
@@ -67,5 +61,3 @@ $(document).ready(function() {
         $('.reviews__slider>.reviews__list').slick('slickNext');
     });
   });
-
-  

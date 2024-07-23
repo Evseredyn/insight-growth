@@ -4,21 +4,20 @@ $(document).ready(function() {
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
       easing: 'cubic-bezier(0.4,0,0.2,1)',
-      // autoplay: true, // Автоматичне прокручування
+      autoplay: true, // Автоматичне прокручування
       autoplaySpeed: 3000, // Затримка між автоматичним прокручуванням (у мілісекундах)
       infinite: false,
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
       initialSlide: 0, //починаємо з першого
-      // centerMode:true,
       arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
-          breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
+          breakpoint: 360, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
             slidesToShow: 1, // Кількість відгуків на мобільному
-            autoplay: true,
+            // autoplay: true,
             // centerMode: true,
             // centerPadding: '15px',
           }
@@ -29,19 +28,19 @@ $(document).ready(function() {
             slidesToShow: 1, // Кількість відгуків на планшеті
           }
         },
+        // {
+        //   breakpoint: 900,
+        //   settings: {
+        //     slidesToShow: 2.5, // Кількість відгуків на планшеті
+        //     // autoplay: true,
+        //     // initialSlide: 0,
+        //     infinite: false
+        //   }
+        // },
         {
-          breakpoint: 745,
+          breakpoint: 1100,
           settings: {
-            slidesToShow: 2.15, // Кількість відгуків на планшеті
-            // autoplay: true,
-            // initialSlide: 0,
-            infinite: false
-          }
-        },
-        {
-          breakpoint: 1440,
-          settings: {
-            slidesToShow: 2.15,
+            slidesToShow: 2.2,
           }
         },
         {
