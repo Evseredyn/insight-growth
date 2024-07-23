@@ -4,17 +4,17 @@ $(document).ready(function() {
       slidesToScroll: 1, // Кількість відгуків, які прокручуються за один раз
       speed: 500,
       easing: 'cubic-bezier(0.4,0,0.2,1)',
-      autoplay: true, // Автоматичне прокручування
+      autoplay: false, // Автоматичне прокручування
       autoplaySpeed: 3000, // Затримка між автоматичним прокручуванням (у мілісекундах)
       infinite: false,
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
-      initialSlide: 0, //починаємо з першого
+      // initialSlide: 0, //починаємо з першого
       arrows: false, // Не відображати стрілки навігації
       responsive: [
         {
-          breakpoint: 360, // Розмір екрану, на якому застосовуються ці налаштування
+          breakpoint: 481, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
             slidesToShow: 1, // Кількість відгуків на мобільному
             // autoplay: true,
@@ -23,9 +23,15 @@ $(document).ready(function() {
           }
         },
         {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.2, // Кількість відгуків на планшеті
+          }
+        },
+        {
           breakpoint: 744,
           settings: {
-            slidesToShow: 1, // Кількість відгуків на планшеті
+            slidesToShow: 1.4, // Кількість відгуків на планшеті
           }
         },
         // {
@@ -38,18 +44,18 @@ $(document).ready(function() {
         //   }
         // },
         {
-          breakpoint: 1100,
+          breakpoint: 1090,
           settings: {
             slidesToShow: 2.2,
           }
         },
         {
-          breakpoint: 1441,
+          breakpoint: 1440,
           settings: {
             slidesToShow: 3,
             slideWidth: 380, // Ширина слайда 380px
             centerMode: true,
-            centerPadding: '120px'
+            // centerPadding: '120px'
           }
         },
         {
@@ -58,7 +64,7 @@ $(document).ready(function() {
             slidesToShow: 4,
             slideWidth: 400, // Ширина слайда 400px
             // centerMode: true, // Центрувати активний слайд
-            centerPadding: '100px' // Додати відступ 40px праворуч і ліворуч
+            // centerPadding: '100px' // Додати відступ 40px праворуч і ліворуч
           }
         }
       ]

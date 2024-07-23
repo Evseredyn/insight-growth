@@ -548,7 +548,7 @@ nav li:hover > .site-subnav__list,
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 20px 15px;
   background-color: #F3F8FF;
@@ -1837,6 +1837,7 @@ nav li:hover > .footer-subnav__list,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   overflow: hidden;
 }
 @media screen and (min-width: 744px) {
@@ -1863,22 +1864,20 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 330px;
+  width: 100vw;
   height: 460px;
   margin-left: 15px;
   margin-right: 15px;
   padding: 10px 10px 30px;
-  background-color: #EBF4FF;
   border-radius: 30px;
+  background-color: #EBF4FF;
 }
 @media screen and (min-width: 744px) {
   .services__item {
+    width: 330px;
     height: 480px;
     margin-left: 10px;
     margin-right: 10px;
@@ -1887,7 +1886,7 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .services__item {
-    max-width: 380px;
+    width: 380px;
     height: 500px;
     margin-left: 15px;
     margin-right: 15px;
@@ -1929,7 +1928,7 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .services__title {
-  width: 60%;
+  width: 180px;
   margin: 20px auto;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -1940,7 +1939,7 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .services__title {
-    width: 240px;
+    width: 210px;
     margin: 30px auto;
     font-size: 24px;
     line-height: 1.38;
@@ -2196,6 +2195,7 @@ nav li:hover > .footer-subnav__list,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   overflow: hidden;
 }
 @media screen and (min-width: 744px) {
@@ -2225,7 +2225,7 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 330px;
+  width: 100vw;
   height: 350px;
   margin-left: 15px;
   margin-right: 15px;
@@ -2235,6 +2235,7 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .reviews__item {
+    max-width: 330px;
     height: 340px;
     margin-left: 10px;
     margin-right: 10px;

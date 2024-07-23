@@ -58,6 +58,8 @@
 
     &__list {
         display: flex;
+        // width: 100vw;
+        width: 100%;
         overflow: hidden;
     
         @include mq(tablet) {
@@ -68,13 +70,6 @@
         @include mq(desktop) {
             justify-content: center;
             margin-left: 0;
-            // padding-left: 105px;
-            // padding-right: 120px;
-        }
-    
-        @include mq(monitor) {
-        //    padding-left: 85px;
-        //    padding-right: 100px;
         }
     }
     
@@ -82,7 +77,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 330px;
+        // max-width: 330px;
+        width: 100vw;
         height: 350px;
         margin-left: 15px;
         margin-right: 15px;
@@ -91,6 +87,7 @@
         background-color: $color-bg-item;
     
         @include mq(tablet) {
+            max-width: 330px;
             height: 340px;
             margin-left: 10px;
             margin-right: 10px;
@@ -112,6 +109,10 @@
         }
     }
     
+    // &__item:last-child {
+    //     margin-right: 100px;
+    // }
+
     &__title {
         // width: 240px;
         width: 90%;
