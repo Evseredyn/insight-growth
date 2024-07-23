@@ -43,11 +43,24 @@ html {
    }
 
    @include mq(desktop) {
-      padding: 120px 0;
+      padding: 140px 0;
    }
 
-   @include mq(monitor) {
-      padding: 100px 0;
+   // @include mq(monitor) {
+   //    padding: 100px 0;
+   // }
+}
+
+.section-down {
+   padding-bottom: 100px;
+   
+   @include mq(tablet) {
+      padding-bottom: 120px;
+   }
+
+   @include mq(desktop) {
+      // padding-top: 20px;
+      padding-bottom: 120px;
    }
 }
 

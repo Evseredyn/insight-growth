@@ -24,7 +24,7 @@ $(document).ready(function() {
           }
         },
         {
-          breakpoint: 620,
+          breakpoint: 744,
           settings: {
             slidesToShow: 1, // Кількість відгуків на планшеті
           }
@@ -39,7 +39,7 @@ $(document).ready(function() {
           }
         },
         {
-          breakpoint: 1120,
+          breakpoint: 1440,
           settings: {
             slidesToShow: 2.15,
           }
