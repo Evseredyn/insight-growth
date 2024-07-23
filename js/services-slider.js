@@ -6,7 +6,7 @@ $(document).ready(function() {
       easing: 'cubic-bezier(0.4,0,0.2,1)',
       // autoplay: true, // Автоматичне прокручування
       autoplaySpeed: 3000, // Затримка між автоматичним прокручуванням (у мілісекундах)
-      infinite: true,
+      infinite: false,
       pauseOnFocus: true,
       pauseOnHover: true,
       draggable: false,
@@ -24,6 +24,12 @@ $(document).ready(function() {
           }
         },
         {
+          breakpoint: 620,
+          settings: {
+            slidesToShow: 1, // Кількість відгуків на планшеті
+          }
+        },
+        {
           breakpoint: 745,
           settings: {
             slidesToShow: 2.15, // Кількість відгуків на планшеті
@@ -33,10 +39,16 @@ $(document).ready(function() {
           }
         },
         {
+          breakpoint: 1120,
+          settings: {
+            slidesToShow: 2.15,
+          }
+        },
+        {
           breakpoint: 1441,
           settings: {
             slidesToShow: 3,
-            slideWidth: 400, // Ширина слайда 400px
+            slideWidth: 380, // Ширина слайда 380px
             centerMode: true,
             centerPadding: '120px'
           }
@@ -44,10 +56,10 @@ $(document).ready(function() {
         {
           breakpoint: 1921,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slideWidth: 400, // Ширина слайда 400px
-            centerMode: true, // Центрувати активний слайд
-            centerPadding: '320px' // Додати відступ 40px праворуч і ліворуч
+            // centerMode: true, // Центрувати активний слайд
+            centerPadding: '100px' // Додати відступ 40px праворуч і ліворуч
           }
         }
       ]

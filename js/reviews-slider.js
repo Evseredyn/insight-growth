@@ -16,11 +16,23 @@ $(document).ready(function() {
         {
           breakpoint: 361, // Розмір екрану, на якому застосовуються ці налаштування
           settings: {
+            slidesToShow: 1, // Кількість відгуків на мобільному
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
             slidesToShow: 1, // Кількість відгуків на планшеті
           }
         },
         {
           breakpoint: 745,
+          settings: {
+            slidesToShow: 2.15, // Кількість відгуків на планшеті
+          }
+        },
+        {
+          breakpoint: 960,
           settings: {
             slidesToShow: 2.15,
           }

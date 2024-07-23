@@ -1846,6 +1846,9 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1888,6 +1891,8 @@ nav li:hover > .footer-subnav__list,
   border-radius: 20px;
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 744px) {
   .services__img {
@@ -1908,7 +1913,7 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .services__title {
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -2025,8 +2030,37 @@ nav li:hover > .footer-subnav__list,
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.services-slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  width: 110px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 744px) {
+  .services-slider__wrapper {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 130px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .services-slider__wrapper {
+    display: none;
+  }
+}
 .services-slider__prev-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2037,8 +2071,6 @@ nav li:hover > .footer-subnav__list,
       -ms-flex-pack: center;
           justify-content: center;
   content: "";
-  bottom: 0;
-  left: 120px;
   width: 50px;
   height: 50px;
   padding: 0;
@@ -2052,30 +2084,11 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .services-slider__prev-button {
-    top: 0;
-    left: auto;
-    right: 85px;
     width: 60px;
     height: 60px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .services-slider__prev-button {
-    display: none;
-    top: 0;
-    left: auto;
-    right: 190px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .services-slider__prev-button {
-    top: 0;
-    left: auto;
-    right: 170px;
-  }
-}
 .services-slider__next-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2086,8 +2099,6 @@ nav li:hover > .footer-subnav__list,
       -ms-flex-pack: center;
           justify-content: center;
   content: "";
-  bottom: 0;
-  right: 120px;
   width: 50px;
   height: 50px;
   padding: 0;
@@ -2101,25 +2112,8 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .services-slider__next-button {
-    top: 0;
-    right: 15px;
     width: 60px;
     height: 60px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .services-slider__next-button {
-    display: none;
-    top: 0;
-    left: auto;
-    right: 120px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .services-slider__next-button {
-    top: 0;
-    left: auto;
-    right: 100px;
   }
 }
 .services-slider__icon {
@@ -2128,7 +2122,6 @@ nav li:hover > .footer-subnav__list,
 
 .reviews__slider {
   position: relative;
-  padding-bottom: 90px;
 }
 @media screen and (min-width: 744px) {
   .reviews__slider {
@@ -2137,12 +2130,12 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .reviews__slider {
-    padding-left: 105px;
+    padding-left: 120px;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__slider {
-    padding-left: 85px;
+    padding-left: 100px;
   }
 }
 .reviews__heading {
@@ -2213,8 +2206,7 @@ nav li:hover > .footer-subnav__list,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 350px;
+  width: 100vw;
   margin-left: 15px;
   margin-right: 15px;
   padding: 20px;
@@ -2247,7 +2239,7 @@ nav li:hover > .footer-subnav__list,
   }
 }
 .reviews__title {
-  width: 240px;
+  width: 90%;
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
@@ -2257,20 +2249,18 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .reviews__title {
-    width: 280px;
+    width: 100%;
     font-size: 26px;
     line-height: 1.33;
   }
 }
 @media screen and (min-width: 1920px) {
   .reviews__title {
-    width: 330px;
     font-size: 30px;
     line-height: 1.33;
   }
 }
 .reviews__description {
-  width: 290px;
   margin: 20px 0px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -2280,7 +2270,6 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 1440px) {
   .reviews__description {
-    width: 330px;
     margin: 20px 0px 30px;
     font-size: 14px;
     line-height: 1.86;
@@ -2296,10 +2285,16 @@ nav li:hover > .footer-subnav__list,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
 }
 .reviews__img {
   width: 80px;
-  margin-right: 20px;
   height: auto;
   border-radius: 50%;
 }
@@ -2319,7 +2314,7 @@ nav li:hover > .footer-subnav__list,
   font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 @media screen and (min-width: 1440px) {
   .reviews__name {
@@ -2337,8 +2332,42 @@ nav li:hover > .footer-subnav__list,
   font-size: 20px;
   font-weight: 400;
 }
+.reviews-slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  width: 110px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 744px) {
+  .reviews-slider__wrapper {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 130px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-slider__wrapper {
+    right: 120px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .reviews-slider__wrapper {
+    right: 100px;
+  }
+}
 .reviews-slider__prev-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2349,8 +2378,6 @@ nav li:hover > .footer-subnav__list,
       -ms-flex-pack: center;
           justify-content: center;
   content: "";
-  bottom: 0;
-  left: 125px;
   width: 50px;
   height: 50px;
   padding: 0;
@@ -2364,29 +2391,11 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .reviews-slider__prev-button {
-    top: 0;
-    left: auto;
-    right: 85px;
     width: 60px;
     height: 60px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .reviews-slider__prev-button {
-    top: 0;
-    left: auto;
-    right: 190px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews-slider__prev-button {
-    top: 0;
-    left: auto;
-    right: 170px;
-  }
-}
 .reviews-slider__next-button {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2397,8 +2406,6 @@ nav li:hover > .footer-subnav__list,
       -ms-flex-pack: center;
           justify-content: center;
   content: "";
-  bottom: 0;
-  right: 125px;
   width: 50px;
   height: 50px;
   padding: 0;
@@ -2412,24 +2419,8 @@ nav li:hover > .footer-subnav__list,
 }
 @media screen and (min-width: 744px) {
   .reviews-slider__next-button {
-    top: 0;
-    right: 15px;
     width: 60px;
     height: 60px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .reviews-slider__next-button {
-    top: 0;
-    left: auto;
-    right: 120px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .reviews-slider__next-button {
-    top: 0;
-    left: auto;
-    right: 100px;
   }
 }
 .reviews-slider__icon {
