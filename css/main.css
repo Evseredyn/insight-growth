@@ -877,6 +877,8 @@ nav li:hover > .mob-subnav__link,
 }
 .footer-nav__link {
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   font-size: 16px;
@@ -886,6 +888,7 @@ nav li:hover > .mob-subnav__link,
 @media screen and (min-width: 1440px) {
   .footer-nav__link {
     font-size: 20px;
+    line-height: 1.5;
   }
 }
 .footer-nav__link.active {
@@ -908,14 +911,14 @@ nav li:hover > .mob-subnav__link,
 @media screen and (min-width: 744px) {
   .footer-subnav__list {
     position: absolute;
-    top: 150%;
+    top: 100%;
     width: 230px;
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-subnav__list {
-    top: 150%;
+    top: 90%;
     left: 0;
     width: 400px;
   }

@@ -104,8 +104,8 @@
 
     &__link {
         margin: 0 auto;
-        // padding-top: 20px;
-        // padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-family: $info-font;
         color: $color-white;
         font-size: 16px;
@@ -119,6 +119,7 @@
     
         @include mq(desktop) {
             font-size: 20px;
+            line-height: 1.5;
         }
     
         // @include mq(monitor) {
@@ -149,14 +150,14 @@
 
         @include mq(tablet) {
             position: absolute;
-            top: 150%;
+            top: 100%;
             // left: -50%;
             width: 230px;
             margin-top: 0;
         }
 
         @include mq(desktop) {
-            top: 150%;
+            top: 90%;
             left: 0;
             width: 400px;
             // padding: 20px;
