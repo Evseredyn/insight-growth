@@ -39,7 +39,7 @@ html {
    padding: 100px 0;
 
    @include mq(tablet) {
-      padding: 120px 0;
+      // padding: 120px 0;
    }
 
    @include mq(desktop) {
