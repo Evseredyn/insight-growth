@@ -120,52 +120,146 @@
         }
     }
 
-    &__btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 286px;
-        height: 70px;
-        // max-height: 75px;
-        margin-left: 0;
-        padding: 8px 8px 8px 35px;
-        font-family: $main-font;
-        background-color: $color-akcent;
-        font-size: 16px;
-        font-weight: 500;
-        color: $color-white;
-        text-transform: uppercase;
-        border: $color-akcent;
+    &__button-wrapper {
+        position: relative;
+        width: 250px;
+        height: 66px;
+        margin: 40px auto 0;
+        // margin-left: auto;
+        // margin-right: auto;
+        overflow: hidden;
+        
+        @include mq(tablet) {
+            width: 288px;
+            height: 76px;
+        }
+    }
+
+    &__button-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color-gradient;
+        border: solid 2px transparent;
         border-radius: 40px;
-        cursor: pointer;
-        transition: color $duration $timing-function, background-color $duration $timing-function;
+        transition: opacity $duration $timing-function;
+    }
+
+    &__button-wrapper:hover &__button-background,
+    &__button-wrapper:focus &__button-background {
+        opacity: 0;
+    }
     
-        // @include mq(not-desktop) {
-        //     margin-left: auto;
-        //     margin-right: auto;
-        //     width: 200px;
-        // }
+    &__button-wrapper:hover &__link,
+    &__button-wrapper:focus &__link {
+        color: $color-akcent;
+        border: solid 2px $color-akcent;
+
     }
 
     &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // gap: 20px;
+        width: 250px;
+        height: 66px;
+        // margin: 40px auto 0;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding: 8px 8px 8px 30px;
+        border: solid 2px transparent;
+        border-radius: 40px;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1,25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-white;
+        transition: color $duration $timing-function,  opacity $duration $timing-function;
+        cursor: pointer;
+
+        @include mq(tablet) {
+            width: 288px;
+            height: 76px;
+            font-size: 18px;
+            line-height: 1,1;
+        }
+    }
+  
+    &__link:hover &__decor,
+    &__link:focus &__decor {
+       color: $color-white;
+    }
+  
+    &__circle {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 60px;
-        background-color: $color-white;
-        border-radius: 50%;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: currentColor;
+    }
+ 
+    &__decor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: $color-akcent;
     }
 
-    &__icon {
-        width: 32px;
-        height: 32px;
-        // background-color: $color-white;
-        // border-radius: 50px;
-        fill: $color-akcent;
-        // padding: 10px;
+    &__btn-icon {
+        fill: currentColor;
         transition: color $duration $timing-function;
     }
+
+    // &__btn {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     min-width: 286px;
+    //     height: 70px;
+    //     // max-height: 75px;
+    //     margin-left: 0;
+    //     padding: 8px 8px 8px 35px;
+    //     font-family: $main-font;
+    //     background-color: $color-akcent;
+    //     font-size: 16px;
+    //     font-weight: 500;
+    //     color: $color-white;
+    //     text-transform: uppercase;
+    //     border: $color-akcent;
+    //     border-radius: 40px;
+    //     cursor: pointer;
+    //     transition: color $duration $timing-function, background-color $duration $timing-function;
+    // }
+
+    // &__link {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 60px;
+    //     height: 60px;
+    //     background-color: $color-white;
+    //     border-radius: 50%;
+    // }
+
+    // &__icon {
+    //     width: 32px;
+    //     height: 32px;
+    //     // background-color: $color-white;
+    //     // border-radius: 50px;
+    //     fill: $color-akcent;
+    //     // padding: 10px;
+    //     transition: color $duration $timing-function;
+    // }
 
     &__thumb {
         position: relative;

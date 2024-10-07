@@ -167,10 +167,6 @@
 
     &__list { 
         position: relative;
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
-        // align-items: flex-end;
 
         @include mq(mobile-only) {    
             width: 330px;
