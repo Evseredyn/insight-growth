@@ -2835,7 +2835,6 @@ nav li:hover > .footer-subnav__list,
   position: relative;
   width: 250px;
   height: 66px;
-  margin: 40px auto 0;
   overflow: hidden;
 }
 @media screen and (min-width: 744px) {
