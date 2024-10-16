@@ -4,24 +4,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 20px;
+        width: 100%;
 
         @include mq(desktop) {
             flex-direction: row;
-            align-items: center;
             gap: 30px;
         }
 
         @include mq(monitor) {
-            flex-direction: row;
-            align-items: center;
             gap: 40px;
         }
     }
 
     &__item {
         background-color: $color-bg-item;
-        width: 100%;
+        // width: 100%;
         // max-height: 390px;
         padding: 30px 10px 40px;
         border-radius: 30px;
@@ -30,7 +29,8 @@
         justify-content: space-between;
 
         @include mq(tablet) {
-            max-width: 714px;
+            // max-width: 714px;
+            width: 100%;
             height: 370px;
             padding: 30px 65px 40px;
         }
@@ -182,7 +182,7 @@
         @include mq(desktop) {
             font-size: 30px;
             line-height: 1.33;
-            width: 90%;
+            // width: 90%;
         }
 
         @include mq(monitor) {
@@ -205,17 +205,17 @@
     }
     
     @include mq(tablet) {
-        width: 85%;
+        width: 100%;
         font-size: 16px;
         line-height: 1.6;
     }
 
     @include mq(desktop) {
-        width: 90%;
+        // width: 90%;
     }
 
     @include mq(monitor) {
-        width: 450px;
+        // width: 450px;
         font-size: 18px;
     }
 }
