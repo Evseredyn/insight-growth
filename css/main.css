@@ -821,9 +821,6 @@ nav li:hover > .mob-subnav__link,
 }
 @media screen and (min-width: 744px) {
   .footer-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2681,6 +2678,14 @@ nav li:hover > .footer-subnav__list,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .contact-us__inner {
