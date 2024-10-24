@@ -144,9 +144,6 @@
     transition: max-height $duration $timing-function;
     }
 
-    &__item {
-    }
-
     &__item:not(:last-child) {
         margin-bottom: 20px;
     }
